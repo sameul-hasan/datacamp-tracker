@@ -28,6 +28,7 @@ import Showcase from './components/Pages/Showcase';
 import Guide from './components/Pages/Guide';
 import Market from './components/Pages/Market';
 import Builder from './components/Pages/Builder';
+import Settings from './components/Pages/Settings';
 
 export default function App() {
   const [tab, setTab] = useState('dashboard');
@@ -51,6 +52,7 @@ export default function App() {
         {tab === 'practice' && <Practice />}
         {tab === 'showcase' && <Showcase />}
         {tab === 'guide' && <Guide />}
+        {tab === 'settings' && <Settings />}
         {tab === 'market' && <Market />}
         {tab === 'builder' && <Builder />}
       </main>

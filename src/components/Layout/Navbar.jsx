@@ -13,6 +13,7 @@ const MORE_TABS = [
   { id:'practice', label:'🧪 Practice' },
   { id:'showcase', label:'📣 Showcase' },
   { id:'guide', label:'📖 Guide' },
+  { id:'settings', label:'⚙️ Settings' },
 ];
 
 const EXTRA = [

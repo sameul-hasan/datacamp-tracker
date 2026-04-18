@@ -2,6 +2,7 @@ import { WEEKS, MONTHS } from '../../data/curriculum';
 import { BADGES } from '../../hooks/useTracker';
 import MetricCard from './MetricCard';
 import LevelBar from './LevelBar';
+import Heatmap from './Heatmap';
 
 function findDayData(dayNum) {
   for (const w of WEEKS) {
@@ -65,6 +66,8 @@ export default function Dashboard({ tracker }) {
           <MetricCard label="Total XP" value={xp} pct={Math.min(xp/7000*100,100)} />
           <MetricCard label="Badges" value={`${earnedBadges.length}/${BADGES.length}`} pct={earnedBadges.length/BADGES.length*100} color="gold" />
         </div>
+
+        <Heatmap tracker={tracker} />
 
         {nextDayData && (
           <div className="next-action">
