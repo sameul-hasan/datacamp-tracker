@@ -1,0 +1,50 @@
+/* ══════════════════════════════════════════
+   DESIGN TOKENS — Colors, Typography, Spacing
+   ══════════════════════════════════════════ */
+
+:root {
+  /* ── Surface Colors ── */
+  --bg:       #05080f;
+  --bg-2:     #090d18;
+  --bg-3:     #0e1320;
+  --card:     rgba(11,16,34,0.65);
+  --card-solid: #0b1022;
+  --glass:    rgba(11,16,34,0.45);
+  --border:   rgba(23,32,53,0.7);
+  --border-2: rgba(30,45,71,0.8);
+
+  /* ── Brand Colors ── */
+  --accent:   #05c3de;
+  --accent-2: #037f91;
+  --gold:     #f4b942;
+  --green:    #22d87a;
+  --purple:   #9b6dff;
+  --red:      #ff5577;
+  --pink:     #ff6bca;
+
+  /* ── Text Colors ── */
+  --text:     #dde6f5;
+  --text-2:   #a3b4cc;
+  --muted:    #52647d;
+
+  /* ── Radius ── */
+  --r:        14px;
+  --r-sm:     10px;
+  --r-pill:   99px;
+
+  /* ── Shadows ── */
+  --shadow-sm:  0 2px 8px rgba(0,0,0,0.2);
+  --shadow-md:  0 4px 24px rgba(0,0,0,0.3);
+  --shadow-lg:  0 8px 40px rgba(0,0,0,0.4);
+  --shadow-glow: 0 0 30px rgba(5,195,222,0.08);
+
+  /* ── Typography ── */
+  --font-body:  'Inter', 'Outfit', system-ui, sans-serif;
+  --font-head:  'Space Grotesk', 'Outfit', sans-serif;
+  --font-mono:  'JetBrains Mono', 'Fira Code', monospace;
+
+  /* ── Transitions ── */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --speed: 0.2s;
+}
