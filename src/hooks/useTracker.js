@@ -1,9 +1,9 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useMemo } from 'react';
 import { WEEKS, CERTIFICATIONS, COURSES } from '../data/curriculum';
 
 const STORAGE_KEY = 'dc-tracker-v3';
 
-const TOTAL_DAYS = 140;
+const TOTAL_DAYS = 168;
 const TOTAL_COURSES = COURSES.length;
 const TOTAL_CERTS = CERTIFICATIONS.length;
 
@@ -18,12 +18,12 @@ const BADGES = [
   { id:'course_all', name:'Course Collector', icon:'📚', desc:'Complete all courses', xp:500, check: s => Object.values(s.completedCourses).filter(Boolean).length >= TOTAL_COURSES },
   { id:'cert_1', name:'Certified!', icon:'📜', desc:'Earn first certification', xp:500, check: s => Object.values(s.certifications).filter(Boolean).length >= 1 },
   { id:'cert_all', name:'Quad Certified', icon:'💎', desc:'Earn all 4 certifications', xp:2000, check: s => Object.values(s.certifications).filter(Boolean).length >= 4 },
-  { id:'half_way', name:'Halfway There', icon:'🚀', desc:'Complete 70 days (50%)', xp:400, check: s => Object.values(s.completedDays).filter(Boolean).length >= 70 },
+  { id:'half_way', name:'Halfway There', icon:'🚀', desc:'Complete 84 days (50%)', xp:400, check: s => Object.values(s.completedDays).filter(Boolean).length >= 84 },
   { id:'month_1', name:'Part I Done', icon:'🗓️', desc:'Complete first 28 days', xp:300, check: s => { for(let i=1;i<=28;i++) if(!s.completedDays[i]) return false; return true; }},
   { id:'python_start', name:'Pythonista', icon:'🐍', desc:'Complete 10 days', xp:150, check: s => Object.values(s.completedDays).filter(Boolean).length >= 10 },
   { id:'ml_master', name:'ML Master', icon:'🤖', desc:'Complete Part II (56 days)', xp:400, check: s => { for(let i=29;i<=56;i++) if(!s.completedDays[i]) return false; return true; }},
   { id:'deep_diver', name:'Deep Diver', icon:'🧠', desc:'Complete Part III (84 days)', xp:400, check: s => { for(let i=57;i<=84;i++) if(!s.completedDays[i]) return false; return true; }},
-  { id:'finish', name:'Job Ready', icon:'🎯', desc:'Complete all 140 days', xp:5000, check: s => Object.values(s.completedDays).filter(Boolean).length >= TOTAL_DAYS },
+  { id:'finish', name:'Job Ready', icon:'🎯', desc:'Complete all 168 days', xp:5000, check: s => Object.values(s.completedDays).filter(Boolean).length >= TOTAL_DAYS },
 ];
 
 const LEVELS = [
@@ -58,14 +58,16 @@ export function useTracker() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
       if (raw) return { ...defaultState, ...JSON.parse(raw) };
-    } catch(e) {}
+    } catch {
+      // Ignore parse errors
+    }
     return { ...defaultState, startDate: new Date().toISOString().split('T')[0] };
   });
 
   const [newBadge, setNewBadge] = useState(null);
 
   useEffect(() => {
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch(e) {}
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch { /* Ignore write errors */ }
   }, [state]);
 
   const totalDays = TOTAL_DAYS;
@@ -84,7 +86,7 @@ export function useTracker() {
     return s;
   })();
 
-  const derived = { streak, daysComplete, coursesComplete, certsComplete };
+  const derived = useMemo(() => ({ streak, daysComplete, coursesComplete, certsComplete }), [streak, daysComplete, coursesComplete, certsComplete]);
 
   // XP calculation
   const xp = (() => {
@@ -187,12 +189,13 @@ export function useTracker() {
   const motivation = (() => {
     if (daysComplete === 0) return "Ready to start your AI/ML journey? 🚀 Click the circle next to Day 1!";
     if (daysComplete < 7) return "Great start! Keep building daily habits. Every day counts! 💪";
-    if (daysComplete < 28) return "Part I — building the mathematical bedrock. Foundations matter! 🧱";
-    if (daysComplete < 56) return "Part II — core ML algorithms unlocked. You're thinking like a data scientist! 📊";
-    if (daysComplete < 84) return "Part III — deep learning & specialized domains. Neural nets are your new superpower! 🧠";
-    if (daysComplete < 112) return "Part IV — MLOps, system design & capstone. Almost there! ⚙️";
-    if (daysComplete < 140) return "Part V — The Final Mile. Apply, mock interviews, and land the job! 🎯";
-    return "🎉 You've completed the entire 5-month challenge! You are JOB READY! 🎉";
+    if (daysComplete < 28) return "Month 1 — building the mathematical bedrock. Foundations matter! 🧱";
+    if (daysComplete < 56) return "Month 2 — Statistics & EDA. You're thinking like a data scientist! 📊";
+    if (daysComplete < 84) return "Month 3 — Machine Learning. The algorithms are clicking! 🤖";
+    if (daysComplete < 112) return "Month 4 — Deep Learning & PyTorch. Neural nets are your new superpower! 🧠";
+    if (daysComplete < 140) return "Month 5 — GenAI & LangChain. Building the cool stuff! ⚙️";
+    if (daysComplete < 168) return "Month 6 — MLOps & Job Hunt. The final sprint to the finish line! 🏁";
+    return "🎉 You've completed the entire 6-month challenge! You are JOB READY! 🎉";
   })();
 
   return {

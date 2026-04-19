@@ -1,11 +1,11 @@
 export default function Heatmap({ tracker }) {
   const { state } = tracker;
   
-  // 140 days = 20 weeks * 7 days
-  const WEEKS = 20;
+  // 168 days = 24 weeks * 7 days
+  const WEEKS = 24;
   const DAYS_PER_WEEK = 7;
 
-  // Generate a matrix of days [column][row] -> day number 1-140
+  // Generate a matrix of days [column][row] -> day number 1-168
   const matrix = Array.from({ length: WEEKS }, (_, w) => 
     Array.from({ length: DAYS_PER_WEEK }, (_, d) => w * DAYS_PER_WEEK + d + 1)
   );
@@ -17,7 +17,7 @@ export default function Heatmap({ tracker }) {
           📅 Contribution Activity
         </h3>
         <span style={{ fontSize: 11, color: 'var(--muted)' }}>
-          {tracker.daysComplete} / 140 Days Completed
+          {tracker.daysComplete} / 168 Days Completed
         </span>
       </div>
       

@@ -37,7 +37,7 @@ export default function Settings() {
         } else {
           setMsg('Error: Invalid save file format.');
         }
-      } catch (err) {
+      } catch {
         setMsg('Error reading file. Is it a valid JSON?');
       }
     };

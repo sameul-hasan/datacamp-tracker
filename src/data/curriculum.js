@@ -1,303 +1,146 @@
-export const MONTHS = [
-  { id: 1, title: 'Part I: Mathematical & Computational Bedrock', weeks: ['w1', 'w2', 'w3', 'w4'], color: '#05c3de' },
-  { id: 2, title: 'Part II: Core Machine Learning & Algorithms', weeks: ['w5', 'w6', 'w7', 'w8'], color: '#9b6dff' },
-  { id: 3, title: 'Part III: Deep Learning & Specialized Domains', weeks: ['w9', 'w10', 'w11', 'w12'], color: '#f4b942' },
-  { id: 4, title: 'Part IV: MLOps, System Design & Capstone', weeks: ['w13', 'w14', 'w15', 'w16'], color: '#22d87a' },
-  { id: 5, title: 'Part V: The Final Mile — Job Hunt & Portfolio', weeks: ['w17', 'w18', 'w19', 'w20'], color: '#ff5577' }
-];
-
+// ── 6-Month AI/ML Curriculum Data ──
 export const COURSES = [
-  { id: "c1", name: "Intro to Python", url: "https://www.datacamp.com/courses/intro-to-python-for-data-science", month: 1 },
-  { id: "c2", name: "OOP in Python", url: "https://www.datacamp.com/courses/object-oriented-programming-in-python", month: 1 },
-  { id: "c3", name: "Introduction to SQL", url: "https://www.datacamp.com/courses/introduction-to-sql", month: 1 },
-  { id: "c4", name: "Intermediate SQL", url: "https://www.datacamp.com/courses/intermediate-sql", month: 1 },
-  { id: "c5", name: "Databases in Python", url: "https://www.datacamp.com/courses/introduction-to-relational-databases-in-python", month: 1 },
-  { id: "c6", name: "Data Manipulation w/ Pandas", url: "https://www.datacamp.com/courses/data-manipulation-with-pandas", month: 1 },
-  { id: "c7", name: "Cleaning Data in Python", url: "https://www.datacamp.com/courses/cleaning-data-in-python", month: 1 },
-  { id: "c8", name: "Intro to Statistics", url: "https://www.datacamp.com/courses/introduction-to-statistics-in-python", month: 2 },
-  { id: "c9", name: "Hypothesis Testing", url: "https://www.datacamp.com/courses/hypothesis-testing-in-python", month: 2 },
-  { id: "c10", name: "Intro to Seaborn", url: "https://www.datacamp.com/courses/introduction-to-data-visualization-with-seaborn", month: 2 },
-  { id: "c11", name: "EDA in Python", url: "https://www.datacamp.com/courses/exploratory-data-analysis-in-python", month: 2 },
-  { id: "c12", name: "Linear Algebra", url: "https://www.datacamp.com/courses/linear-algebra-for-data-science-in-python", month: 2 },
-  { id: "c13", name: "Preprocessing for ML", url: "https://www.datacamp.com/courses/preprocessing-for-machine-learning-in-python", month: 2 },
-  { id: "c14", name: "Supervised Learning", url: "https://www.datacamp.com/courses/supervised-learning-with-scikit-learn", month: 3 },
-  { id: "c15", name: "Unsupervised Learning", url: "https://www.datacamp.com/courses/unsupervised-learning-in-python", month: 3 },
-  { id: "c16", name: "Tree-Based Models", url: "https://www.datacamp.com/courses/machine-learning-with-tree-based-models-in-python", month: 3 },
-  { id: "c17", name: "XGBoost", url: "https://www.datacamp.com/courses/extreme-gradient-boosting-with-xgboost", month: 3 },
-  { id: "c18", name: "Intro to Deep Learning (PyTorch)", url: "https://www.datacamp.com/courses/introduction-to-deep-learning-with-pytorch", month: 4 },
-  { id: "c19", name: "DL for Images (PyTorch)", url: "https://www.datacamp.com/courses/deep-learning-for-images-with-pytorch", month: 4 },
-  { id: "c20", name: "NLP Fundamentals", url: "https://www.datacamp.com/courses/natural-language-processing-fundamentals-in-python", month: 4 },
-  { id: "c21", name: "Feature Eng for NLP", url: "https://www.datacamp.com/courses/feature-engineering-for-nlp-in-python", month: 4 },
-  { id: "c22", name: "Transformers & BERT", url: "https://www.datacamp.com/courses/transformer-models-and-bert", month: 4 },
-  { id: "c23", name: "Fine-Tuning HF", url: "https://www.datacamp.com/courses/fine-tuning-with-hugging-face", month: 4 },
-  { id: "c24", name: "Working w/ OpenAI API", url: "https://www.datacamp.com/courses/working-with-the-openai-api", month: 4 },
-  { id: "c25", name: "LLM Apps w/ LangChain", url: "https://www.datacamp.com/courses/developing-llm-applications-with-langchain", month: 5 },
-  { id: "c26", name: "Streamlit Apps", url: "https://www.datacamp.com/courses/building-web-applications-in-python-with-streamlit", month: 5 },
-  { id: "c27", name: "MLOps Concepts", url: "https://www.datacamp.com/courses/mlops-concepts", month: 6 },
-  { id: "c28", name: "Intro to MLflow", url: "https://www.datacamp.com/courses/introduction-to-mlflow", month: 6 },
-  { id: "c29", name: "Intro to Docker", url: "https://www.datacamp.com/courses/introduction-to-docker", month: 6 },
-  { id: "c30", name: "CI/CD for ML", url: "https://www.datacamp.com/courses/ci-cd-for-machine-learning", month: 6 },
-  { id: "c31", name: "Monitoring ML", url: "https://www.datacamp.com/courses/monitoring-machine-learning-in-python", month: 6 }
+  { id:'c1', name:'Intro to Python', url:'https://www.datacamp.com/courses/intro-to-python-for-data-science', month:1 },
+  { id:'c2', name:'OOP in Python', url:'https://www.datacamp.com/courses/object-oriented-programming-in-python', month:1 },
+  { id:'c3', name:'Introduction to SQL', url:'https://www.datacamp.com/courses/introduction-to-sql', month:1 },
+  { id:'c4', name:'Intermediate SQL', url:'https://www.datacamp.com/courses/intermediate-sql', month:1 },
+  { id:'c5', name:'Databases in Python', url:'https://www.datacamp.com/courses/introduction-to-relational-databases-in-python', month:1 },
+  { id:'c6', name:'Data Manipulation w/ Pandas', url:'https://www.datacamp.com/courses/data-manipulation-with-pandas', month:1 },
+  { id:'c7', name:'Cleaning Data in Python', url:'https://www.datacamp.com/courses/cleaning-data-in-python', month:1 },
+  { id:'c8', name:'Intro to Statistics', url:'https://www.datacamp.com/courses/introduction-to-statistics-in-python', month:2 },
+  { id:'c9', name:'Hypothesis Testing', url:'https://www.datacamp.com/courses/hypothesis-testing-in-python', month:2 },
+  { id:'c10', name:'Intro to Seaborn', url:'https://www.datacamp.com/courses/introduction-to-data-visualization-with-seaborn', month:2 },
+  { id:'c11', name:'EDA in Python', url:'https://www.datacamp.com/courses/exploratory-data-analysis-in-python', month:2 },
+  { id:'c12', name:'Linear Algebra', url:'https://www.datacamp.com/courses/linear-algebra-for-data-science-in-python', month:2 },
+  { id:'c13', name:'Preprocessing for ML', url:'https://www.datacamp.com/courses/preprocessing-for-machine-learning-in-python', month:2 },
+  { id:'c14', name:'Supervised Learning', url:'https://www.datacamp.com/courses/supervised-learning-with-scikit-learn', month:3 },
+  { id:'c15', name:'Unsupervised Learning', url:'https://www.datacamp.com/courses/unsupervised-learning-in-python', month:3 },
+  { id:'c16', name:'Tree-Based Models', url:'https://www.datacamp.com/courses/machine-learning-with-tree-based-models-in-python', month:3 },
+  { id:'c17', name:'XGBoost', url:'https://www.datacamp.com/courses/extreme-gradient-boosting-with-xgboost', month:3 },
+  { id:'c18', name:'Intro to Deep Learning (PyTorch)', url:'https://www.datacamp.com/courses/introduction-to-deep-learning-with-pytorch', month:4 },
+  { id:'c19', name:'DL for Images (PyTorch)', url:'https://www.datacamp.com/courses/deep-learning-for-images-with-pytorch', month:4 },
+  { id:'c20', name:'NLP Fundamentals', url:'https://www.datacamp.com/courses/natural-language-processing-fundamentals-in-python', month:4 },
+  { id:'c21', name:'Feature Eng for NLP', url:'https://www.datacamp.com/courses/feature-engineering-for-nlp-in-python', month:4 },
+  { id:'c22', name:'Transformers & BERT', url:'https://www.datacamp.com/courses/transformer-models-and-bert', month:4 },
+  { id:'c23', name:'Fine-Tuning HF', url:'https://www.datacamp.com/courses/fine-tuning-with-hugging-face', month:4 },
+  { id:'c24', name:'Working w/ OpenAI API', url:'https://www.datacamp.com/courses/working-with-the-openai-api', month:4 },
+  { id:'c25', name:'LLM Apps w/ LangChain', url:'https://www.datacamp.com/courses/developing-llm-applications-with-langchain', month:5 },
+  { id:'c26', name:'Streamlit Apps', url:'https://www.datacamp.com/courses/building-web-applications-in-python-with-streamlit', month:5 },
+  { id:'c27', name:'MLOps Concepts', url:'https://www.datacamp.com/courses/mlops-concepts', month:6 },
+  { id:'c28', name:'Intro to MLflow', url:'https://www.datacamp.com/courses/introduction-to-mlflow', month:6 },
+  { id:'c29', name:'Intro to Docker', url:'https://www.datacamp.com/courses/introduction-to-docker', month:6 },
+  { id:'c30', name:'CI/CD for ML', url:'https://www.datacamp.com/courses/ci-cd-for-machine-learning', month:6 },
+  { id:'c31', name:'Monitoring ML', url:'https://www.datacamp.com/courses/monitoring-machine-learning-in-python', month:6 },
 ];
 
 export const CERTIFICATIONS = [
-  { id: "cert1", name: "Python Data Associate", week: 4, month: 1, reqDays: 28, color: "#05c3de", desc: "Tests Python, OOP, Data Manipulation, and SQL foundations." },
-  { id: "cert2", name: "Data Scientist Associate", week: 8, month: 2, reqDays: 56, color: "#9b6dff", desc: "Tests data extraction, visualization, stats, and predictive modeling." },
-  { id: "cert3", name: "AI Engineer Associate", week: 12, month: 3, reqDays: 84, color: "#f4b942", desc: "Tests AI app building (OpenAI APIs, embeddings, LangChain). ⭐ MOST IMPORTANT" },
-  { id: "cert4", name: "MLOps Fundamentals Badge", week: 16, month: 4, reqDays: 112, color: "#22d87a", desc: "Tests MLflow, CI/CD, Docker, and pipeline automation." }
-];
-
-const W = (id, title, days) => ({ id, title, days });
-const D = (day, dow, topic, task, tag, courseId) => ({ day, dow, topic, task, tag, courseId });
-
-export const WEEKS = [
-  W('w1', 'Linear Algebra & Vector Calculus for ML', [
-    D(1, 'MON', 'Linear Algebra', 'Vector Spaces, Subspaces, and Basis', 'ML', 'c12'),
-    D(2, 'TUE', 'Linear Algebra', 'Transformations, Matrices, Systems of Equations', 'ML', 'c12'),
-    D(3, 'WED', 'Linear Algebra', 'Eigenvalues, Eigenvectors, Eigendecomposition', 'ML', 'c12'),
-    D(4, 'THU', 'Linear Algebra', 'Singular Value Decomposition (SVD)', 'ML', 'c12'),
-    D(5, 'FRI', 'Calculus', 'Multivariable Calculus: Partial Derivatives', 'ML', null),
-    D(6, 'SAT', 'Calculus', 'Jacobian and Hessian Matrices', 'ML', null),
-    D(7, 'SUN', 'Calculus', 'Matrix Calculus & Backprop Foundations', 'REST', null)
-  ]),
-  W('w2', 'Probability, Statistics & Inference', [
-    D(8, 'MON', 'Probability', 'Axioms, Conditional Probability, Bayes Theorem', 'PY', 'c8'),
-    D(9, 'TUE', 'Probability', 'Discrete vs. Continuous Distributions', 'PY', 'c8'),
-    D(10, 'WED', 'Probability', 'Expectation, Variance, and Moments', 'PY', 'c8'),
-    D(11, 'THU', 'Statistics', 'Central Limit Theorem & Sampling', 'PY', 'c8'),
-    D(12, 'FRI', 'Hypothesis Test', 'P-values, Type I/II Errors, Z/T-tests', 'PY', 'c9'),
-    D(13, 'SAT', 'Estimation', 'MLE vs MAP', 'PY', 'c9'),
-    D(14, 'SUN', 'A/B Testing', 'Statistical Significance for Product DS', 'REST', 'c9')
-  ]),
-  W('w3', 'Optimization & Linear Models', [
-    D(15, 'MON', 'Optimization', 'Convex Optimization, KKT Conditions', 'ML', null),
-    D(16, 'TUE', 'Linear Models', 'Simple Linear Regression & OLS', 'ML', null),
-    D(17, 'WED', 'Linear Models', 'Multiple Linear Regression & Collinearity', 'ML', null),
-    D(18, 'THU', 'Optimization', 'Gradient Descent Variants (Batch, SGD)', 'ML', null),
-    D(19, 'FRI', 'Linear Models', 'Regularization: Ridge (L2) & Lasso (L1)', 'ML', null),
-    D(20, 'SAT', 'Linear Models', 'Logistic Regression & Cross-Entropy', 'ML', null),
-    D(21, 'SUN', 'Coding', 'Build Regression from Scratch in NumPy', 'REST', null)
-  ]),
-  W('w4', 'Python for High-Performance DS', [
-    D(22, 'MON', 'Python', 'Generators, Decorators, Context Managers', 'PY', 'c1'),
-    D(23, 'TUE', 'NumPy', 'Vectorization & Broadcasting', 'PY', 'c1'),
-    D(24, 'WED', 'Pandas', 'Multi-indexing & GroupBy', 'PY', 'c6'),
-    D(25, 'THU', 'EDA', 'Outliers and Distribution Shifts', 'VIZ', 'c11'),
-    D(26, 'FRI', 'Visualization', 'Matplotlib, Seaborn, and Plotly', 'VIZ', 'c10'),
-    D(27, 'SAT', 'Data Cleaning', 'Missingness Mechanisms & Encoding', 'PY', 'c7'),
-    D(28, 'SUN', 'Project', 'Milestone Project 01: EDA & Stats Report', 'REST', null)
-  ]),
-  W('w5', 'Supervised Learning I', [
-    D(29, 'MON', 'Classification', 'K-Nearest Neighbors & Dimensionality', 'ML', 'c14'),
-    D(30, 'TUE', 'Trees', 'Decision Trees: Information Gain & Entropy', 'ML', 'c14'),
-    D(31, 'WED', 'Trees', 'Tree Pruning & Handling Overfitting', 'ML', 'c14'),
-    D(32, 'THU', 'SVM', 'Support Vector Machines & Kernel Trick', 'ML', 'c14'),
-    D(33, 'FRI', 'Classification', 'Naive Bayes: Geometric vs. Probabilistic', 'ML', 'c14'),
-    D(34, 'SAT', 'Evaluation', 'Precision, Recall, F1, ROC-AUC', 'ML', 'c14'),
-    D(35, 'SUN', 'Imbalanced Data', 'SMOTE, Weighted Loss, PR-Curves', 'REST', 'c14')
-  ]),
-  W('w6', 'Supervised Learning II', [
-    D(36, 'MON', 'Ensemble', 'Wisdom of the Crowd', 'ML', 'c16'),
-    D(37, 'TUE', 'Ensemble', 'Bagging & Random Forests', 'ML', 'c16'),
-    D(38, 'WED', 'Ensemble', 'Boosting Theory: AdaBoost', 'ML', 'c16'),
-    D(39, 'THU', 'GBM', 'Gradient Boosting Machines & XGBoost', 'ML', 'c17'),
-    D(40, 'FRI', 'GBM', 'LightGBM and CatBoost', 'ML', 'c17'),
-    D(41, 'SAT', 'XAI', 'SHAP Values & Local Interpretability', 'ML', 'c17'),
-    D(42, 'SUN', 'Hyperparams', 'GridSearch & Bayesian Opt', 'REST', 'c16')
-  ]),
-  W('w7', 'Unsupervised Learning', [
-    D(43, 'MON', 'Clustering', 'K-Means, K-Medoids, Silhouette Score', 'ML', 'c15'),
-    D(44, 'TUE', 'Clustering', 'Hierarchical Clustering & Dendrograms', 'ML', 'c15'),
-    D(45, 'WED', 'Clustering', 'DBSCAN & Anomaly Detection', 'ML', 'c15'),
-    D(46, 'THU', 'Dim Reduction', 'PCA Deep Dive', 'ML', 'c15'),
-    D(47, 'FRI', 'Dim Reduction', 't-SNE and UMAP', 'ML', 'c15'),
-    D(48, 'SAT', 'Association', 'Apriori and FP-Growth', 'ML', 'c15'),
-    D(49, 'SUN', 'Project', 'Milestone 02: Customer Segmentation', 'REST', null)
-  ]),
-  W('w8', 'SQL, Big Data & Feature Eng', [
-    D(50, 'MON', 'SQL', 'Joins, Subqueries, CTEs', 'SQL', 'c3'),
-    D(51, 'TUE', 'SQL', 'Window Functions: RANK, LEAD/LAG', 'SQL', 'c4'),
-    D(52, 'WED', 'Feature Eng', 'Polynomial Features & Binning', 'SQL', 'c4'),
-    D(53, 'THU', 'Scaling', 'StandardScaler, RobustScaler', 'SQL', 'c13'),
-    D(54, 'FRI', 'Big Data', 'NoSQL & Spark Basics', 'SQL', 'c5'),
-    D(55, 'SAT', 'Feature Eng', 'RFE & VIF', 'SQL', 'c13'),
-    D(56, 'SUN', 'Feature Eng', 'Data Leakage Prevention', 'REST', 'c13')
-  ]),
-  W('w9', 'Neural Network Foundations', [
-    D(57, 'MON', 'Deep Learning', 'Biological Neuron vs Perceptron', 'DL', 'c18'),
-    D(58, 'TUE', 'Deep Learning', 'MLP & Architecture Design', 'DL', 'c18'),
-    D(59, 'WED', 'Deep Learning', 'Activation: ReLU, Softmax, Swish', 'DL', 'c18'),
-    D(60, 'THU', 'Deep Learning', 'Backpropagation & Chain Rule', 'DL', 'c18'),
-    D(61, 'FRI', 'Deep Learning', 'Adam, RMSProp, Momentum', 'DL', 'c18'),
-    D(62, 'SAT', 'Deep Learning', 'Dropout & Batch Normalization', 'DL', 'c18'),
-    D(63, 'SUN', 'PyTorch', 'PyTorch Basics & Distributed ML', 'REST', 'c18')
-  ]),
-  W('w10', 'Computer Vision (CV)', [
-    D(64, 'MON', 'CV', 'CNN Architectures', 'DL', 'c19'),
-    D(65, 'TUE', 'CV', 'Pooling, Strides, Padding', 'DL', 'c19'),
-    D(66, 'WED', 'CV', 'LeNet, AlexNet, VGG', 'DL', 'c19'),
-    D(67, 'THU', 'CV', 'ResNet & Inception', 'DL', 'c19'),
-    D(68, 'FRI', 'CV', 'Transfer Learning (ImageNet)', 'DL', 'c19'),
-    D(69, 'SAT', 'CV', 'Object Detection: YOLO & R-CNN', 'DL', 'c19'),
-    D(70, 'SUN', 'CV', 'Image Augmentation', 'REST', 'c19')
-  ]),
-  W('w11', 'NLP & GenAI', [
-    D(71, 'MON', 'NLP', 'Tokenization & Stemming', 'LLM', 'c20'),
-    D(72, 'TUE', 'NLP', 'Word2Vec, GloVe, FastText', 'LLM', 'c21'),
-    D(73, 'WED', 'Transformers', 'Attention is All You Need', 'LLM', 'c22'),
-    D(74, 'THU', 'Transformers', 'BERT, GPT, Encoder-Decoder', 'LLM', 'c22'),
-    D(75, 'FRI', 'LLMs', 'Prompt Engineering Basics', 'LLM', 'c24'),
-    D(76, 'SAT', 'PEFT', 'LoRA and QLoRA', 'LLM', 'c23'),
-    D(77, 'SUN', 'RAG', 'Retrieval-Augmented Generation & Vector DBs', 'REST', 'c25')
-  ]),
-  W('w12', 'Time Series & RecSys', [
-    D(78, 'MON', 'Time Series', 'Trend, Seasonality, Noise', 'DL', null),
-    D(79, 'TUE', 'Time Series', 'ARIMA & SARIMA', 'DL', null),
-    D(80, 'WED', 'Time Series', 'Facebook Prophet & DeepAR', 'DL', null),
-    D(81, 'THU', 'RecSys', 'Collaborative Filtering', 'DL', null),
-    D(82, 'FRI', 'RecSys', 'Matrix Factorization (ALS, SVD)', 'DL', null),
-    D(83, 'SAT', 'RecSys', 'Content-Based & Hybrid Systems', 'DL', null),
-    D(84, 'SUN', 'Project', 'Milestone 03: Recommender System', 'REST', null)
-  ]),
-  W('w13', 'MLOps & Deployment', [
-    D(85, 'MON', 'MLOps', 'ML Lifecycle & Experiment Tracking', 'OPS', 'c27'),
-    D(86, 'TUE', 'Docker', 'Containerization for DS', 'OPS', 'c29'),
-    D(87, 'WED', 'APIs', 'Building REST APIs with FastAPI', 'OPS', 'c28'),
-    D(88, 'THU', 'Cloud', 'AWS SageMaker & Cloud Costs', 'OPS', 'c27'),
-    D(89, 'FRI', 'CI/CD', 'GitHub Actions & Automations', 'OPS', 'c30'),
-    D(90, 'SAT', 'Monitoring', 'Detecting Data & Concept Drift', 'OPS', 'c31'),
-    D(91, 'SUN', 'Serving', 'Kubernetes & TorchServe', 'REST', 'c31')
-  ]),
-  W('w14', 'System Design & Algorithms', [
-    D(92, 'MON', 'Algorithms', 'Big O & Complexity', 'INT', null),
-    D(93, 'TUE', 'Algorithms', 'Arrays & Hash Maps', 'INT', null),
-    D(94, 'WED', 'Algorithms', 'Trees & Queues', 'INT', null),
-    D(95, 'THU', 'Algorithms', 'Sorting & Binary Search', 'INT', null),
-    D(96, 'FRI', 'System Design', 'Load Balancers & Latency', 'INT', null),
-    D(97, 'SAT', 'System Design', 'ML Architecture Case Studies', 'INT', null),
-    D(98, 'SUN', 'Mock Interview', 'LeetCode Easy/Medium', 'REST', null)
-  ]),
-  W('w15', 'Capstone Project', [
-    D(99, 'MON', 'Capstone', 'Project Ideation', 'HERO', null),
-    D(100, 'TUE', 'Capstone', 'Data Acquisition', 'HERO', null),
-    D(101, 'WED', 'Capstone', 'Pipeline & Feature Store', 'HERO', null),
-    D(102, 'THU', 'Capstone', 'Training & SHAP', 'HERO', null),
-    D(103, 'FRI', 'Capstone', 'Streamlit Dashboard/API', 'HERO', 'c26'),
-    D(104, 'SAT', 'Capstone', 'README & Technical Blog', 'HERO', null),
-    D(105, 'SUN', 'Capstone', '5-Minute Technical Demo', 'REST', null)
-  ]),
-  W('w16', 'The Job Hunt Basics', [
-    D(106, 'MON', 'Job Hunt', 'Resume Surgery', 'INT', null),
-    D(107, 'TUE', 'Job Hunt', 'LinkedIn Branding', 'INT', null),
-    D(108, 'WED', 'Job Hunt', 'Behavioral Interviews (STAR)', 'INT', null),
-    D(109, 'THU', 'Job Hunt', 'Technical Case Studies', 'INT', null),
-    D(110, 'FRI', 'Job Hunt', 'Mock Technical Interview', 'INT', null),
-    D(111, 'SAT', 'Job Hunt', 'Negotiation Skills', 'INT', null),
-    D(112, 'SUN', 'Job Hunt', 'Final Math Review', 'REST', null)
-  ]),
-  W('w17', 'Portfolio Polishing', [
-    D(113, 'MON', 'Polish', 'Audit GitHub Repos & READMEs', 'INT', null),
-    D(114, 'TUE', 'Polish', 'Record Demo Videos (Loom)', 'INT', null),
-    D(115, 'WED', 'Polish', 'Write Medium/Dev.to Article', 'INT', null),
-    D(116, 'THU', 'Polish', 'Deploy Streamlit/FastAPI Apps', 'INT', null),
-    D(117, 'FRI', 'Polish', 'Refactor Code (Pylint, Typing)', 'INT', null),
-    D(118, 'SAT', 'Polish', 'Create Personal Portfolio Site', 'INT', null),
-    D(119, 'SUN', 'Polish', 'Rest & Recover', 'REST', null)
-  ]),
-  W('w18', 'Mock Interviews & Design', [
-    D(120, 'MON', 'Mocks', 'Pramp/interviewing.io Session', 'INT', null),
-    D(121, 'TUE', 'Design', 'Architect Fraud Detection System', 'INT', null),
-    D(122, 'WED', 'LeetCode', 'Solve 5 Medium questions', 'INT', null),
-    D(123, 'THU', 'Mocks', 'Mock Interview: ML Theory', 'INT', null),
-    D(124, 'FRI', 'Behavioral', 'Master 5 Core STAR Stories', 'INT', null),
-    D(125, 'SAT', 'SQL', 'SQL Whiteboarding (CTEs, Window)', 'INT', null),
-    D(126, 'SUN', 'Mocks', 'Review Feedback', 'REST', null)
-  ]),
-  W('w19', 'Applications & Branding', [
-    D(127, 'MON', 'Apply', 'Update LinkedIn "Open to Work"', 'INT', null),
-    D(128, 'TUE', 'Network', 'Cold Outreach to Managers', 'INT', null),
-    D(129, 'WED', 'Apply', 'Apply to 15 Targeted Roles', 'INT', null),
-    D(130, 'THU', 'Research', 'Study Target Company Tech Stacks', 'INT', null),
-    D(131, 'FRI', 'Network', 'Follow up on Applications', 'INT', null),
-    D(132, 'SAT', 'Network', 'Join AI Discords & Meetups', 'INT', null),
-    D(133, 'SUN', 'Apply', 'Track Applications Spreadsheet', 'REST', null)
-  ]),
-  W('w20', 'The Final Gauntlet', [
-    D(134, 'MON', 'Gauntlet', 'Practice 4-hour ML Pipeline Take-home', 'INT', null),
-    D(135, 'TUE', 'Gauntlet', 'Cloud Review (AWS/GCP)', 'INT', null),
-    D(136, 'WED', 'Gauntlet', 'Culture Fit Prep', 'INT', null),
-    D(137, 'THU', 'Gauntlet', 'Salary Negotiation Prep (levels.fyi)', 'INT', null),
-    D(138, 'FRI', 'Gauntlet', 'Fix Bugs in Live Deployments', 'INT', null),
-    D(139, 'SAT', 'Gauntlet', 'Review Mathematics Theory', 'INT', null),
-    D(140, 'SUN', 'Graduation', 'You are ready.', 'REST', null)
-  ])
-];
-
-export const DAILY_THEORY = {
-  1:{math:'Big-O notation: O(1) vs O(n) vs O(n²).',resource:'https://www.bigocheatsheet.com/'},
-  29:{math:'Probability: P(A|B) = P(B|A)·P(A)/P(B).',resource:'https://seeing-theory.brown.edu/'},
-  57:{math:'Linear regression: y = Xβ + ε. OLS minimizes Σ(yᵢ - ŷᵢ)²',resource:''},
-  85:{math:'Backpropagation: chain rule ∂L/∂w = ∂L/∂a · ∂a/∂z · ∂z/∂w.',resource:'https://karpathy.github.io/neuralnets/'},
-  113:{math:'Attention: Attention(Q,K,V) = softmax(QKᵀ/√d_k)V.',resource:'https://jalammar.github.io/illustrated-transformer/'}
-};
-
-export const HOW_TO_USE = [
-  { icon:'📅', title:'Daily Routine (2-3 hours/day)', desc:'Study the concept (1-1.5 hrs), complete any linked DataCamp course, then practice. Mark the day complete when done.' },
-  { icon:'✅', title:'Marking Progress', desc:'Click the ✓ circle next to each day in the Roadmap tab. This earns you 20 XP and updates your streak.' },
-  { icon:'📚', title:'Course Links', desc:'Days with a 📘 badge link directly to a specific DataCamp course. All 31 courses map exactly to your daily progress.' },
-  { icon:'🏆', title:'Certifications', desc:'Certs auto-unlock when you complete enough days. Go to the Certs tab to take the exam once unlocked.' },
-  { icon:'📁', title:'Projects', desc:'Build your portfolio as you progress. The final month (Month 5) is dedicated to polishing these projects.' },
-  { icon:'🎯', title:'The Final Mile (Month 5)', desc:'Month 5 is all about applying, mock interviews, and system design. You transition from learning to earning.' }
+  { id:'cert1', name:'Python Data Associate', week:4, month:1, reqDays:28, color:'#05c3de',
+    desc:'Tests Python, OOP, Data Manipulation, and SQL foundations.' },
+  { id:'cert2', name:'Data Scientist Associate', week:12, month:3, reqDays:84, color:'#9b6dff',
+    desc:'Tests data extraction, visualization, stats, and predictive modeling.' },
+  { id:'cert3', name:'AI Engineer Associate', week:20, month:5, reqDays:140, color:'#f4b942',
+    desc:'Tests AI app building (OpenAI APIs, embeddings, LangChain). ⭐ MOST IMPORTANT' },
+  { id:'cert4', name:'MLOps Fundamentals Badge', week:24, month:6, reqDays:168, color:'#22d87a',
+    desc:'Tests MLflow, CI/CD, Docker, and pipeline automation.' },
 ];
 
 export const PROJECTS = [
-  { id:'p1', name:'End-to-End EDA Report', month:1, tag:'VIZ', color:'#05c3de',
-    desc:'Interactive EDA dashboard analyzing a real-world dataset with statistical tests.',
-    tech:['Python','Pandas','Seaborn','Matplotlib'],
+  { id:'p1', name:'Titanic ML Pipeline', month:3, tag:'ML', color:'#9b6dff',
+    desc:'End-to-end ML pipeline: data cleaning → EDA → feature engineering → model selection → evaluation.',
+    tech:['Python','Pandas','scikit-learn','Seaborn','Matplotlib'],
+    dataset:{ name:'Titanic Dataset', url:'https://www.kaggle.com/c/titanic/data' },
+    outcomes:['Clean & preprocess real-world data','Build sklearn Pipelines with GridSearchCV','Evaluate with F1, AUC-ROC, confusion matrix','Version control with Git'],
+    setup:['pip install pandas scikit-learn seaborn matplotlib','Download titanic.csv from Kaggle','Create project folder: mkdir titanic-ml && cd titanic-ml','python -m venv venv && source venv/bin/activate'],
+    structure:['README.md','notebooks/eda.ipynb','src/preprocess.py','src/train.py','src/evaluate.py','requirements.txt'],
+    resources:[
+      { name:'Kaggle Titanic Guide', url:'https://www.kaggle.com/code/startupsci/titanic-data-science-solutions' },
+      { name:'sklearn Pipeline Docs', url:'https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html' },
+    ],
+    showcase:'Export notebook to HTML. Add ROC curve and confusion matrix images to README. Push to GitHub with clear commit history.',
+  },
+  { id:'p0a', name:'EDA & Visualization Dashboard', month:2, tag:'VIZ', color:'#05c3de',
+    desc:'Interactive EDA dashboard analyzing a real-world dataset with statistical tests and publication-quality plots.',
+    tech:['Python','Pandas','Seaborn','Matplotlib','Jupyter'],
     dataset:{ name:'World Happiness Report', url:'https://www.kaggle.com/datasets/unsdsn/world-happiness' },
-    outcomes:['Perform hypothesis tests','Create correlation heatmaps','Export notebooks'],
-    setup:['pip install pandas seaborn scipy jupyter'],
-    structure:['README.md','notebooks/eda_happiness.ipynb'],
-    resources:[],
-    showcase:'Export 5+ plots. Push notebook.'
+    outcomes:['Master Seaborn advanced plotting','Perform hypothesis tests on real data','Create correlation heatmaps & pairplots','Export notebooks as shareable HTML reports'],
+    setup:['pip install pandas seaborn matplotlib scipy jupyter','Download world-happiness.csv','jupyter notebook'],
+    structure:['README.md','notebooks/eda_happiness.ipynb','outputs/plots/','requirements.txt'],
+    resources:[
+      { name:'Seaborn Gallery', url:'https://seaborn.pydata.org/examples/index.html' },
+      { name:'Scipy Stats Docs', url:'https://docs.scipy.org/doc/scipy/reference/stats.html' },
+    ],
+    showcase:'Export 5+ publication-quality plots as PNG. Write a Medium article walking through your analysis. Push notebook + images to GitHub.',
   },
-  { id:'p2', name:'Customer Segmentation', month:2, tag:'ML', color:'#9b6dff',
-    desc:'K-Means clustering and PCA for customer behavioral segmentation.',
-    tech:['Python','scikit-learn','PCA','K-Means'],
-    dataset:{ name:'Mall Customers', url:'' },
-    outcomes:['Build pipelines','Scale data','Find optimal K via Elbow method'],
-    setup:['pip install scikit-learn'],
-    structure:['src/train.py'],
-    resources:[],
-    showcase:'Showcase PCA scatter plot in 2D/3D.'
+  { id:'p2', name:'PyTorch LSTM Text Classifier', month:4, tag:'DL', color:'#ff5577',
+    desc:'Sentiment classifier using LSTM networks, with MLflow experiment tracking and TF-IDF baseline comparison.',
+    tech:['Python','PyTorch','MLflow','NLTK','torchtext'],
+    dataset:{ name:'IMDB Reviews (50K)', url:'https://ai.stanford.edu/~amaas/data/sentiment/' },
+    outcomes:['Build custom PyTorch Dataset & DataLoader','Implement LSTM with embedding layer','Track experiments with MLflow','Compare DL vs TF-IDF baseline (F1, accuracy)'],
+    setup:['pip install torch torchtext mlflow nltk scikit-learn','python -c "import nltk; nltk.download(\'punkt\')"','mlflow ui  # Start MLflow at localhost:5000'],
+    structure:['README.md','src/dataset.py','src/model.py','src/train.py','src/baseline_tfidf.py','mlflow_runs/','requirements.txt'],
+    resources:[
+      { name:'PyTorch LSTM Tutorial', url:'https://pytorch.org/tutorials/beginner/nlp/sequence_models_tutorial.html' },
+      { name:'MLflow Quickstart', url:'https://mlflow.org/docs/latest/quickstart.html' },
+    ],
+    showcase:'Add MLflow comparison screenshot to README showing LSTM vs baseline. Record 2-min demo video. Include training loss curve.',
   },
-  { id:'p3', name:'Time Series Recommender', month:3, tag:'DL', color:'#f4b942',
-    desc:'Deep learning recommender system or time series predictor.',
-    tech:['PyTorch','Transformers'],
-    dataset:{ name:'MovieLens', url:'' },
-    outcomes:['Build embeddings','Train PyTorch Model'],
-    setup:['pip install torch'],
-    structure:['src/model.py'],
-    resources:[],
-    showcase:'Show architecture diagram.'
+  { id:'p0b', name:'Sentiment Analysis REST API', month:4, tag:'DL', color:'#ff5577',
+    desc:'Deploy your LSTM model as a production REST API with FastAPI, input validation, and Swagger docs.',
+    tech:['Python','FastAPI','PyTorch','Pydantic','Uvicorn'],
+    dataset:{ name:'Uses trained LSTM model from P2', url:'' },
+    outcomes:['Serve PyTorch model via REST API','Add input validation with Pydantic','Auto-generate Swagger/OpenAPI docs','Handle errors and edge cases gracefully'],
+    setup:['pip install fastapi uvicorn pydantic torch','Create app/ folder with main.py','uvicorn app.main:app --reload'],
+    structure:['README.md','app/main.py','app/model_loader.py','app/schemas.py','models/lstm_best.pt','requirements.txt'],
+    resources:[
+      { name:'FastAPI Tutorial', url:'https://fastapi.tiangolo.com/tutorial/' },
+      { name:'Serving PyTorch Models', url:'https://pytorch.org/tutorials/intermediate/flask_rest_api_tutorial.html' },
+    ],
+    showcase:'Include curl examples and Swagger screenshot in README. Add /health endpoint. Show request/response JSON examples.',
   },
-  { id:'p4', name:'MLOps Capstone', month:4, tag:'OPS', color:'#22d87a',
-    desc:'End-to-end MLOps pipeline with FastAPI, MLflow, and Streamlit.',
-    tech:['MLflow','Docker','FastAPI','Streamlit'],
-    dataset:{ name:'Custom Dataset', url:'' },
-    outcomes:['Dockerize app','Log with MLflow','Serve API'],
-    setup:['docker-compose up'],
-    structure:['Dockerfile','docker-compose.yml'],
-    resources:[],
-    showcase:'Record live demo of the Streamlit app connecting to FastAPI.'
-  }
+  { id:'p3', name:'Domain Fine-Tuned LLM', month:5, tag:'LLM', color:'#f4b942',
+    desc:'Fine-tune DistilBERT with LoRA/PEFT on domain-specific data. Publish HuggingFace model card with eval metrics.',
+    tech:['Python','HuggingFace Transformers','PEFT/LoRA','Datasets','Evaluate'],
+    dataset:{ name:'Financial PhraseBank', url:'https://huggingface.co/datasets/financial_phrasebank' },
+    outcomes:['Fine-tune with HuggingFace Trainer API','Apply LoRA for efficient adaptation','Write professional HuggingFace Model Card','Evaluate with BLEU, ROUGE-L, BERTScore'],
+    setup:['pip install transformers datasets evaluate peft accelerate','huggingface-cli login','python -c "from datasets import load_dataset; load_dataset(\'financial_phrasebank\', \'sentences_allagree\')"'],
+    structure:['README.md','src/fine_tune.py','src/evaluate_model.py','model_card.md','configs/training_args.json','requirements.txt'],
+    resources:[
+      { name:'HuggingFace PEFT Guide', url:'https://huggingface.co/docs/peft/index' },
+      { name:'Model Card Template', url:'https://huggingface.co/docs/hub/model-cards' },
+      { name:'LoRA Paper', url:'https://arxiv.org/abs/2106.09685' },
+    ],
+    showcase:'Push model to HuggingFace Hub. Include eval metrics table in README. Write blog post comparing LoRA vs full fine-tuning.',
+  },
+  { id:'p5', name:'Document Q&A RAG App', month:5, tag:'HERO', color:'#05c3de', hero:true,
+    desc:'Full-stack RAG: PDF upload → chunking → embeddings → ChromaDB → LangChain retrieval → streaming LLM → citation → Streamlit UI.',
+    tech:['Python','LangChain','ChromaDB','OpenAI API','Streamlit','FastAPI','PyPDF2'],
+    dataset:{ name:'Your own PDF documents', url:'' },
+    outcomes:['Build production RAG pipeline end-to-end','Implement semantic chunking & retrieval','Add source citations to LLM responses','Create polished Streamlit UI with streaming','Design FastAPI backend with proper error handling'],
+    setup:['pip install langchain chromadb openai streamlit fastapi pypdf2 tiktoken','export OPENAI_API_KEY=your_key_here','mkdir -p data/pdfs  # Add your PDF files here','streamlit run app.py'],
+    structure:['README.md','app.py (Streamlit frontend)','api/main.py (FastAPI backend)','api/rag_chain.py','api/embeddings.py','api/chunker.py','data/pdfs/','chroma_db/','requirements.txt','Dockerfile','.env.example'],
+    resources:[
+      { name:'LangChain RAG Tutorial', url:'https://python.langchain.com/docs/tutorials/rag/' },
+      { name:'ChromaDB Quickstart', url:'https://docs.trychroma.com/getting-started' },
+      { name:'Streamlit Docs', url:'https://docs.streamlit.io/' },
+    ],
+    showcase:'Record 3-min video demo: upload PDF → ask question → show streamed answer with citations. Deploy to Streamlit Cloud or Railway. Add architecture diagram to README.',
+  },
+  { id:'p4', name:'Full MLOps Pipeline', month:6, tag:'OPS', color:'#22d87a',
+    desc:'Production ML system: MLflow tracking → model registry → Docker → FastAPI serving → CI/CD → drift monitoring → SHAP explainability.',
+    tech:['Python','MLflow','Docker','FastAPI','GitHub Actions','Evidently AI','SHAP'],
+    dataset:{ name:'California Housing', url:'https://scikit-learn.org/stable/datasets/real_world.html#california-housing-dataset' },
+    outcomes:['Log experiments & register models in MLflow','Containerize with Docker & docker-compose','Automate testing with GitHub Actions CI/CD','Monitor data drift with Evidently AI','Add SHAP explainability for trust'],
+    setup:['pip install mlflow fastapi docker evidently shap scikit-learn','docker --version  # Ensure Docker is installed','mlflow server --host 0.0.0.0 --port 5000','docker-compose up --build'],
+    structure:['README.md','src/train.py','src/predict.py','api/main.py','tests/test_api.py','monitoring/drift_report.py','Dockerfile','docker-compose.yml','.github/workflows/ci.yml','requirements.txt'],
+    resources:[
+      { name:'MLflow Model Registry', url:'https://mlflow.org/docs/latest/model-registry.html' },
+      { name:'Evidently AI Docs', url:'https://docs.evidentlyai.com/' },
+      { name:'SHAP Documentation', url:'https://shap.readthedocs.io/' },
+      { name:'Docker for ML Guide', url:'https://docs.docker.com/guides/use-case/ml-model/' },
+    ],
+    showcase:'Create architecture diagram (draw.io). Record CI/CD pipeline running. Add Evidently drift report screenshot. Show SHAP force plot in README.',
+  },
 ];
-
-export const TAG_COLORS = {
-  PY:'#05c3de', SQL:'#f4b942', ML:'#9b6dff', DL:'#ff5577',
-  LLM:'#f4b942', OPS:'#22d87a', VIZ:'#05c3de', CERT:'#ff5577',
-  INT:'#9b6dff', REST:'#52647d', HERO:'#05c3de',
-};
 
 export const SETUP_GUIDE = {
   title:'Local Environment Setup (Day 5)',
@@ -311,7 +154,6 @@ export const SETUP_GUIDE = {
     { title:'Create GitHub Repos', cmd:'# Create repos on github.com:\n# 1. titanic-ml-pipeline\n# 2. eda-dashboard\n# 3. lstm-text-classifier\n# 4. sentiment-api\n# 5. fine-tuned-llm\n# 6. rag-qa-app (HERO)\n# 7. mlops-pipeline', note:'Add README.md with project description to each' },
   ],
 };
-
 
 export const PRACTICE_PROBLEMS = {
   PY:[
@@ -346,7 +188,6 @@ export const PRACTICE_PROBLEMS = {
   ],
 };
 
-
 export const SHOWCASE_GUIDE = [
   { title:'Professional README Template', steps:['Add project title + one-line description','Include architecture diagram (use draw.io or Mermaid)','List tech stack with badges (shields.io)','Add installation & usage instructions','Include screenshots/GIFs of the app','Add evaluation metrics table','Link to live demo if deployed'] },
   { title:'GitHub Profile Optimization', steps:['Pin your top 5 projects','Add a profile README with skills chart','Use GitHub Actions for green commit history','Add topics/tags to each repo','Include a contribution graph'] },
@@ -355,6 +196,294 @@ export const SHOWCASE_GUIDE = [
   { title:'Blog Writing (Medium/Dev.to)', steps:['Write 1 article per project minimum','Structure: Problem → Approach → Code → Results','Include code snippets and diagrams','Cross-post to Hashnode for SEO','Add to your resume under "Publications"'] },
 ];
 
+const W = (id,title,days) => ({ id, title, days });
+const D = (day,dow,topic,task,tag,courseId) => ({ day,dow,topic,task,tag,courseId });
+
+export const WEEKS = [
+  W('w1','Python Software Engineering',[
+    D(1,'MON','Data Structures','Master lists, dicts, set comprehensions','PY','c1'),
+    D(2,'TUE','Vectorization','Replace for loops with NumPy broadcasting','PY','c1'),
+    D(3,'WED','OOP Basics','Define classes, __init__, instantiation','PY','c2'),
+    D(4,'THU','Inheritance','Build child classes for error handling','PY','c2'),
+    D(5,'FRI','Local Env Setup','Install VS Code, Python 3.10+, venv','OPS',null),
+    D(6,'SAT','Practice Day','Write OOP script to parse log files','PY',null),
+    D(7,'SUN','Rest','Rest and review OOP concepts','REST',null),
+  ]),
+  W('w2','SQL Data Engineering',[
+    D(8,'MON','SQL Queries','SELECT, WHERE, HAVING, aggregates','SQL','c3'),
+    D(9,'TUE','Relational Joins','INNER JOIN, LEFT JOIN, schemas','SQL','c4'),
+    D(10,'WED','Set Theory','UNION, INTERSECT, subqueries','SQL','c4'),
+    D(11,'THU','Python + SQL','SQLAlchemy to connect to DB','SQL','c5'),
+    D(12,'FRI','Data Extraction','ETL script: SQL tables → Pandas','SQL','c5'),
+    D(13,'SAT','DB Setup','Create SQLite DB, load JSON data','PY',null),
+    D(14,'SUN','Rest','Rest','REST',null),
+  ]),
+  W('w3','Pandas & Data Cleaning',[
+    D(15,'MON','DataFrames','Subsetting, filtering, dropping cols','PY','c6'),
+    D(16,'TUE','Grouping Data','groupby, aggregations, sorting','PY','c6'),
+    D(17,'WED','Missing Data','Impute nulls, drop dupes, validate','PY','c7'),
+    D(18,'THU','String Parsing','Regex in pandas (str.extract)','PY','c7'),
+    D(19,'FRI','Pipeline Design','Combine SQL + Pandas into OOP class','PY',null),
+    D(20,'SAT','Project Build','Clean dataset, save to new tables','PY',null),
+    D(21,'SUN','GitHub Push','Push pipeline to GitHub','OPS',null),
+  ]),
+  W('w4','Data Associate Cert Prep',[
+    D(22,'MON','SQL Drill','Review complex joins for exam','SQL',null),
+    D(23,'TUE','Pandas Drill','Review missing values and merging','PY',null),
+    D(24,'WED','Mock Exam','DC readiness quizzes, target 80%+','CERT',null),
+    D(25,'THU','🏆 Timed Exam','Take Python/SQL timed component','CERT',null),
+    D(26,'FRI','🏆 Practical','Complete hands-on data project exam','CERT',null),
+    D(27,'SAT','LinkedIn Post','Post your first credential!','OPS',null),
+    D(28,'SUN','Rest','End of Month 1. Foundations solid.','REST',null),
+  ]),
+  W('w5','Statistical Foundations',[
+    D(29,'MON','Probability Axioms','Conditional Probability & Bayes Theorem','PY','c8'),
+    D(30,'TUE','Random Variables','Discrete vs Continuous Distributions','PY','c8'),
+    D(31,'WED','Moments','Expectation, Variance, and Moments','PY','c8'),
+    D(32,'THU','Hypothesis Test','P-values, Type I/II Errors, T-tests','PY','c9'),
+    D(33,'FRI','MLE vs MAP','Maximum Likelihood vs A Posteriori','PY','c9'),
+    D(34,'SAT','Practice','Run statistical tests on real data','PY',null),
+    D(35,'SUN','Rest','Rest','REST',null),
+  ]),
+  W('w6','Data Visualization & EDA',[
+    D(36,'MON','Seaborn Basics','Scatter, line, bar plots','VIZ','c10'),
+    D(37,'TUE','Categorical Viz','Box plots, violin, count plots','VIZ','c10'),
+    D(38,'WED','Advanced Viz','Heatmaps and pairplots','VIZ','c10'),
+    D(39,'THU','EDA Logic','Find outliers and patterns','VIZ','c11'),
+    D(40,'FRI','Feature Eng','Create columns from visual insights','VIZ','c11'),
+    D(41,'SAT','EDA Project','Add Seaborn visualizations to project','PY',null),
+    D(42,'SUN','Push Docs','Export notebook to HTML, push to GH','OPS',null),
+  ]),
+  W('w7','Math for ML',[
+    D(43,'MON','Vector Spaces','Subspaces, Basis, and the Geometry of Data','ML','c12'),
+    D(44,'TUE','Eigendecomposition','Eigenvalues and Eigenvectors','ML','c12'),
+    D(45,'WED','SVD & PCA','Singular Value Decomposition foundations','ML',null),
+    D(46,'THU','Multivariable Calculus','Partial Derivatives and Gradient Vectors','SQL',null),
+    D(47,'FRI','Prep ML Env','Install scikit-learn, lock deps','OPS',null),
+    D(48,'SAT','Assessments','Take Python & Stats skill quizzes','ML',null),
+    D(49,'SUN','Rest','Rest before ML starts','REST',null),
+  ]),
+  W('w8','Data Preprocessing for ML',[
+    D(50,'MON','Scaling','StandardScaler, MinMaxScaler','ML','c13'),
+    D(51,'TUE','Encoding','LabelEncoder vs OneHotEncoder','ML','c13'),
+    D(52,'WED','Imputing','SimpleImputer vs KNNImputer','ML','c13'),
+    D(53,'THU','Feature Selection','Variance thresholds','ML','c13'),
+    D(54,'FRI','Practice Pipeline','Build preprocessing for Titanic','ML',null),
+    D(55,'SAT','Push Setup','Commit preprocessing scripts','OPS',null),
+    D(56,'SUN','Rest','End of Month 2','REST',null),
+  ]),
+  W('w9','Supervised Learning',[
+    D(57,'MON','Convex Optimization','Global vs Local Minima, KKT Conditions','ML','c14'),
+    D(58,'TUE','Gradient Descent','Batch, Stochastic (SGD), Mini-batch','ML','c14'),
+    D(59,'WED','Regularization','Ridge (L2), Lasso (L1), Elastic Net','ML','c14'),
+    D(60,'THU','Logistic Regression','Sigmoid Function & Cross-Entropy Loss','ML','c14'),
+    D(61,'FRI','Unsupervised','K-Means clustering, PCA','ML','c15'),
+    D(62,'SAT','Project Build','Baseline Logistic Regression','ML',null),
+    D(63,'SUN','Rest','Review metrics formulas','REST',null),
+  ]),
+  W('w10','Tree Models & XGBoost',[
+    D(64,'MON','Decision Trees','Build CART, visualize nodes','ML','c16'),
+    D(65,'TUE','Random Forests','Bagging, OOB error','ML','c16'),
+    D(66,'WED','Boosting (XGB)','Gradient boosting logic','ML','c17'),
+    D(67,'THU','Tuning','GridSearchCV, RandomizedSearchCV','ML','c17'),
+    D(68,'FRI','Kaggle Workflows','Model stacking, feature eng','ML',null),
+    D(69,'SAT','Project Upgrade','Upgrade Titanic to XGBoost','ML',null),
+    D(70,'SUN','GitHub Push','Push ML code to GitHub','OPS',null),
+  ]),
+  W('w11','Data Scientist Cert Prep',[
+    D(71,'MON','DS101: EDA Prep','Review Seaborn + anomalies','CERT',null),
+    D(72,'TUE','DS101: Stats Prep','Review hypothesis tests','CERT',null),
+    D(73,'WED','DS102: Data Quality','Cleaning & validation','CERT',null),
+    D(74,'THU','DS102: Modeling','Pipeline & GridSearchCV','CERT',null),
+    D(75,'FRI','Readiness Quizzes','DC readiness for DS Assoc','CERT',null),
+    D(76,'SAT','Focus Study','Target weak areas','CERT',null),
+    D(77,'SUN','Rest','Get ready for cert week','REST',null),
+  ]),
+  W('w12','Data Scientist Cert Week',[
+    D(78,'MON','🏆 DS101 Exam','2-hour EDA/Stats timed exam','CERT',null),
+    D(79,'TUE','🏆 DS102 Exam','2-hour Data/Modeling exam','CERT',null),
+    D(80,'WED','🏆 Practical Prep','Read guidelines, set up env','CERT',null),
+    D(81,'THU','🏆 Practical Exam','Solve real business problem','CERT',null),
+    D(82,'FRI','LinkedIn Update','Add Cert #2','OPS',null),
+    D(83,'SAT','PyTorch Preview','Skim PyTorch tensor docs','DL',null),
+    D(84,'SUN','Rest','End of Month 3. Two certs down!','REST',null),
+  ]),
+  W('w13','PyTorch Fundamentals',[
+    D(85,'MON','Tensors & Autograd','Backprop mechanics','DL','c18'),
+    D(86,'TUE','Neural Networks','nn.Sequential for tabular','DL','c18'),
+    D(87,'WED','Training Loops','Custom loops with Adam','DL','c18'),
+    D(88,'THU','CNNs Basics','Convolutions, pooling, filters','DL','c18'),
+    D(89,'FRI','Advanced CNNs','Image classification nets','DL','c19'),
+    D(90,'SAT','Transfer Learning','Fine-tune ResNet','DL','c19'),
+    D(91,'SUN','CV Project Start','Start building CV model','DL',null),
+  ]),
+  W('w14','NLP Fundamentals',[
+    D(92,'MON','Regex & NLP','Advanced regex, tokenization','DL','c20'),
+    D(93,'TUE','TF-IDF','Bag of Words, TF-IDF pipeline','DL','c21'),
+    D(94,'WED','Word Embeddings','Word2Vec, dense vectors','DL','c21'),
+    D(95,'THU','NER','Extract entities with spaCy','DL','c20'),
+    D(96,'FRI','NLP Pipeline','Text → TF-IDF → Classifier','DL',null),
+    D(97,'SAT','Transformers Prep','Read Attention Is All You Need','DL',null),
+    D(98,'SUN','CV Project Push','Push CV project to GitHub','DL',null),
+  ]),
+  W('w15','HuggingFace & Fine-Tuning',[
+    D(99,'MON','Hugging Face','Load pipeline, tokenizer, BERT','LLM','c22'),
+    D(100,'TUE','Fine-tuning Logic','Trainer API basics','LLM','c23'),
+    D(101,'WED','Domain Adaptation','Fine-tune DistilBERT','LLM','c23'),
+    D(102,'THU','Evaluation','Perplexity, accuracy on test','LLM','c23'),
+    D(103,'FRI','LLM Project Push','Push fine-tuned model to GH','LLM',null),
+    D(104,'SAT','Documentation','Write HuggingFace Model Cards','LLM',null),
+    D(105,'SUN','Rest','Rest before GenAI week','REST',null),
+  ]),
+  W('w16','Generative AI APIs',[
+    D(106,'MON','LLM Concepts','Large Language Model concepts','LLM','c24'),
+    D(107,'TUE','OpenAI API','Auth & basic completions','LLM','c24'),
+    D(108,'WED','Prompt Eng','Zero-shot, few-shot, system','LLM','c24'),
+    D(109,'THU','Embeddings API','Generate embeddings via API','LLM','c24'),
+    D(110,'FRI','Vector Search','Cosine similarity on outputs','LLM','c24'),
+    D(111,'SAT','Vector DBs','Set up local ChromaDB','LLM',null),
+    D(112,'SUN','Rest','End of Month 4','REST',null),
+  ]),
+  W('w17','LangChain & RAG',[
+    D(113,'MON','Chains','LLMChains & PromptTemplates','LLM','c25'),
+    D(114,'TUE','Memory','Conversational memory buffers','LLM','c25'),
+    D(115,'WED','Doc Loaders','Chunk PDFs for indexing','LLM','c25'),
+    D(116,'THU','RAG Architecture','Retriever + QA chain','LLM','c25'),
+    D(117,'FRI','Agents & Tools','Give agent search & math tools','LLM','c25'),
+    D(118,'SAT','Hero Backend','FastAPI backend for hero app','LLM',null),
+    D(119,'SUN','Rest','Rest','REST',null),
+  ]),
+  W('w18','Hero Project Frontend',[
+    D(120,'MON','Streamlit Intro','Rapid prototyping UI','OPS','c26'),
+    D(121,'TUE','React Setup','Scaffold Vite + React','OPS',null),
+    D(122,'WED','API Integration','Fetch from FastAPI endpoint','OPS',null),
+    D(123,'THU','Streaming UI','LLM text streaming in React','OPS',null),
+    D(124,'FRI','Push Full Stack','Push React+FastAPI, write README','OPS',null),
+    D(125,'SAT','Write Blog','Medium post on architecture','OPS',null),
+    D(126,'SUN','Rest','All projects built. Prep for Cert #3','REST',null),
+  ]),
+  W('w19','AI Engineer Cert Prep',[
+    D(127,'MON','System Design','LLM scaling, token limits','CERT',null),
+    D(128,'TUE','Governance','Enterprise data governance','CERT',null),
+    D(129,'WED','Readiness Mock','AI Engineer readiness quiz','CERT',null),
+    D(130,'THU','API Error Handling','Retry/rate limit logic','CERT',null),
+    D(131,'FRI','Weakness Drill','Target lowest scoring areas','CERT',null),
+    D(132,'SAT','Rest & Focus','Clear mind before exam','REST',null),
+    D(133,'SUN','Env Setup','Prepare local env for testing','REST',null),
+  ]),
+  W('w20','AI Engineer Cert Week',[
+    D(134,'MON','🏆 AI Eng Exam','Timed AI Engineer exam','CERT',null),
+    D(135,'TUE','🏆 Practical','Hands-on AI project exam','CERT',null),
+    D(136,'WED','LinkedIn Update','Add AI Engineering Cert #3','OPS',null),
+    D(137,'THU','MLOps Preview','Read Docker & MLflow docs','OPS',null),
+    D(138,'FRI','Repo Audits','Add badges, GIFs to repos','OPS',null),
+    D(139,'SAT','Rest','Relax','REST',null),
+    D(140,'SUN','Rest','End of Month 5. Three certs!','REST',null),
+  ]),
+  W('w21','MLOps & Docker',[
+    D(141,'MON','MLOps Concepts','Model lifecycle management','OPS','c27'),
+    D(142,'TUE','MLflow Tracking','Log metrics/params','OPS','c28'),
+    D(143,'WED','MLflow Registry','Version, stage, production','OPS','c28'),
+    D(144,'THU','Intro to Docker','Containerize Python script','OPS','c29'),
+    D(145,'FRI','Docker-Compose','FastAPI + MLflow compose','OPS','c29'),
+    D(146,'SAT','Dockerize App','Dockerize hero project','OPS',null),
+    D(147,'SUN','Rest','Rest','REST',null),
+  ]),
+  W('w22','CI/CD & Monitoring',[
+    D(148,'MON','CI/CD for ML','Pytest + GitHub Actions','OPS','c30'),
+    D(149,'TUE','Auto Retrain','Trigger on data updates','OPS','c30'),
+    D(150,'WED','Model Drift','Detect concept & data drift','OPS','c31'),
+    D(151,'THU','Evidently AI','Drift monitoring in pipeline','OPS','c31'),
+    D(152,'FRI','🏆 MLOps Badge','Finish track. Cert #4!','CERT',null),
+    D(153,'SAT','Resume Polish','Match JD keywords','INT',null),
+    D(154,'SUN','Apply','Apply to target roles','INT',null),
+  ]),
+  W('w23','Technical Interview Prep',[
+    D(155,'MON','Python Interview','DC Python interview Qs','INT',null),
+    D(156,'TUE','ML Theory','DC ML interview Qs','INT',null),
+    D(157,'WED','System Design','Whiteboard ML pipeline','INT',null),
+    D(158,'THU','Transformer Theory','Explain Attention aloud','INT',null),
+    D(159,'FRI','LeetCode','Array/Hashmap problems','INT',null),
+    D(160,'SAT','Behavioral','5 STAR stories, record delivery','INT',null),
+    D(161,'SUN','Networking','Message 5 engineers on LinkedIn','INT',null),
+  ]),
+  W('w24','Game Day',[
+    D(162,'MON','Mock Interview','90-min mock via Pramp','INT',null),
+    D(163,'TUE','Review','Patch mock feedback','INT',null),
+    D(164,'WED','Intro Pitch','Perfect "Tell me about yourself"','INT',null),
+    D(165,'THU','Project Demo','5-min live hero app walkthrough','INT',null),
+    D(166,'FRI','Light Review','1 hour max, no hard studying','INT',null),
+    D(167,'SAT','Rest','Confidence and sleep','REST',null),
+    D(168,'SUN','🎯 Target','Trust the 6 months. You are ready.','INT',null),
+  ]),
+];
+
+export const MONTHS = [
+  { id:1, title:'Python & SQL Foundations', weeks:['w1','w2','w3','w4'], color:'#05c3de' },
+  { id:2, title:'Statistics & EDA', weeks:['w5','w6','w7','w8'], color:'#9b6dff' },
+  { id:3, title:'Machine Learning & Cert 2', weeks:['w9','w10','w11','w12'], color:'#f4b942' },
+  { id:4, title:'Deep Learning & PyTorch', weeks:['w13','w14','w15','w16'], color:'#ff5577' },
+  { id:5, title:'GenAI, LangChain & Cert 3', weeks:['w17','w18','w19','w20'], color:'#22d87a' },
+  { id:6, title:'MLOps & Interview Blitz', weeks:['w21','w22','w23','w24'], color:'#05c3de' },
+];
+
+export const TAG_COLORS = {
+  PY:'#05c3de', SQL:'#f4b942', ML:'#9b6dff', DL:'#ff5577',
+  LLM:'#f4b942', OPS:'#22d87a', VIZ:'#05c3de', CERT:'#ff5577',
+  INT:'#9b6dff', REST:'#52647d', HERO:'#05c3de',
+};
+
+// Math & Theory supplements mapped by day number
+export const DAILY_THEORY = {
+  1:{math:'Big-O notation: O(1) vs O(n) vs O(n²). Why list.append() is O(1) but list.insert(0,x) is O(n).',resource:'https://www.bigocheatsheet.com/'},
+  2:{math:'NumPy broadcasting rules: shapes (3,1)+(1,4)→(3,4). Element-wise vs matrix multiplication.',resource:'https://numpy.org/doc/stable/user/basics.broadcasting.html'},
+  3:{math:'Encapsulation: public vs private attributes. Memory layout of Python objects.',resource:''},
+  8:{math:'Set theory: UNION = A∪B, INTERSECT = A∩B. Relational algebra behind SQL joins.',resource:''},
+  15:{math:'Pandas indexing: .loc (label) vs .iloc (integer). Time complexity of DataFrame operations.',resource:''},
+  29:{math:'Probability: P(A|B) = P(B|A)·P(A)/P(B). Bayes theorem is the foundation of ML.',resource:'https://seeing-theory.brown.edu/'},
+  30:{math:'Variance = E[(X-μ)²]. Standard deviation = √Variance. Z-score = (X-μ)/σ.',resource:''},
+  31:{math:'Pearson r = cov(X,Y)/(σ_X·σ_Y). Range [-1,1]. Correlation ≠ causation!',resource:''},
+  32:{math:'p-value: probability of observing data as extreme as yours, given H₀ is true. α=0.05 threshold.',resource:''},
+  33:{math:'F-statistic = between-group variance / within-group variance. Higher F → more significant.',resource:''},
+  36:{math:'Color theory: HSL vs RGB. Perceptual uniformity in sequential colormaps.',resource:''},
+  43:{math:'Vectors: dot product a·b = |a||b|cosθ. Orthogonal when dot product = 0.',resource:'https://www.3blue1brown.com/topics/linear-algebra'},
+  44:{math:'Eigenvalues λ: Av = λv. PCA finds eigenvectors of covariance matrix for dimensionality reduction.',resource:''},
+  50:{math:'StandardScaler: z = (x-μ)/σ. MinMaxScaler: x_norm = (x-min)/(max-min). When to use which.',resource:''},
+  51:{math:'One-hot encoding creates orthogonal binary vectors. Label encoding assumes ordinal relationship.',resource:''},
+  57:{math:'Linear regression: y = Xβ + ε. OLS minimizes Σ(yᵢ - ŷᵢ)². Gradient: ∂L/∂β = -2Xᵀ(y-Xβ).',resource:''},
+  58:{math:'SVM: maximize margin 2/||w||. Kernel trick: K(x,y) = φ(x)·φ(y). RBF kernel for non-linear.',resource:''},
+  59:{math:'Precision = TP/(TP+FP). Recall = TP/(TP+FN). F1 = 2·P·R/(P+R). AUC = area under ROC curve.',resource:''},
+  64:{math:'Information Gain = H(parent) - Σ(wᵢ·H(childᵢ)). Entropy H = -Σpᵢ·log₂(pᵢ). Gini = 1-Σpᵢ².',resource:''},
+  66:{math:'Gradient Boosting: F_m(x) = F_{m-1}(x) + η·h_m(x). Learning rate η controls step size.',resource:''},
+  67:{math:'Cross-validation: K-Fold splits data K ways. Bias-variance tradeoff in model selection.',resource:''},
+  85:{math:'Backpropagation: chain rule ∂L/∂w = ∂L/∂a · ∂a/∂z · ∂z/∂w. Autograd computes this automatically.',resource:'https://karpathy.github.io/neuralnets/'},
+  86:{math:'Universal Approximation Theorem: a NN with 1 hidden layer can approximate any continuous function.',resource:''},
+  88:{math:'Convolution: (f*g)(t) = ∫f(τ)g(t-τ)dτ. In CNNs: output[i,j] = Σ kernel[m,n]·input[i+m,j+n].',resource:''},
+  92:{math:'TF-IDF: tf(t,d)·log(N/df(t)). High value = term is frequent in doc but rare across corpus.',resource:''},
+  94:{math:'Word2Vec: skip-gram predicts context from center word. Embedding space: king-man+woman≈queen.',resource:''},
+  99:{math:'Transformer: Attention(Q,K,V) = softmax(QKᵀ/√d_k)V. Self-attention captures long-range dependencies.',resource:'https://jalammar.github.io/illustrated-transformer/'},
+  106:{math:'Perplexity = exp(-1/N · Σlog P(wᵢ)). Lower = better language model. Used to evaluate LLMs.',resource:''},
+  108:{math:'Temperature T in softmax: P(xᵢ) = exp(xᵢ/T)/Σexp(xⱼ/T). Low T → confident, High T → creative.',resource:''},
+  109:{math:'Cosine similarity: cos(θ) = (A·B)/(||A||·||B||). Used for semantic search in embedding space.',resource:''},
+  113:{math:'Chain-of-Thought prompting: breaking complex reasoning into steps improves LLM accuracy by 20-40%.',resource:''},
+  116:{math:'RAG retrieval: top-k nearest neighbors in embedding space. HNSW algorithm for approximate NN search.',resource:''},
+  150:{math:'KS test: D = max|F₁(x)-F₂(x)|. Detects distribution shift between training and production data.',resource:''},
+};
+
+export const HOW_TO_USE = [
+  { icon:'📅', title:'Daily Routine (2-3 hours/day)', desc:'Each day has ONE focused topic. Complete the DataCamp lesson first (1-1.5 hrs), then read the theory note, then practice. Mark the day complete when done.' },
+  { icon:'✅', title:'Marking Progress', desc:'Click the ✓ circle next to each day in the Roadmap tab. This earns you 20 XP and updates your streak. Use "Mark All" on a week header for bulk completion.' },
+  { icon:'📚', title:'Course Links', desc:'Each day links to a specific DataCamp course. Click the blue course pill to open it directly. All courses are FREE with your DataCamp Classroom subscription.' },
+  { icon:'🧮', title:'Math & Theory Notes', desc:'Many days include a math/theory supplement (shown with a 🧮 icon). These are the concepts that come up in interviews. Review them even on rest days.' },
+  { icon:'🏆', title:'Certifications', desc:'Certs auto-unlock when you complete enough days. Go to the Certs tab to take the exam once unlocked. Post each cert on LinkedIn immediately.' },
+  { icon:'📁', title:'Projects', desc:'Each project has full details: dataset, setup commands, file structure, and showcase tips. Click to expand. Start building from Month 2 onwards.' },
+  { icon:'⭐', title:'XP & Rewards', desc:'Earn XP from days (+20), courses (+50), certs (+200), and badges. Your goal: reach Level 10 (Job Ready). Check the Rewards tab for all 14 badges.' },
+  { icon:'🧪', title:'Practice Problems', desc:'Use the Practice tab to test yourself after each section. Problems are categorized by topic (PY, SQL, ML, DL, LLM) and difficulty (Easy/Medium/Hard).' },
+  { icon:'📣', title:'Showcasing Work', desc:'The Showcase tab has guides for README writing, GitHub optimization, LinkedIn strategy, video demos, and blog writing. Follow these from Day 1.' },
+  { icon:'🔁', title:'Weekly Cycle', desc:'MON-FRI: Learn new topics with DataCamp. SAT: Build/practice. SUN: Rest or light review. Never skip rest days — burnout kills progress.' },
+  { icon:'🎯', title:'Interview Prep', desc:'Months 5-6 focus on interview prep. The Interview tab has IBM-specific stages, LeetCode must-solves, and behavioral Q&A. Start mock interviews at Month 5.' },
+  { icon:'💾', title:'Your Data', desc:'All progress is saved in your browser (localStorage). It persists across sessions. If you clear browser data, your progress resets. Use the same browser consistently.' },
+];
 
 export const INTERVIEW_RESOURCES = {
   leetcode:[
@@ -402,4 +531,3 @@ export const INTERVIEW_RESOURCES = {
     { name:'DataCamp Interview Qs', url:'https://www.datacamp.com/blog/top-machine-learning-interview-questions', type:'Question Bank' },
   ],
 };
-

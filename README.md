@@ -2,20 +2,20 @@
 
 ![DataCamp Tracker Header](./src/assets/hero.png) <!-- Update with actual screenshot if available later -->
 
-A comprehensive, gamified 4-month learning challenge designed to take you from a Python beginner to a job-ready AI/ML Engineer. This tracker utilizes the **DataCamp Classroom** subscription (where all courses are free) and organizes a clear, day-by-day roadmap.
+A comprehensive, gamified 6-month learning challenge designed to take you from a Python beginner to a job-ready AI/ML Engineer. This tracker utilizes the **DataCamp Classroom** subscription (where all courses are free) and organizes a clear, day-by-day roadmap, including a final month strictly dedicated to portfolio polishing and applying.
 
 🔗 **Live Demo:** [https://sameul-hasan.github.io/datacamp-tracker/](https://sameul-hasan.github.io/datacamp-tracker/)
 
 ---
 
 ## 🎯 Goal
-To provide a highly structured, 112-day (16-week) curriculum that builds production-ready AI engineering skills, culminating in an entry-level position (targeting roles like IBM AI/ML Engineer with an average salary of $120K-$181K).
+To provide a highly structured, 168-day (24-week) curriculum that builds production-ready AI engineering skills, culminating in an entry-level position (targeting roles like IBM AI/ML Engineer with an average salary of $120K-$181K).
 
 ## ✨ Features
 
-- **🗺️ Day-by-Day Roadmap:** 112 days of structured tasks, tracking exactly what to learn and when.
+- **🗺️ Day-by-Day Roadmap:** 168 days of structured tasks, tracking exactly what to learn and when.
 - **🧮 Daily Theory Supplements:** bite-sized math and theory explanations linked directly to daily practical tasks.
-- **📚 5 Core Courses:** Direct links to the exact DataCamp courses needed.
+- **📚 31 Core Courses:** Direct links to the exact DataCamp courses needed.
 - **🏆 4 Certifications Tracking:** Built-in progress tracking for the exact certifications that will help you pass ATS filters.
 - **📁 4 Milestone Projects:** Detailed documentation for building real-world projects (like a full RAG pipeline) including tech stack, setup commands, dataset links, and showcase guides.
 - **🎯 Interview Prep Resources:** Glassdoor-verified interview stages, LeetCode (Python/SQL) recommendations, system design guides, and mock interview platforms.
@@ -30,7 +30,7 @@ This project was engineered for speed, modularity, and a premium UX:
 - **Framework:** React 19 + Vite
 - **Styling:** Custom Vanilla CSS Design System (`backdrop-filter` glassmorphism, responsive CSS grid, CSS modules)
 - **State Management:** Custom React Hooks (`useTracker`) with `localStorage`
-- **Deployment:** GitHub Actions + GitHub Pages
+- **Deployment:** Vercel (with `vercel.json` SPA routing support)
 - **Typography:** Space Grotesk (Headings), Inter (Body), JetBrains Mono (Metrics & Code)
 
 ---

@@ -4,8 +4,6 @@ import { MONTHS, WEEKS, COURSES, DAILY_THEORY } from '../../data/curriculum';
 export default function Roadmap({ tracker }) {
   const [expandAll, setExpandAll] = useState(false);
 
-  // Build a week-number lookup from MONTHS
-  const weekNumFromId = (id) => parseInt(id.replace('w',''));
 
   return (
     <section className="fade-in">
@@ -61,7 +59,6 @@ function WeekCard({ week, tracker, forceOpen }) {
         {week.days.map(day => {
           const isDone = tracker.state.completedDays[day.day];
           const isTarget = tracker.nextDay === day.day;
-          const dayInWeek = ((day.day - 1) % 7) + 1;
           return (
             <div key={day.day}
               className={`day-row ${isDone ? 'completed' : ''} ${isTarget ? 'target' : ''}`}>
