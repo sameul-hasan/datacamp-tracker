@@ -21,14 +21,14 @@ function Hero({ tracker }) {
         AI/ML Engineering Path
       </h1>
       <p className="hero-sub">
-        A 6-month day-by-day curriculum from Python basics to production RAG apps.
+        A 4-month day-by-day challenge from Python basics to production RAG apps.
         All courses free with DataCamp Classroom subscription.
       </p>
       <div className="hero-stats">
-        <div className="stat-box"><span className="stat-num">168</span><span className="stat-label">Days</span></div>
-        <div className="stat-box"><span className="stat-num">31</span><span className="stat-label">Courses</span></div>
+        <div className="stat-box"><span className="stat-num">112</span><span className="stat-label">Days</span></div>
+        <div className="stat-box"><span className="stat-num">5</span><span className="stat-label">Courses</span></div>
         <div className="stat-box"><span className="stat-num">4</span><span className="stat-label">Certs</span></div>
-        <div className="stat-box"><span className="stat-num">7</span><span className="stat-label">Projects</span></div>
+        <div className="stat-box"><span className="stat-num">4</span><span className="stat-label">Projects</span></div>
         <div className="stat-box">
           <span className="stat-num" style={{color:'var(--green)'}}>{tracker.streak}</span>
           <span className="stat-label">Day Streak</span>
@@ -39,7 +39,10 @@ function Hero({ tracker }) {
 }
 
 export default function Dashboard({ tracker }) {
-  const { daysComplete, totalDays, coursesComplete, totalCourses, certsComplete, totalCerts, nextDay, resetAll, xp, currentLevel, nextLevel, levelProgress, motivation, earnedBadges } = tracker;
+  const { daysComplete, coursesComplete, totalCourses, nextDay, resetAll, xp, currentLevel, nextLevel, levelProgress, motivation, earnedBadges } = tracker;
+  const totalDays = 112;
+  const totalCerts = 4;
+  const certsComplete = tracker.certsComplete;
   const nextDayData = nextDay ? findDayData(nextDay) : null;
 
   return (
@@ -48,8 +51,7 @@ export default function Dashboard({ tracker }) {
       <section className="fade-in">
         {daysComplete === 0 && (
           <div className="tip-box">
-            <span className="tip-icon">💡</span>
-            <div><strong>Welcome, future AI/ML Engineer!</strong> This tracker follows a 6-month path from Python beginner to job-ready. Start by clicking the ✓ circle next to Day 1 in the Roadmap tab. Each day you complete earns <strong>20 XP</strong>!</div>
+            <div><strong>Welcome, future AI/ML Engineer!</strong> This tracker follows a 4-month path from Python beginner to job-ready. Start by clicking the ✓ circle next to Day 1 in the Roadmap tab. Each day you complete earns <strong>20 XP</strong>!</div>
           </div>
         )}
 
@@ -72,8 +74,8 @@ export default function Dashboard({ tracker }) {
         {nextDayData && (
           <div className="next-action">
             <div className="next-action-label pulse">▸ Your Next Action — Day {nextDay}</div>
-            <div className="next-action-title">{nextDayData.topic}</div>
-            <div className="next-action-desc">{nextDayData.task}</div>
+            <div className="next-action-title">{nextDayData.title}</div>
+            <div className="next-action-desc">{nextDayData.desc}</div>
             <div className="day-xp" style={{marginTop:6}}>+20 XP on completion</div>
           </div>
         )}
@@ -92,8 +94,8 @@ export default function Dashboard({ tracker }) {
             return (
               <div className="info-card" key={m.id}>
                 <div style={{position:'absolute',top:0,left:0,right:0,height:3,background:m.color}} />
-                <div className="card-tag">Month {m.id}</div>
-                <div className="card-title">{m.title}</div>
+                <div className="card-tag">Part {m.id}</div>
+                <div className="card-title">{m.name}</div>
                 <div className="card-desc">{wks.length} weeks · {allDays.length} days</div>
                 <div className="card-action">
                   <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:4}}>

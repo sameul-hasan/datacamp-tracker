@@ -12,7 +12,7 @@ export default defineConfig({
       manifest: {
         name: 'DataCamp AI/ML Tracker',
         short_name: 'AI Tracker',
-        description: '6-month day-by-day AI/ML learning tracker for DataCamp Classroom',
+        description: '4-month day-by-day AI/ML learning challenge',
         theme_color: '#05c3de',
         background_color: '#090d18',
         icons: [

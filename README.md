@@ -2,22 +2,22 @@
 
 ![DataCamp Tracker Header](./src/assets/hero.png) <!-- Update with actual screenshot if available later -->
 
-A comprehensive, gamified 6-month learning tracker designed to take you from a Python beginner to a job-ready AI/ML Engineer. This tracker utilizes the **DataCamp Classroom** subscription (where all courses are free) and organizes a clear, day-by-day roadmap.
+A comprehensive, gamified 4-month learning challenge designed to take you from a Python beginner to a job-ready AI/ML Engineer. This tracker utilizes the **DataCamp Classroom** subscription (where all courses are free) and organizes a clear, day-by-day roadmap.
 
 🔗 **Live Demo:** [https://sameul-hasan.github.io/datacamp-tracker/](https://sameul-hasan.github.io/datacamp-tracker/)
 
 ---
 
 ## 🎯 Goal
-To provide a highly structured, 168-day curriculum that builds production-ready AI engineering skills, culminating in an entry-level position (targeting roles like IBM AI/ML Engineer with an average salary of $120K-$181K).
+To provide a highly structured, 112-day (16-week) curriculum that builds production-ready AI engineering skills, culminating in an entry-level position (targeting roles like IBM AI/ML Engineer with an average salary of $120K-$181K).
 
 ## ✨ Features
 
-- **🗺️ Day-by-Day Roadmap:** 168 days of structured tasks, tracking exactly what to learn and when.
-- **🧮 Daily Theory Supplements:** bite-sized math and theory explanations (Big-O, Linear Algebra, Backprop, Attention mechanism) linked directly to daily practical tasks.
-- **📚 31 Curated Courses:** Direct links to the exact DataCamp courses needed.
+- **🗺️ Day-by-Day Roadmap:** 112 days of structured tasks, tracking exactly what to learn and when.
+- **🧮 Daily Theory Supplements:** bite-sized math and theory explanations linked directly to daily practical tasks.
+- **📚 5 Core Courses:** Direct links to the exact DataCamp courses needed.
 - **🏆 4 Certifications Tracking:** Built-in progress tracking for the exact certifications that will help you pass ATS filters.
-- **📁 5 Portfolio Projects:** Detailed documentation for building real-world projects (like a full RAG pipeline) including tech stack, setup commands, dataset links, and showcase guides.
+- **📁 4 Milestone Projects:** Detailed documentation for building real-world projects (like a full RAG pipeline) including tech stack, setup commands, dataset links, and showcase guides.
 - **🎯 Interview Prep Resources:** Glassdoor-verified interview stages, LeetCode (Python/SQL) recommendations, system design guides, and mock interview platforms.
 - **⭐ Gamified Progression:** Earn XP for completing days, courses, and certs. Unlock 14 different achievement badges and level up your profile locally.
 - **💾 Local Persistence:** Your progress is saved automatically in your browser's local storage.
