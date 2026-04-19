@@ -19,17 +19,17 @@ function weekNumFromId(id) {
 function Hero({ tracker }) {
   return (
     <header className="hero">
-      <div className="hero-eyebrow">4-Month Job Crack Challenge</div>
+      <div className="hero-eyebrow">5-Month Job Crack Challenge</div>
       <h1>
         <span className="gradient">Zero to Job Ready</span><br />
         AI/ML Engineering Path
       </h1>
       <p className="hero-sub">
-        A 4-month day-by-day challenge from mathematical bedrock to production MLOps.
+        A 5-month day-by-day challenge from mathematical bedrock to production MLOps and portfolio polish.
         All courses free with DataCamp Classroom subscription.
       </p>
       <div className="hero-stats">
-        <div className="stat-box"><span className="stat-num">112</span><span className="stat-label">Days</span></div>
+        <div className="stat-box"><span className="stat-num">140</span><span className="stat-label">Days</span></div>
         <div className="stat-box"><span className="stat-num">{COURSES.length}</span><span className="stat-label">Courses</span></div>
         <div className="stat-box"><span className="stat-num">4</span><span className="stat-label">Certs</span></div>
         <div className="stat-box"><span className="stat-num">4</span><span className="stat-label">Projects</span></div>
@@ -53,7 +53,7 @@ export default function Dashboard({ tracker }) {
         {daysComplete === 0 && (
           <div className="tip-box">
             <span className="tip-icon">💡</span>
-            <div><strong>Welcome, future AI/ML Engineer!</strong> This tracker follows a 4-month path from Python beginner to job-ready. Start by clicking the ✓ circle next to Day 1 in the Roadmap tab. Each day you complete earns <strong>20 XP</strong>!</div>
+            <div><strong>Welcome, future AI/ML Engineer!</strong> This tracker follows a 5-month path from Python beginner to job-ready. Start by clicking the ✓ circle next to Day 1 in the Roadmap tab. Each day you complete earns <strong>20 XP</strong>!</div>
           </div>
         )}
 
@@ -88,7 +88,7 @@ export default function Dashboard({ tracker }) {
         <h2 className="section-head">// Part Overview</h2>
         <div className="cards-grid">
           {MONTHS.map(m => {
-            const wks = WEEKS.filter(w => m.weeks.includes(weekNumFromId(w.id)));
+            const wks = WEEKS.filter(w => m.weeks.includes(w.id));
             const allDays = wks.flatMap(w => w.days);
             const done = allDays.filter(d => tracker.state.completedDays[d.day]).length;
             const pct = allDays.length > 0 ? Math.round(done / allDays.length * 100) : 0;

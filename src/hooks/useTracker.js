@@ -3,7 +3,7 @@ import { WEEKS, CERTIFICATIONS, COURSES } from '../data/curriculum';
 
 const STORAGE_KEY = 'dc-tracker-v3';
 
-const TOTAL_DAYS = 112;
+const TOTAL_DAYS = 140;
 const TOTAL_COURSES = COURSES.length;
 const TOTAL_CERTS = CERTIFICATIONS.length;
 
@@ -18,12 +18,12 @@ const BADGES = [
   { id:'course_all', name:'Course Collector', icon:'📚', desc:'Complete all courses', xp:500, check: s => Object.values(s.completedCourses).filter(Boolean).length >= TOTAL_COURSES },
   { id:'cert_1', name:'Certified!', icon:'📜', desc:'Earn first certification', xp:500, check: s => Object.values(s.certifications).filter(Boolean).length >= 1 },
   { id:'cert_all', name:'Quad Certified', icon:'💎', desc:'Earn all 4 certifications', xp:2000, check: s => Object.values(s.certifications).filter(Boolean).length >= 4 },
-  { id:'half_way', name:'Halfway There', icon:'🚀', desc:'Complete 56 days (50%)', xp:400, check: s => Object.values(s.completedDays).filter(Boolean).length >= 56 },
+  { id:'half_way', name:'Halfway There', icon:'🚀', desc:'Complete 70 days (50%)', xp:400, check: s => Object.values(s.completedDays).filter(Boolean).length >= 70 },
   { id:'month_1', name:'Part I Done', icon:'🗓️', desc:'Complete first 28 days', xp:300, check: s => { for(let i=1;i<=28;i++) if(!s.completedDays[i]) return false; return true; }},
   { id:'python_start', name:'Pythonista', icon:'🐍', desc:'Complete 10 days', xp:150, check: s => Object.values(s.completedDays).filter(Boolean).length >= 10 },
   { id:'ml_master', name:'ML Master', icon:'🤖', desc:'Complete Part II (56 days)', xp:400, check: s => { for(let i=29;i<=56;i++) if(!s.completedDays[i]) return false; return true; }},
   { id:'deep_diver', name:'Deep Diver', icon:'🧠', desc:'Complete Part III (84 days)', xp:400, check: s => { for(let i=57;i<=84;i++) if(!s.completedDays[i]) return false; return true; }},
-  { id:'finish', name:'Job Ready', icon:'🎯', desc:'Complete all 112 days', xp:5000, check: s => Object.values(s.completedDays).filter(Boolean).length >= TOTAL_DAYS },
+  { id:'finish', name:'Job Ready', icon:'🎯', desc:'Complete all 140 days', xp:5000, check: s => Object.values(s.completedDays).filter(Boolean).length >= TOTAL_DAYS },
 ];
 
 const LEVELS = [
@@ -190,8 +190,9 @@ export function useTracker() {
     if (daysComplete < 28) return "Part I — building the mathematical bedrock. Foundations matter! 🧱";
     if (daysComplete < 56) return "Part II — core ML algorithms unlocked. You're thinking like a data scientist! 📊";
     if (daysComplete < 84) return "Part III — deep learning & specialized domains. Neural nets are your new superpower! 🧠";
-    if (daysComplete < 112) return "Part IV — MLOps, system design & interview prep. The finish line is in sight! 🏁";
-    return "🎉 You've completed the entire 4-month challenge! You are JOB READY! 🎉";
+    if (daysComplete < 112) return "Part IV — MLOps, system design & capstone. Almost there! ⚙️";
+    if (daysComplete < 140) return "Part V — The Final Mile. Apply, mock interviews, and land the job! 🎯";
+    return "🎉 You've completed the entire 5-month challenge! You are JOB READY! 🎉";
   })();
 
   return {

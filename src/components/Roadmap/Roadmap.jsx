@@ -17,15 +17,12 @@ export default function Roadmap({ tracker }) {
       </div>
 
       {MONTHS.map(month => {
-        const monthWeeks = WEEKS.filter(w => {
-          const wNum = weekNumFromId(w.id);
-          return month.weeks.includes(wNum);
-        });
+        const monthWeeks = WEEKS.filter(w => month.weeks.includes(w.id));
         return (
           <div key={month.id}>
             <div className="phase-header" style={{'--phase-color': month.color}}>
               <div style={{position:'absolute',top:0,left:0,right:0,height:3,background:month.color}} />
-              <div className="phase-num">Part {month.id} / 04</div>
+              <div className="phase-num">Part {month.id} / 05</div>
               <div className="phase-title">{month.name}</div>
             </div>
             {monthWeeks.map(week => (
@@ -76,6 +73,11 @@ function WeekCard({ week, tracker, forceOpen }) {
               <div className="day-content">
                 <div className="day-top">
                   <span className="day-topic">{day.desc}</span>
+                  {day.courseId && COURSES.find(c => c.id === day.courseId) && (
+                    <a href={COURSES.find(c => c.id === day.courseId).url} target="_blank" rel="noopener noreferrer" className="course-pill">
+                      📘 {COURSES.find(c => c.id === day.courseId).name}
+                    </a>
+                  )}
                 </div>
                 {day.theory && day.theory !== 'Focus on implementation and deep understanding.' && (
                   <div style={{fontSize:11,color:'var(--purple)',marginTop:4,lineHeight:1.5,background:'rgba(155,109,255,0.06)',padding:'6px 10px',borderRadius:6,border:'1px solid rgba(155,109,255,0.15)'}}>

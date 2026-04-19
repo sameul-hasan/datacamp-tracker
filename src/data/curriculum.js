@@ -1,198 +1,303 @@
 export const MONTHS = [
-  { id: 1, name: 'Part I: Mathematical & Computational Bedrock', weeks: [1, 2, 3, 4], color: '#05c3de' },
-  { id: 2, name: 'Part II: Core Machine Learning & Algorithms', weeks: [5, 6, 7, 8], color: '#9b6dff' },
-  { id: 3, name: 'Part III: Deep Learning & Specialized Domains', weeks: [9, 10, 11, 12], color: '#f4b942' },
-  { id: 4, name: 'Part IV: MLOps, System Design & Career Cracking', weeks: [13, 14, 15, 16], color: '#22d87a' }
+  { id: 1, title: 'Part I: Mathematical & Computational Bedrock', weeks: ['w1', 'w2', 'w3', 'w4'], color: '#05c3de' },
+  { id: 2, title: 'Part II: Core Machine Learning & Algorithms', weeks: ['w5', 'w6', 'w7', 'w8'], color: '#9b6dff' },
+  { id: 3, title: 'Part III: Deep Learning & Specialized Domains', weeks: ['w9', 'w10', 'w11', 'w12'], color: '#f4b942' },
+  { id: 4, title: 'Part IV: MLOps, System Design & Capstone', weeks: ['w13', 'w14', 'w15', 'w16'], color: '#22d87a' },
+  { id: 5, title: 'Part V: The Final Mile — Job Hunt & Portfolio', weeks: ['w17', 'w18', 'w19', 'w20'], color: '#ff5577' }
 ];
 
 export const COURSES = [
-  { id:'c1', name:'Python Foundations', url:'https://www.datacamp.com', month:1 },
-  { id:'c2', name:'Math & Stats for ML', url:'https://www.datacamp.com', month:1 },
-  { id:'c3', name:'Machine Learning Scientist Track', url:'https://www.datacamp.com', month:2 },
-  { id:'c4', name:'Deep Learning in Python', url:'https://www.datacamp.com', month:3 },
-  { id:'c5', name:'MLOps Concepts', url:'https://www.datacamp.com', month:4 }
+  { id: "c1", name: "Intro to Python", url: "https://www.datacamp.com/courses/intro-to-python-for-data-science", month: 1 },
+  { id: "c2", name: "OOP in Python", url: "https://www.datacamp.com/courses/object-oriented-programming-in-python", month: 1 },
+  { id: "c3", name: "Introduction to SQL", url: "https://www.datacamp.com/courses/introduction-to-sql", month: 1 },
+  { id: "c4", name: "Intermediate SQL", url: "https://www.datacamp.com/courses/intermediate-sql", month: 1 },
+  { id: "c5", name: "Databases in Python", url: "https://www.datacamp.com/courses/introduction-to-relational-databases-in-python", month: 1 },
+  { id: "c6", name: "Data Manipulation w/ Pandas", url: "https://www.datacamp.com/courses/data-manipulation-with-pandas", month: 1 },
+  { id: "c7", name: "Cleaning Data in Python", url: "https://www.datacamp.com/courses/cleaning-data-in-python", month: 1 },
+  { id: "c8", name: "Intro to Statistics", url: "https://www.datacamp.com/courses/introduction-to-statistics-in-python", month: 2 },
+  { id: "c9", name: "Hypothesis Testing", url: "https://www.datacamp.com/courses/hypothesis-testing-in-python", month: 2 },
+  { id: "c10", name: "Intro to Seaborn", url: "https://www.datacamp.com/courses/introduction-to-data-visualization-with-seaborn", month: 2 },
+  { id: "c11", name: "EDA in Python", url: "https://www.datacamp.com/courses/exploratory-data-analysis-in-python", month: 2 },
+  { id: "c12", name: "Linear Algebra", url: "https://www.datacamp.com/courses/linear-algebra-for-data-science-in-python", month: 2 },
+  { id: "c13", name: "Preprocessing for ML", url: "https://www.datacamp.com/courses/preprocessing-for-machine-learning-in-python", month: 2 },
+  { id: "c14", name: "Supervised Learning", url: "https://www.datacamp.com/courses/supervised-learning-with-scikit-learn", month: 3 },
+  { id: "c15", name: "Unsupervised Learning", url: "https://www.datacamp.com/courses/unsupervised-learning-in-python", month: 3 },
+  { id: "c16", name: "Tree-Based Models", url: "https://www.datacamp.com/courses/machine-learning-with-tree-based-models-in-python", month: 3 },
+  { id: "c17", name: "XGBoost", url: "https://www.datacamp.com/courses/extreme-gradient-boosting-with-xgboost", month: 3 },
+  { id: "c18", name: "Intro to Deep Learning (PyTorch)", url: "https://www.datacamp.com/courses/introduction-to-deep-learning-with-pytorch", month: 4 },
+  { id: "c19", name: "DL for Images (PyTorch)", url: "https://www.datacamp.com/courses/deep-learning-for-images-with-pytorch", month: 4 },
+  { id: "c20", name: "NLP Fundamentals", url: "https://www.datacamp.com/courses/natural-language-processing-fundamentals-in-python", month: 4 },
+  { id: "c21", name: "Feature Eng for NLP", url: "https://www.datacamp.com/courses/feature-engineering-for-nlp-in-python", month: 4 },
+  { id: "c22", name: "Transformers & BERT", url: "https://www.datacamp.com/courses/transformer-models-and-bert", month: 4 },
+  { id: "c23", name: "Fine-Tuning HF", url: "https://www.datacamp.com/courses/fine-tuning-with-hugging-face", month: 4 },
+  { id: "c24", name: "Working w/ OpenAI API", url: "https://www.datacamp.com/courses/working-with-the-openai-api", month: 4 },
+  { id: "c25", name: "LLM Apps w/ LangChain", url: "https://www.datacamp.com/courses/developing-llm-applications-with-langchain", month: 5 },
+  { id: "c26", name: "Streamlit Apps", url: "https://www.datacamp.com/courses/building-web-applications-in-python-with-streamlit", month: 5 },
+  { id: "c27", name: "MLOps Concepts", url: "https://www.datacamp.com/courses/mlops-concepts", month: 6 },
+  { id: "c28", name: "Intro to MLflow", url: "https://www.datacamp.com/courses/introduction-to-mlflow", month: 6 },
+  { id: "c29", name: "Intro to Docker", url: "https://www.datacamp.com/courses/introduction-to-docker", month: 6 },
+  { id: "c30", name: "CI/CD for ML", url: "https://www.datacamp.com/courses/ci-cd-for-machine-learning", month: 6 },
+  { id: "c31", name: "Monitoring ML", url: "https://www.datacamp.com/courses/monitoring-machine-learning-in-python", month: 6 }
 ];
 
 export const CERTIFICATIONS = [
-  { id:'cert1', name:'Python Data Associate', week:4, month:1, reqDays:28, color:'#05c3de',
-    desc:'Foundational Python, Data Manipulation, and Mathematics.' },
-  { id:'cert2', name:'Data Scientist Associate', week:8, month:2, reqDays:56, color:'#9b6dff',
-    desc:'Core Machine Learning, Trees, Ensembles, and SQL.' },
-  { id:'cert3', name:'AI Engineer Associate', week:12, month:3, reqDays:84, color:'#f4b942',
-    desc:'Deep Learning, CV, NLP, and LLMs. ⭐ MOST IMPORTANT' },
-  { id:'cert4', name:'MLOps Fundamentals Badge', week:16, month:4, reqDays:112, color:'#22d87a',
-    desc:'MLflow, CI/CD, Docker, and System Design.' },
+  { id: "cert1", name: "Python Data Associate", week: 4, month: 1, reqDays: 28, color: "#05c3de", desc: "Tests Python, OOP, Data Manipulation, and SQL foundations." },
+  { id: "cert2", name: "Data Scientist Associate", week: 8, month: 2, reqDays: 56, color: "#9b6dff", desc: "Tests data extraction, visualization, stats, and predictive modeling." },
+  { id: "cert3", name: "AI Engineer Associate", week: 12, month: 3, reqDays: 84, color: "#f4b942", desc: "Tests AI app building (OpenAI APIs, embeddings, LangChain). ⭐ MOST IMPORTANT" },
+  { id: "cert4", name: "MLOps Fundamentals Badge", week: 16, month: 4, reqDays: 112, color: "#22d87a", desc: "Tests MLflow, CI/CD, Docker, and pipeline automation." }
+];
+
+const W = (id, title, days) => ({ id, title, days });
+const D = (day, dow, topic, task, tag, courseId) => ({ day, dow, topic, task, tag, courseId });
+
+export const WEEKS = [
+  W('w1', 'Linear Algebra & Vector Calculus for ML', [
+    D(1, 'MON', 'Linear Algebra', 'Vector Spaces, Subspaces, and Basis', 'ML', 'c12'),
+    D(2, 'TUE', 'Linear Algebra', 'Transformations, Matrices, Systems of Equations', 'ML', 'c12'),
+    D(3, 'WED', 'Linear Algebra', 'Eigenvalues, Eigenvectors, Eigendecomposition', 'ML', 'c12'),
+    D(4, 'THU', 'Linear Algebra', 'Singular Value Decomposition (SVD)', 'ML', 'c12'),
+    D(5, 'FRI', 'Calculus', 'Multivariable Calculus: Partial Derivatives', 'ML', null),
+    D(6, 'SAT', 'Calculus', 'Jacobian and Hessian Matrices', 'ML', null),
+    D(7, 'SUN', 'Calculus', 'Matrix Calculus & Backprop Foundations', 'REST', null)
+  ]),
+  W('w2', 'Probability, Statistics & Inference', [
+    D(8, 'MON', 'Probability', 'Axioms, Conditional Probability, Bayes Theorem', 'PY', 'c8'),
+    D(9, 'TUE', 'Probability', 'Discrete vs. Continuous Distributions', 'PY', 'c8'),
+    D(10, 'WED', 'Probability', 'Expectation, Variance, and Moments', 'PY', 'c8'),
+    D(11, 'THU', 'Statistics', 'Central Limit Theorem & Sampling', 'PY', 'c8'),
+    D(12, 'FRI', 'Hypothesis Test', 'P-values, Type I/II Errors, Z/T-tests', 'PY', 'c9'),
+    D(13, 'SAT', 'Estimation', 'MLE vs MAP', 'PY', 'c9'),
+    D(14, 'SUN', 'A/B Testing', 'Statistical Significance for Product DS', 'REST', 'c9')
+  ]),
+  W('w3', 'Optimization & Linear Models', [
+    D(15, 'MON', 'Optimization', 'Convex Optimization, KKT Conditions', 'ML', null),
+    D(16, 'TUE', 'Linear Models', 'Simple Linear Regression & OLS', 'ML', null),
+    D(17, 'WED', 'Linear Models', 'Multiple Linear Regression & Collinearity', 'ML', null),
+    D(18, 'THU', 'Optimization', 'Gradient Descent Variants (Batch, SGD)', 'ML', null),
+    D(19, 'FRI', 'Linear Models', 'Regularization: Ridge (L2) & Lasso (L1)', 'ML', null),
+    D(20, 'SAT', 'Linear Models', 'Logistic Regression & Cross-Entropy', 'ML', null),
+    D(21, 'SUN', 'Coding', 'Build Regression from Scratch in NumPy', 'REST', null)
+  ]),
+  W('w4', 'Python for High-Performance DS', [
+    D(22, 'MON', 'Python', 'Generators, Decorators, Context Managers', 'PY', 'c1'),
+    D(23, 'TUE', 'NumPy', 'Vectorization & Broadcasting', 'PY', 'c1'),
+    D(24, 'WED', 'Pandas', 'Multi-indexing & GroupBy', 'PY', 'c6'),
+    D(25, 'THU', 'EDA', 'Outliers and Distribution Shifts', 'VIZ', 'c11'),
+    D(26, 'FRI', 'Visualization', 'Matplotlib, Seaborn, and Plotly', 'VIZ', 'c10'),
+    D(27, 'SAT', 'Data Cleaning', 'Missingness Mechanisms & Encoding', 'PY', 'c7'),
+    D(28, 'SUN', 'Project', 'Milestone Project 01: EDA & Stats Report', 'REST', null)
+  ]),
+  W('w5', 'Supervised Learning I', [
+    D(29, 'MON', 'Classification', 'K-Nearest Neighbors & Dimensionality', 'ML', 'c14'),
+    D(30, 'TUE', 'Trees', 'Decision Trees: Information Gain & Entropy', 'ML', 'c14'),
+    D(31, 'WED', 'Trees', 'Tree Pruning & Handling Overfitting', 'ML', 'c14'),
+    D(32, 'THU', 'SVM', 'Support Vector Machines & Kernel Trick', 'ML', 'c14'),
+    D(33, 'FRI', 'Classification', 'Naive Bayes: Geometric vs. Probabilistic', 'ML', 'c14'),
+    D(34, 'SAT', 'Evaluation', 'Precision, Recall, F1, ROC-AUC', 'ML', 'c14'),
+    D(35, 'SUN', 'Imbalanced Data', 'SMOTE, Weighted Loss, PR-Curves', 'REST', 'c14')
+  ]),
+  W('w6', 'Supervised Learning II', [
+    D(36, 'MON', 'Ensemble', 'Wisdom of the Crowd', 'ML', 'c16'),
+    D(37, 'TUE', 'Ensemble', 'Bagging & Random Forests', 'ML', 'c16'),
+    D(38, 'WED', 'Ensemble', 'Boosting Theory: AdaBoost', 'ML', 'c16'),
+    D(39, 'THU', 'GBM', 'Gradient Boosting Machines & XGBoost', 'ML', 'c17'),
+    D(40, 'FRI', 'GBM', 'LightGBM and CatBoost', 'ML', 'c17'),
+    D(41, 'SAT', 'XAI', 'SHAP Values & Local Interpretability', 'ML', 'c17'),
+    D(42, 'SUN', 'Hyperparams', 'GridSearch & Bayesian Opt', 'REST', 'c16')
+  ]),
+  W('w7', 'Unsupervised Learning', [
+    D(43, 'MON', 'Clustering', 'K-Means, K-Medoids, Silhouette Score', 'ML', 'c15'),
+    D(44, 'TUE', 'Clustering', 'Hierarchical Clustering & Dendrograms', 'ML', 'c15'),
+    D(45, 'WED', 'Clustering', 'DBSCAN & Anomaly Detection', 'ML', 'c15'),
+    D(46, 'THU', 'Dim Reduction', 'PCA Deep Dive', 'ML', 'c15'),
+    D(47, 'FRI', 'Dim Reduction', 't-SNE and UMAP', 'ML', 'c15'),
+    D(48, 'SAT', 'Association', 'Apriori and FP-Growth', 'ML', 'c15'),
+    D(49, 'SUN', 'Project', 'Milestone 02: Customer Segmentation', 'REST', null)
+  ]),
+  W('w8', 'SQL, Big Data & Feature Eng', [
+    D(50, 'MON', 'SQL', 'Joins, Subqueries, CTEs', 'SQL', 'c3'),
+    D(51, 'TUE', 'SQL', 'Window Functions: RANK, LEAD/LAG', 'SQL', 'c4'),
+    D(52, 'WED', 'Feature Eng', 'Polynomial Features & Binning', 'SQL', 'c4'),
+    D(53, 'THU', 'Scaling', 'StandardScaler, RobustScaler', 'SQL', 'c13'),
+    D(54, 'FRI', 'Big Data', 'NoSQL & Spark Basics', 'SQL', 'c5'),
+    D(55, 'SAT', 'Feature Eng', 'RFE & VIF', 'SQL', 'c13'),
+    D(56, 'SUN', 'Feature Eng', 'Data Leakage Prevention', 'REST', 'c13')
+  ]),
+  W('w9', 'Neural Network Foundations', [
+    D(57, 'MON', 'Deep Learning', 'Biological Neuron vs Perceptron', 'DL', 'c18'),
+    D(58, 'TUE', 'Deep Learning', 'MLP & Architecture Design', 'DL', 'c18'),
+    D(59, 'WED', 'Deep Learning', 'Activation: ReLU, Softmax, Swish', 'DL', 'c18'),
+    D(60, 'THU', 'Deep Learning', 'Backpropagation & Chain Rule', 'DL', 'c18'),
+    D(61, 'FRI', 'Deep Learning', 'Adam, RMSProp, Momentum', 'DL', 'c18'),
+    D(62, 'SAT', 'Deep Learning', 'Dropout & Batch Normalization', 'DL', 'c18'),
+    D(63, 'SUN', 'PyTorch', 'PyTorch Basics & Distributed ML', 'REST', 'c18')
+  ]),
+  W('w10', 'Computer Vision (CV)', [
+    D(64, 'MON', 'CV', 'CNN Architectures', 'DL', 'c19'),
+    D(65, 'TUE', 'CV', 'Pooling, Strides, Padding', 'DL', 'c19'),
+    D(66, 'WED', 'CV', 'LeNet, AlexNet, VGG', 'DL', 'c19'),
+    D(67, 'THU', 'CV', 'ResNet & Inception', 'DL', 'c19'),
+    D(68, 'FRI', 'CV', 'Transfer Learning (ImageNet)', 'DL', 'c19'),
+    D(69, 'SAT', 'CV', 'Object Detection: YOLO & R-CNN', 'DL', 'c19'),
+    D(70, 'SUN', 'CV', 'Image Augmentation', 'REST', 'c19')
+  ]),
+  W('w11', 'NLP & GenAI', [
+    D(71, 'MON', 'NLP', 'Tokenization & Stemming', 'LLM', 'c20'),
+    D(72, 'TUE', 'NLP', 'Word2Vec, GloVe, FastText', 'LLM', 'c21'),
+    D(73, 'WED', 'Transformers', 'Attention is All You Need', 'LLM', 'c22'),
+    D(74, 'THU', 'Transformers', 'BERT, GPT, Encoder-Decoder', 'LLM', 'c22'),
+    D(75, 'FRI', 'LLMs', 'Prompt Engineering Basics', 'LLM', 'c24'),
+    D(76, 'SAT', 'PEFT', 'LoRA and QLoRA', 'LLM', 'c23'),
+    D(77, 'SUN', 'RAG', 'Retrieval-Augmented Generation & Vector DBs', 'REST', 'c25')
+  ]),
+  W('w12', 'Time Series & RecSys', [
+    D(78, 'MON', 'Time Series', 'Trend, Seasonality, Noise', 'DL', null),
+    D(79, 'TUE', 'Time Series', 'ARIMA & SARIMA', 'DL', null),
+    D(80, 'WED', 'Time Series', 'Facebook Prophet & DeepAR', 'DL', null),
+    D(81, 'THU', 'RecSys', 'Collaborative Filtering', 'DL', null),
+    D(82, 'FRI', 'RecSys', 'Matrix Factorization (ALS, SVD)', 'DL', null),
+    D(83, 'SAT', 'RecSys', 'Content-Based & Hybrid Systems', 'DL', null),
+    D(84, 'SUN', 'Project', 'Milestone 03: Recommender System', 'REST', null)
+  ]),
+  W('w13', 'MLOps & Deployment', [
+    D(85, 'MON', 'MLOps', 'ML Lifecycle & Experiment Tracking', 'OPS', 'c27'),
+    D(86, 'TUE', 'Docker', 'Containerization for DS', 'OPS', 'c29'),
+    D(87, 'WED', 'APIs', 'Building REST APIs with FastAPI', 'OPS', 'c28'),
+    D(88, 'THU', 'Cloud', 'AWS SageMaker & Cloud Costs', 'OPS', 'c27'),
+    D(89, 'FRI', 'CI/CD', 'GitHub Actions & Automations', 'OPS', 'c30'),
+    D(90, 'SAT', 'Monitoring', 'Detecting Data & Concept Drift', 'OPS', 'c31'),
+    D(91, 'SUN', 'Serving', 'Kubernetes & TorchServe', 'REST', 'c31')
+  ]),
+  W('w14', 'System Design & Algorithms', [
+    D(92, 'MON', 'Algorithms', 'Big O & Complexity', 'INT', null),
+    D(93, 'TUE', 'Algorithms', 'Arrays & Hash Maps', 'INT', null),
+    D(94, 'WED', 'Algorithms', 'Trees & Queues', 'INT', null),
+    D(95, 'THU', 'Algorithms', 'Sorting & Binary Search', 'INT', null),
+    D(96, 'FRI', 'System Design', 'Load Balancers & Latency', 'INT', null),
+    D(97, 'SAT', 'System Design', 'ML Architecture Case Studies', 'INT', null),
+    D(98, 'SUN', 'Mock Interview', 'LeetCode Easy/Medium', 'REST', null)
+  ]),
+  W('w15', 'Capstone Project', [
+    D(99, 'MON', 'Capstone', 'Project Ideation', 'HERO', null),
+    D(100, 'TUE', 'Capstone', 'Data Acquisition', 'HERO', null),
+    D(101, 'WED', 'Capstone', 'Pipeline & Feature Store', 'HERO', null),
+    D(102, 'THU', 'Capstone', 'Training & SHAP', 'HERO', null),
+    D(103, 'FRI', 'Capstone', 'Streamlit Dashboard/API', 'HERO', 'c26'),
+    D(104, 'SAT', 'Capstone', 'README & Technical Blog', 'HERO', null),
+    D(105, 'SUN', 'Capstone', '5-Minute Technical Demo', 'REST', null)
+  ]),
+  W('w16', 'The Job Hunt Basics', [
+    D(106, 'MON', 'Job Hunt', 'Resume Surgery', 'INT', null),
+    D(107, 'TUE', 'Job Hunt', 'LinkedIn Branding', 'INT', null),
+    D(108, 'WED', 'Job Hunt', 'Behavioral Interviews (STAR)', 'INT', null),
+    D(109, 'THU', 'Job Hunt', 'Technical Case Studies', 'INT', null),
+    D(110, 'FRI', 'Job Hunt', 'Mock Technical Interview', 'INT', null),
+    D(111, 'SAT', 'Job Hunt', 'Negotiation Skills', 'INT', null),
+    D(112, 'SUN', 'Job Hunt', 'Final Math Review', 'REST', null)
+  ]),
+  W('w17', 'Portfolio Polishing', [
+    D(113, 'MON', 'Polish', 'Audit GitHub Repos & READMEs', 'INT', null),
+    D(114, 'TUE', 'Polish', 'Record Demo Videos (Loom)', 'INT', null),
+    D(115, 'WED', 'Polish', 'Write Medium/Dev.to Article', 'INT', null),
+    D(116, 'THU', 'Polish', 'Deploy Streamlit/FastAPI Apps', 'INT', null),
+    D(117, 'FRI', 'Polish', 'Refactor Code (Pylint, Typing)', 'INT', null),
+    D(118, 'SAT', 'Polish', 'Create Personal Portfolio Site', 'INT', null),
+    D(119, 'SUN', 'Polish', 'Rest & Recover', 'REST', null)
+  ]),
+  W('w18', 'Mock Interviews & Design', [
+    D(120, 'MON', 'Mocks', 'Pramp/interviewing.io Session', 'INT', null),
+    D(121, 'TUE', 'Design', 'Architect Fraud Detection System', 'INT', null),
+    D(122, 'WED', 'LeetCode', 'Solve 5 Medium questions', 'INT', null),
+    D(123, 'THU', 'Mocks', 'Mock Interview: ML Theory', 'INT', null),
+    D(124, 'FRI', 'Behavioral', 'Master 5 Core STAR Stories', 'INT', null),
+    D(125, 'SAT', 'SQL', 'SQL Whiteboarding (CTEs, Window)', 'INT', null),
+    D(126, 'SUN', 'Mocks', 'Review Feedback', 'REST', null)
+  ]),
+  W('w19', 'Applications & Branding', [
+    D(127, 'MON', 'Apply', 'Update LinkedIn "Open to Work"', 'INT', null),
+    D(128, 'TUE', 'Network', 'Cold Outreach to Managers', 'INT', null),
+    D(129, 'WED', 'Apply', 'Apply to 15 Targeted Roles', 'INT', null),
+    D(130, 'THU', 'Research', 'Study Target Company Tech Stacks', 'INT', null),
+    D(131, 'FRI', 'Network', 'Follow up on Applications', 'INT', null),
+    D(132, 'SAT', 'Network', 'Join AI Discords & Meetups', 'INT', null),
+    D(133, 'SUN', 'Apply', 'Track Applications Spreadsheet', 'REST', null)
+  ]),
+  W('w20', 'The Final Gauntlet', [
+    D(134, 'MON', 'Gauntlet', 'Practice 4-hour ML Pipeline Take-home', 'INT', null),
+    D(135, 'TUE', 'Gauntlet', 'Cloud Review (AWS/GCP)', 'INT', null),
+    D(136, 'WED', 'Gauntlet', 'Culture Fit Prep', 'INT', null),
+    D(137, 'THU', 'Gauntlet', 'Salary Negotiation Prep (levels.fyi)', 'INT', null),
+    D(138, 'FRI', 'Gauntlet', 'Fix Bugs in Live Deployments', 'INT', null),
+    D(139, 'SAT', 'Gauntlet', 'Review Mathematics Theory', 'INT', null),
+    D(140, 'SUN', 'Graduation', 'You are ready.', 'REST', null)
+  ])
+];
+
+export const DAILY_THEORY = {
+  1:{math:'Big-O notation: O(1) vs O(n) vs O(n²).',resource:'https://www.bigocheatsheet.com/'},
+  29:{math:'Probability: P(A|B) = P(B|A)·P(A)/P(B).',resource:'https://seeing-theory.brown.edu/'},
+  57:{math:'Linear regression: y = Xβ + ε. OLS minimizes Σ(yᵢ - ŷᵢ)²',resource:''},
+  85:{math:'Backpropagation: chain rule ∂L/∂w = ∂L/∂a · ∂a/∂z · ∂z/∂w.',resource:'https://karpathy.github.io/neuralnets/'},
+  113:{math:'Attention: Attention(Q,K,V) = softmax(QKᵀ/√d_k)V.',resource:'https://jalammar.github.io/illustrated-transformer/'}
+};
+
+export const HOW_TO_USE = [
+  { icon:'📅', title:'Daily Routine (2-3 hours/day)', desc:'Study the concept (1-1.5 hrs), complete any linked DataCamp course, then practice. Mark the day complete when done.' },
+  { icon:'✅', title:'Marking Progress', desc:'Click the ✓ circle next to each day in the Roadmap tab. This earns you 20 XP and updates your streak.' },
+  { icon:'📚', title:'Course Links', desc:'Days with a 📘 badge link directly to a specific DataCamp course. All 31 courses map exactly to your daily progress.' },
+  { icon:'🏆', title:'Certifications', desc:'Certs auto-unlock when you complete enough days. Go to the Certs tab to take the exam once unlocked.' },
+  { icon:'📁', title:'Projects', desc:'Build your portfolio as you progress. The final month (Month 5) is dedicated to polishing these projects.' },
+  { icon:'🎯', title:'The Final Mile (Month 5)', desc:'Month 5 is all about applying, mock interviews, and system design. You transition from learning to earning.' }
 ];
 
 export const PROJECTS = [
-  { id:'p1', name:'EDA & Statistical Report', month:1, tag:'EDA', color:'#05c3de',
-    desc:'End-to-End EDA and Statistical Report on a Real-World Dataset.',
-    tech:['Python','Pandas','Matplotlib','SciPy'],
-    source:'Kaggle Dataset / Real Estate Data',
-    learn:'Master distributions, outlier handling, and statistical significance.' },
-  { id:'p2', name:'Customer Segmentation & Fraud', month:2, tag:'ML', color:'#9b6dff',
-    desc:'Customer Segmentation and Fraud Detection Pipeline using Unsupervised & Supervised learning.',
-    tech:['scikit-learn','XGBoost','K-Means','SMOTE'],
-    source:'Credit Card Fraud Dataset',
-    learn:'Handle imbalanced data, build ensemble models, and interpret with SHAP.' },
-  { id:'p3', name:'Movie Recommender / Stock Predictor', month:3, tag:'DL', color:'#f4b942',
-    desc:'Build a deep learning recommendation engine or a time-series stock predictor.',
-    tech:['PyTorch','Transformers','Prophet'],
-    source:'MovieLens / Yahoo Finance',
-    learn:'Implement neural networks, embeddings, and time-series forecasting.' },
-  { id:'p4', name:'The "Job-Winner" Capstone', month:4, tag:'MLOps', color:'#22d87a',
-    desc:'End-to-end full-stack AI application solving a real business problem.',
-    tech:['FastAPI','Docker','MLflow','Streamlit','GitHub Actions'],
-    source:'Custom/Scraped Data',
-    learn:'Deploy models to the cloud, set up CI/CD, and create a portfolio-ready dashboard.' }
+  { id:'p1', name:'End-to-End EDA Report', month:1, tag:'VIZ', color:'#05c3de',
+    desc:'Interactive EDA dashboard analyzing a real-world dataset with statistical tests.',
+    tech:['Python','Pandas','Seaborn','Matplotlib'],
+    dataset:{ name:'World Happiness Report', url:'https://www.kaggle.com/datasets/unsdsn/world-happiness' },
+    outcomes:['Perform hypothesis tests','Create correlation heatmaps','Export notebooks'],
+    setup:['pip install pandas seaborn scipy jupyter'],
+    structure:['README.md','notebooks/eda_happiness.ipynb'],
+    resources:[],
+    showcase:'Export 5+ plots. Push notebook.'
+  },
+  { id:'p2', name:'Customer Segmentation', month:2, tag:'ML', color:'#9b6dff',
+    desc:'K-Means clustering and PCA for customer behavioral segmentation.',
+    tech:['Python','scikit-learn','PCA','K-Means'],
+    dataset:{ name:'Mall Customers', url:'' },
+    outcomes:['Build pipelines','Scale data','Find optimal K via Elbow method'],
+    setup:['pip install scikit-learn'],
+    structure:['src/train.py'],
+    resources:[],
+    showcase:'Showcase PCA scatter plot in 2D/3D.'
+  },
+  { id:'p3', name:'Time Series Recommender', month:3, tag:'DL', color:'#f4b942',
+    desc:'Deep learning recommender system or time series predictor.',
+    tech:['PyTorch','Transformers'],
+    dataset:{ name:'MovieLens', url:'' },
+    outcomes:['Build embeddings','Train PyTorch Model'],
+    setup:['pip install torch'],
+    structure:['src/model.py'],
+    resources:[],
+    showcase:'Show architecture diagram.'
+  },
+  { id:'p4', name:'MLOps Capstone', month:4, tag:'OPS', color:'#22d87a',
+    desc:'End-to-end MLOps pipeline with FastAPI, MLflow, and Streamlit.',
+    tech:['MLflow','Docker','FastAPI','Streamlit'],
+    dataset:{ name:'Custom Dataset', url:'' },
+    outcomes:['Dockerize app','Log with MLflow','Serve API'],
+    setup:['docker-compose up'],
+    structure:['Dockerfile','docker-compose.yml'],
+    resources:[],
+    showcase:'Record live demo of the Streamlit app connecting to FastAPI.'
+  }
 ];
 
-export const WEEKS = [
-  { id: 'w1', title: 'Linear Algebra & Vector Calculus for ML', month: 1, days: [
-    { day: 1, title: 'Day 1', desc: 'Vector Spaces, Subspaces, and Basis: The Geometry of Data.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 2, title: 'Day 2', desc: 'Linear Transformations, Matrices, and Systems of Equations.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 3, title: 'Day 3', desc: 'Eigenvalues, Eigenvectors, and Eigendecomposition.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 4, title: 'Day 4', desc: 'Singular Value Decomposition (SVD) and Principal Component Analysis Foundations.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 5, title: 'Day 5', desc: 'Multivariable Calculus: Partial Derivatives and the Gradient Vector .', theory: 'Focus on implementation and deep understanding.' },
-    { day: 6, title: 'Day 6', desc: 'The Jacobian and Hessian Matrices: Understanding Curvature in Optimization.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 7, title: 'Day 7', desc: 'Matrix Calculus Notation Rigor & Backpropagation Foundations.', theory: 'Focus on implementation and deep understanding.' },
-  ]},
-  { id: 'w2', title: 'Probability, Statistics & Bayesian Inference', month: 1, days: [
-    { day: 8, title: 'Day 1', desc: 'Probability Theory: Axioms, Conditional Probability , and Bayes\' Theorem.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 9, title: 'Day 2', desc: 'Random Variables: Discrete vs. Continuous Distributions.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 10, title: 'Day 3', desc: 'Expectation, Variance, and Moments of a Distribution.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 11, title: 'Day 4', desc: 'Inferential Statistics: Central Limit Theorem and Sampling Distributions.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 12, title: 'Day 5', desc: 'Hypothesis Testing: P-values, Type I/II Errors, and Z/T -tests.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 13, title: 'Day 6', desc: 'Maximum Likelihood Estimation (MLE) vs. Maximum A Posteriori (MAP).', theory: 'Focus on implementation and deep understanding.' },
-    { day: 14, title: 'Day 7', desc: 'Statistical Significance in A/B Testing for Product Data Science.', theory: 'Focus on implementation and deep understanding.' },
-  ]},
-  { id: 'w3', title: 'Optimization & Linear Models', month: 1, days: [
-    { day: 15, title: 'Day 1', desc: 'Convex Optimization: Global vs. Local Minima and KKT  Conditions.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 16, title: 'Day 2', desc: 'Simple Linear Regression: OLS Derivation & The Bias-V ariance Decomposition Proof.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 17, title: 'Day 3', desc: 'Multiple Linear Regression and Multi-collinearity Diagnostics.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 18, title: 'Day 4', desc: 'Gradient Descent Variants: Batch, Stochastic (SGD), and Mini-batch.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 19, title: 'Day 5', desc: 'Regularization: Ridge (L2), Lasso (L1), and Elastic Net.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 20, title: 'Day 6', desc: 'Logistic Regression: The Sigmoid Function and Cross-Entropy Loss.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 21, title: 'Day 7', desc: 'Coding Workshop: Building Regression Models from Scratch in NumPy .', theory: 'Focus on implementation and deep understanding.' },
-  ]},
-  { id: 'w4', title: 'Python for High-Performance Data Science', month: 1, days: [
-    { day: 22, title: 'Day 1', desc: 'Advanced Python: Generators, Decorators, and Context Managers.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 23, title: 'Day 2', desc: 'NumPy Mastery: Vectorization, Broadcasting, and Memory Ef ficiency .', theory: 'Focus on implementation and deep understanding.' },
-    { day: 24, title: 'Day 3', desc: 'Pandas Deep Dive: Multi-indexing, GroupBy Mechanics, and Pivot Tables.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 25, title: 'Day 4', desc: 'Exploratory Data Analysis (EDA): Outliers and Distribution Shifts.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 26, title: 'Day 5', desc: 'Data Visualization Theory: Matplotlib, Seaborn, and Plotly .', theory: 'Focus on implementation and deep understanding.' },
-    { day: 27, title: 'Day 6', desc: 'Data Cleaning Pipelines: Missingness Mechanisms and Categorical Encoding.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 28, title: 'Day 7', desc: 'Milestone Project 01: End-to-End EDA  and Statistical Report on a Real-W orld Dataset.', theory: 'Focus on implementation and deep understanding.' },
-  ]},
-  { id: 'w5', title: 'Supervised Learning I (Classification & Trees)', month: 2, days: [
-    { day: 29, title: 'Day 1', desc: 'K-Nearest Neighbors (KNN) and the Curse of Dimensionality .', theory: 'Focus on implementation and deep understanding.' },
-    { day: 30, title: 'Day 2', desc: 'Decision Trees: Information Gain, Gini Impurity , and Entropy .', theory: 'Focus on implementation and deep understanding.' },
-    { day: 31, title: 'Day 3', desc: 'Tree Pruning and Handling Overfitting.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 32, title: 'Day 4', desc: 'Support Vector Machines (SVM): Hyperplanes and the Kernel Trick.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 33, title: 'Day 5', desc: 'Naive Bayes: Geometric vs. Probabilistic Classification.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 34, title: 'Day 6', desc: 'Evaluation Metrics: Precision, Recall, F1-Score, ROC-AUC, and Model Calibration (Platt', theory: 'Focus on implementation and deep understanding.' },
-    { day: 35, title: 'Day 7', desc: 'Imbalanced Data Techniques: SMOTE, Weighted Loss, and Precision-Recall Curves.', theory: 'Focus on implementation and deep understanding.' },
-  ]},
-  { id: 'w6', title: 'Supervised Learning II (Ensemble & Interpretability)', month: 2, days: [
-    { day: 36, title: 'Day 1', desc: 'Introduction to Ensemble Thinking: Wisdom of the Crowd.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 37, title: 'Day 2', desc: 'Bagging: Bootstrapping and Random Forests.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 38, title: 'Day 3', desc: 'Boosting Theory: AdaBoost and Weighted Weak Learners.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 39, title: 'Day 4', desc: 'Gradient Boosting Machines (GBM) and XGBoost Architecture.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 40, title: 'Day 5', desc: 'LightGBM and CatBoost: Handling Categorical Data and Execution Speed.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 41, title: 'Day 6', desc: 'Explainable AI (XAI): SHAP  Values, LIME, and Global vs. Local Interpretability .', theory: 'Focus on implementation and deep understanding.' },
-    { day: 42, title: 'Day 7', desc: 'Hyperparameter Tuning: GridSearch, RandomSearch, and Bayesian Optimization (Optuna).', theory: 'Focus on implementation and deep understanding.' },
-  ]},
-  { id: 'w7', title: 'Unsupervised Learning & Dimensionality Reduction', month: 2, days: [
-    { day: 43, title: 'Day 1', desc: 'Clustering: K-Means, K-Medoids, and the Silhouette Score.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 44, title: 'Day 2', desc: 'Hierarchical Clustering and Dendrograms.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 45, title: 'Day 3', desc: 'Density-Based Clustering (DBSCAN) and Anomaly Detection.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 46, title: 'Day 4', desc: 'Dimensionality Reduction: PCA  (Principal Component Analysis) Deep Dive.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 47, title: 'Day 5', desc: 't-SNE and UMAP  for High-Dimensional Visualization.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 48, title: 'Day 6', desc: 'Association Rule Learning: Apriori and FP-Growth.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 49, title: 'Day 7', desc: 'Milestone Project 02: Customer Segmentation and Fraud Detection Pipeline.', theory: 'Focus on implementation and deep understanding.' },
-  ]},
-  { id: 'w8', title: 'SQL, Big Data & Feature Engineering', month: 2, days: [
-    { day: 50, title: 'Day 1', desc: 'Advanced SQL: Joins, Subqueries, and CTEs (Common Table Expressions).', theory: 'Focus on implementation and deep understanding.' },
-    { day: 51, title: 'Day 2', desc: 'Window Functions: RANK, LEAD/LAG, and Partitioning.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 52, title: 'Day 3', desc: 'Feature Engineering: Polynomial Features, Binning, and Interaction Terms.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 53, title: 'Day 4', desc: 'Scaling Data: StandardScaler vs. RobustScaler vs. MinMaxScaler .', theory: 'Focus on implementation and deep understanding.' },
-    { day: 54, title: 'Day 5', desc: 'Working with NoSQL  (MongoDB) and Lar ge Scale Data (Spark Basics).', theory: 'Focus on implementation and deep understanding.' },
-    { day: 55, title: 'Day 6', desc: 'Feature Selection: Recursive Feature Elimination (RFE) and Variance Inflation Factor (VIF).', theory: 'Focus on implementation and deep understanding.' },
-    { day: 56, title: 'Day 7', desc: 'Data Leakage: How to Identify and Prevent It in Production Environments.', theory: 'Focus on implementation and deep understanding.' },
-  ]},
-  { id: 'w9', title: 'Neural Network Foundations & Scale', month: 3, days: [
-    { day: 57, title: 'Day 1', desc: 'The Biological Neuron vs. Artificial Perceptron.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 58, title: 'Day 2', desc: 'Multi-Layer Perceptron (MLP) and Architecture Design.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 59, title: 'Day 3', desc: 'Activation Functions: ReLU, Tanh, Softmax, and Swish.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 60, title: 'Day 4', desc: 'Deep Dive: Backpropagation and the Chain Rule in Code.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 61, title: 'Day 5', desc: 'Optimization for DL: Adam, RMSProp, and Momentum.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 62, title: 'Day 6', desc: 'Overfitting in DL: Dropout, Batch Normalization, and Early Stopping.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 63, title: 'Day 7', desc: 'PyTorch Basics & Distributed Machine Learning (Data Parallelism vs. Model Parallelism).', theory: 'Focus on implementation and deep understanding.' },
-  ]},
-  { id: 'w10', title: 'Computer Vision (CV)', month: 3, days: [
-    { day: 64, title: 'Day 1', desc: 'Convolutional Neural Networks (CNN) Architecture.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 65, title: 'Day 2', desc: 'Pooling, Strides, and Padding Mechanics.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 66, title: 'Day 3', desc: 'Classic Architectures: LeNet, AlexNet, VGG.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 67, title: 'Day 4', desc: 'Modern CV : ResNet (Residual Connections) and Inception.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 68, title: 'Day 5', desc: 'Transfer Learning: Fine-tuning ImageNet Models.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 69, title: 'Day 6', desc: 'Object Detection: YOLO (Y ou Only Look Once) and R-CNN Concepts.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 70, title: 'Day 7', desc: 'Image Augmentation Strategies for Small Datasets.', theory: 'Focus on implementation and deep understanding.' },
-  ]},
-  { id: 'w11', title: 'Natural Language Processing (NLP) & GenAI', month: 3, days: [
-    { day: 71, title: 'Day 1', desc: 'Text Preprocessing: Tokenization, Stemming, and Lemmatization.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 72, title: 'Day 2', desc: 'Word Embeddings: Word2V ec, GloV e, and FastT ext.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 73, title: 'Day 3', desc: 'Sequence Modeling & Attention Mechanism: Why "Attention is All You Need."', theory: 'Focus on implementation and deep understanding.' },
-    { day: 74, title: 'Day 4', desc: 'Transformers: BER T, GPT , and Encoder -Decoder Architectures.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 75, title: 'Day 5', desc: 'Large Language Models (LLMs) & Prompt Engineering Basics.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 76, title: 'Day 6', desc: 'Parameter -Efficient Fine-T uning (PEFT): LoRA  and QLoRA  for LLMs.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 77, title: 'Day 7', desc: 'Retrieval-Augmented Generation (RAG) & Vector Databases (Pinecone/Milvus).', theory: 'Focus on implementation and deep understanding.' },
-  ]},
-  { id: 'w12', title: 'Time Series & Recommendation Systems', month: 3, days: [
-    { day: 78, title: 'Day 1', desc: 'Time Series Basics: Trend, Seasonality , and Noise.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 79, title: 'Day 2', desc: 'Classical Models: AR, MA, ARIMA, and SARIMA.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 80, title: 'Day 3', desc: 'Modern Forecasting: Facebook Prophet and DeepAR.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 81, title: 'Day 4', desc: 'Recommendation Systems: Collaborative Filtering (User/Item-based).', theory: 'Focus on implementation and deep understanding.' },
-    { day: 82, title: 'Day 5', desc: 'Matrix Factorization: ALS and SVD for Recommendations.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 83, title: 'Day 6', desc: 'Content-Based Filtering and Hybrid Systems.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 84, title: 'Day 7', desc: 'Milestone Project 03: Build a Movie Recommender or Stock Price Predictor .', theory: 'Focus on implementation and deep understanding.' },
-  ]},
-  { id: 'w13', title: 'MLOps & Model Deployment', month: 4, days: [
-    { day: 85, title: 'Day 1', desc: 'The ML  Lifecycle: Experiment Tracking with MLflow or W&B.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 86, title: 'Day 2', desc: 'Containerization: Docker for Data Scientists.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 87, title: 'Day 3', desc: 'Model APIs: Building REST  APIs with FastAPI.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 88, title: 'Day 4', desc: 'Cloud Deployment: AWS (SageMaker) or GCP  (Vertex AI) + Cloud Cost Optimization.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 89, title: 'Day 5', desc: 'CI/CD for ML: GitHub Actions and Automated Testing.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 90, title: 'Day 6', desc: 'Model Monitoring: Detecting Data Drift, Concept Drift, and System Failures.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 91, title: 'Day 7', desc: 'Scalable Serving: Kubernetes and TorchServe Basics.', theory: 'Focus on implementation and deep understanding.' },
-  ]},
-  { id: 'w14', title: 'Data Structures, Algorithms & ML System Design', month: 4, days: [
-    { day: 92, title: 'Day 1', desc: 'Big O Notation and Time/Space Complexity .', theory: 'Focus on implementation and deep understanding.' },
-    { day: 93, title: 'Day 2', desc: 'Arrays, Strings, and Hash Maps (Interview Essentials).', theory: 'Focus on implementation and deep understanding.' },
-    { day: 94, title: 'Day 3', desc: 'Linked Lists, Stacks, Trees, and Queues.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 95, title: 'Day 4', desc: 'Sorting and Searching (Binary Search).', theory: 'Focus on implementation and deep understanding.' },
-    { day: 96, title: 'Day 5', desc: 'Scalable System Architecture: Load Balancers, Latency vs. Throughput.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 97, title: 'Day 6', desc: 'ML System Design Case Studies: Netflix Recommendation Engine & Uber ET A Prediction.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 98, title: 'Day 7', desc: 'Coding Mock Interview: LeetCode Easy/Medium for Data Science.', theory: 'Focus on implementation and deep understanding.' },
-  ]},
-  { id: 'w15', title: 'Capstone Project - The "Job-Winner" Portfolio', month: 4, days: [
-    { day: 99, title: 'Day 1', desc: 'Project Ideation: Solving a Real Business Problem (or tackling a live Kaggle competition).', theory: 'Focus on implementation and deep understanding.' },
-    { day: 100, title: 'Day 2', desc: 'Data Acquisition: Web Scraping or API Data Extraction.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 101, title: 'Day 3', desc: 'Robust Data Pipeline and Feature Store Creation.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 102, title: 'Day 4', desc: 'Model Training, Tuning, Experimentation, and SHAP  Interpretation.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 103, title: 'Day 5', desc: 'Deployment: Creating a Live Dashboard (Streamlit) or API.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 104, title: 'Day 6', desc: 'Documentation: Writing a Professional README and Technical Blog Post.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 105, title: 'Day 7', desc: 'Project Presentation: Recording a 5-Minute Technical Demo.', theory: 'Focus on implementation and deep understanding.' },
-  ]},
-  { id: 'w16', title: 'The Job Hunt - Cracking the Interview', month: 4, days: [
-    { day: 106, title: 'Day 1', desc: 'Resume Sur gery: Keyword Optimization for ATS.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 107, title: 'Day 2', desc: 'LinkedIn Branding: Networking and Cold Outreach Strategies.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 108, title: 'Day 3', desc: 'Behavioral Interviews: ST AR Method for "T ell me about a time..."', theory: 'Focus on implementation and deep understanding.' },
-    { day: 109, title: 'Day 4', desc: 'Technical Case Studies: Translating Business Problems to ML  Metrics.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 110, title: 'Day 5', desc: 'Mock Technical Interview: ML  Theory , Math, and Model Trade-of fs.', theory: 'Focus on implementation and deep understanding.' },
-    { day: 111, title: 'Day 6', desc: 'Negotiation Skills: Salary , Benefits, and Equity .', theory: 'Focus on implementation and deep understanding.' },
-    { day: 112, title: 'Day 7', desc: 'Final Review: Revisit Week 01–03 Math (The most common trap).', theory: 'Focus on implementation and deep understanding.' },
-  ]},
-];
+export const TAG_COLORS = {
+  PY:'#05c3de', SQL:'#f4b942', ML:'#9b6dff', DL:'#ff5577',
+  LLM:'#f4b942', OPS:'#22d87a', VIZ:'#05c3de', CERT:'#ff5577',
+  INT:'#9b6dff', REST:'#52647d', HERO:'#05c3de',
+};
 
 export const SETUP_GUIDE = {
   title:'Local Environment Setup (Day 5)',
@@ -206,6 +311,7 @@ export const SETUP_GUIDE = {
     { title:'Create GitHub Repos', cmd:'# Create repos on github.com:\n# 1. titanic-ml-pipeline\n# 2. eda-dashboard\n# 3. lstm-text-classifier\n# 4. sentiment-api\n# 5. fine-tuned-llm\n# 6. rag-qa-app (HERO)\n# 7. mlops-pipeline', note:'Add README.md with project description to each' },
   ],
 };
+
 
 export const PRACTICE_PROBLEMS = {
   PY:[
@@ -240,6 +346,7 @@ export const PRACTICE_PROBLEMS = {
   ],
 };
 
+
 export const SHOWCASE_GUIDE = [
   { title:'Professional README Template', steps:['Add project title + one-line description','Include architecture diagram (use draw.io or Mermaid)','List tech stack with badges (shields.io)','Add installation & usage instructions','Include screenshots/GIFs of the app','Add evaluation metrics table','Link to live demo if deployed'] },
   { title:'GitHub Profile Optimization', steps:['Pin your top 5 projects','Add a profile README with skills chart','Use GitHub Actions for green commit history','Add topics/tags to each repo','Include a contribution graph'] },
@@ -248,63 +355,6 @@ export const SHOWCASE_GUIDE = [
   { title:'Blog Writing (Medium/Dev.to)', steps:['Write 1 article per project minimum','Structure: Problem → Approach → Code → Results','Include code snippets and diagrams','Cross-post to Hashnode for SEO','Add to your resume under "Publications"'] },
 ];
 
-export const TAG_COLORS = {
-  PY:'#05c3de', SQL:'#f4b942', ML:'#9b6dff', DL:'#ff5577',
-  LLM:'#f4b942', OPS:'#22d87a', VIZ:'#05c3de', CERT:'#ff5577',
-  INT:'#9b6dff', REST:'#52647d', HERO:'#05c3de',
-};
-
-// Math & Theory supplements mapped by day number
-export const DAILY_THEORY = {
-  1:{math:'Big-O notation: O(1) vs O(n) vs O(n²). Why list.append() is O(1) but list.insert(0,x) is O(n).',resource:'https://www.bigocheatsheet.com/'},
-  2:{math:'NumPy broadcasting rules: shapes (3,1)+(1,4)→(3,4). Element-wise vs matrix multiplication.',resource:'https://numpy.org/doc/stable/user/basics.broadcasting.html'},
-  3:{math:'Encapsulation: public vs private attributes. Memory layout of Python objects.',resource:''},
-  8:{math:'Set theory: UNION = A∪B, INTERSECT = A∩B. Relational algebra behind SQL joins.',resource:''},
-  15:{math:'Pandas indexing: .loc (label) vs .iloc (integer). Time complexity of DataFrame operations.',resource:''},
-  29:{math:'Probability: P(A|B) = P(B|A)·P(A)/P(B). Bayes theorem is the foundation of ML.',resource:'https://seeing-theory.brown.edu/'},
-  30:{math:'Variance = E[(X-μ)²]. Standard deviation = √Variance. Z-score = (X-μ)/σ.',resource:''},
-  31:{math:'Pearson r = cov(X,Y)/(σ_X·σ_Y). Range [-1,1]. Correlation ≠ causation!',resource:''},
-  32:{math:'p-value: probability of observing data as extreme as yours, given H₀ is true. α=0.05 threshold.',resource:''},
-  33:{math:'F-statistic = between-group variance / within-group variance. Higher F → more significant.',resource:''},
-  36:{math:'Color theory: HSL vs RGB. Perceptual uniformity in sequential colormaps.',resource:''},
-  43:{math:'Vectors: dot product a·b = |a||b|cosθ. Orthogonal when dot product = 0.',resource:'https://www.3blue1brown.com/topics/linear-algebra'},
-  44:{math:'Eigenvalues λ: Av = λv. PCA finds eigenvectors of covariance matrix for dimensionality reduction.',resource:''},
-  50:{math:'StandardScaler: z = (x-μ)/σ. MinMaxScaler: x_norm = (x-min)/(max-min). When to use which.',resource:''},
-  51:{math:'One-hot encoding creates orthogonal binary vectors. Label encoding assumes ordinal relationship.',resource:''},
-  57:{math:'Linear regression: y = Xβ + ε. OLS minimizes Σ(yᵢ - ŷᵢ)². Gradient: ∂L/∂β = -2Xᵀ(y-Xβ).',resource:''},
-  58:{math:'SVM: maximize margin 2/||w||. Kernel trick: K(x,y) = φ(x)·φ(y). RBF kernel for non-linear.',resource:''},
-  59:{math:'Precision = TP/(TP+FP). Recall = TP/(TP+FN). F1 = 2·P·R/(P+R). AUC = area under ROC curve.',resource:''},
-  64:{math:'Information Gain = H(parent) - Σ(wᵢ·H(childᵢ)). Entropy H = -Σpᵢ·log₂(pᵢ). Gini = 1-Σpᵢ².',resource:''},
-  66:{math:'Gradient Boosting: F_m(x) = F_{m-1}(x) + η·h_m(x). Learning rate η controls step size.',resource:''},
-  67:{math:'Cross-validation: K-Fold splits data K ways. Bias-variance tradeoff in model selection.',resource:''},
-  85:{math:'Backpropagation: chain rule ∂L/∂w = ∂L/∂a · ∂a/∂z · ∂z/∂w. Autograd computes this automatically.',resource:'https://karpathy.github.io/neuralnets/'},
-  86:{math:'Universal Approximation Theorem: a NN with 1 hidden layer can approximate any continuous function.',resource:''},
-  88:{math:'Convolution: (f*g)(t) = ∫f(τ)g(t-τ)dτ. In CNNs: output[i,j] = Σ kernel[m,n]·input[i+m,j+n].',resource:''},
-  92:{math:'TF-IDF: tf(t,d)·log(N/df(t)). High value = term is frequent in doc but rare across corpus.',resource:''},
-  94:{math:'Word2Vec: skip-gram predicts context from center word. Embedding space: king-man+woman≈queen.',resource:''},
-  99:{math:'Transformer: Attention(Q,K,V) = softmax(QKᵀ/√d_k)V. Self-attention captures long-range dependencies.',resource:'https://jalammar.github.io/illustrated-transformer/'},
-  106:{math:'Perplexity = exp(-1/N · Σlog P(wᵢ)). Lower = better language model. Used to evaluate LLMs.',resource:''},
-  108:{math:'Temperature T in softmax: P(xᵢ) = exp(xᵢ/T)/Σexp(xⱼ/T). Low T → confident, High T → creative.',resource:''},
-  109:{math:'Cosine similarity: cos(θ) = (A·B)/(||A||·||B||). Used for semantic search in embedding space.',resource:''},
-  113:{math:'Chain-of-Thought prompting: breaking complex reasoning into steps improves LLM accuracy by 20-40%.',resource:''},
-  116:{math:'RAG retrieval: top-k nearest neighbors in embedding space. HNSW algorithm for approximate NN search.',resource:''},
-  150:{math:'KS test: D = max|F₁(x)-F₂(x)|. Detects distribution shift between training and production data.',resource:''},
-};
-
-export const HOW_TO_USE = [
-  { icon:'📅', title:'Daily Routine (2-3 hours/day)', desc:'Each day has ONE focused topic. Study the concept (1-1.5 hrs), then read the theory note, then practice. Mark the day complete when done.' },
-  { icon:'✅', title:'Marking Progress', desc:'Click the ✓ circle next to each day in the Roadmap tab. This earns you 20 XP and updates your streak. Use "Mark All" on a week header for bulk completion.' },
-  { icon:'📚', title:'Course Links', desc:'Each day links to a specific DataCamp course. Click the blue course pill to open it directly. All courses are FREE with your DataCamp Classroom subscription.' },
-  { icon:'🧮', title:'Math & Theory Notes', desc:'Many days include a math/theory supplement (shown with a 🧮 icon). These are the concepts that come up in interviews. Review them even on rest days.' },
-  { icon:'🏆', title:'Certifications', desc:'Certs auto-unlock when you complete enough days. Go to the Certs tab to take the exam once unlocked. Post each cert on LinkedIn immediately.' },
-  { icon:'📁', title:'Projects', desc:'Each project has full details: dataset, setup commands, file structure, and showcase tips. Click to expand. Start building from Month 2 onwards.' },
-  { icon:'⭐', title:'XP & Rewards', desc:'Earn XP from days (+20), courses (+50), certs (+200), and badges. Your goal: reach Level 10 (Job Ready). Check the Rewards tab for all 14 badges.' },
-  { icon:'🧪', title:'Practice Problems', desc:'Use the Practice tab to test yourself after each section. Problems are categorized by topic (PY, SQL, ML, DL, LLM) and difficulty (Easy/Medium/Hard).' },
-  { icon:'📣', title:'Showcasing Work', desc:'The Showcase tab has guides for README writing, GitHub optimization, LinkedIn strategy, video demos, and blog writing. Follow these from Day 1.' },
-  { icon:'🔁', title:'Weekly Cycle', desc:'MON-FRI: Learn new topics with DataCamp. SAT: Build/practice. SUN: Rest or light review. Never skip rest days — burnout kills progress.' },
-  { icon:'🎯', title:'Interview Prep', desc:'Part IV focuses on interview prep. The Interview tab has LeetCode must-solves, system design case studies, and behavioral Q&A. Start mock interviews in Week 14.' },
-  { icon:'💾', title:'Your Data', desc:'All progress is saved in your browser (localStorage). It persists across sessions. If you clear browser data, your progress resets. Use the same browser consistently.' },
-];
 
 export const INTERVIEW_RESOURCES = {
   leetcode:[
@@ -352,3 +402,4 @@ export const INTERVIEW_RESOURCES = {
     { name:'DataCamp Interview Qs', url:'https://www.datacamp.com/blog/top-machine-learning-interview-questions', type:'Question Bank' },
   ],
 };
+
