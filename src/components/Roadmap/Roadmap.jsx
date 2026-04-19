@@ -1,8 +1,11 @@
 import { useState } from 'react';
-import { MONTHS, WEEKS, COURSES, TAG_COLORS, DAILY_THEORY } from '../../data/curriculum';
+import { MONTHS, WEEKS, COURSES, DAILY_THEORY } from '../../data/curriculum';
 
 export default function Roadmap({ tracker }) {
   const [expandAll, setExpandAll] = useState(false);
+
+  // Build a week-number lookup from MONTHS
+  const weekNumFromId = (id) => parseInt(id.replace('w',''));
 
   return (
     <section className="fade-in">
@@ -13,18 +16,24 @@ export default function Roadmap({ tracker }) {
         </button>
       </div>
 
-      {MONTHS.map(month => (
-        <div key={month.id}>
-          <div className="phase-header" style={{'--phase-color': month.color}}>
-            <div style={{position:'absolute',top:0,left:0,right:0,height:3,background:month.color}} />
-            <div className="phase-num">Month {month.id} / 06</div>
-            <div className="phase-title">{month.title}</div>
+      {MONTHS.map(month => {
+        const monthWeeks = WEEKS.filter(w => {
+          const wNum = weekNumFromId(w.id);
+          return month.weeks.includes(wNum);
+        });
+        return (
+          <div key={month.id}>
+            <div className="phase-header" style={{'--phase-color': month.color}}>
+              <div style={{position:'absolute',top:0,left:0,right:0,height:3,background:month.color}} />
+              <div className="phase-num">Part {month.id} / 04</div>
+              <div className="phase-title">{month.name}</div>
+            </div>
+            {monthWeeks.map(week => (
+              <WeekCard key={week.id} week={week} tracker={tracker} forceOpen={expandAll} />
+            ))}
           </div>
-          {WEEKS.filter(w => month.weeks.includes(w.id)).map(week => (
-            <WeekCard key={week.id} week={week} tracker={tracker} forceOpen={expandAll} />
-          ))}
-        </div>
-      ))}
+        );
+      })}
     </section>
   );
 }
@@ -55,35 +64,31 @@ function WeekCard({ week, tracker, forceOpen }) {
         {week.days.map(day => {
           const isDone = tracker.state.completedDays[day.day];
           const isTarget = tracker.nextDay === day.day;
-          const isWeekend = day.dow === 'SAT' || day.dow === 'SUN';
-          const course = day.courseId ? COURSES.find(c => c.id === day.courseId) : null;
-          const tagColor = TAG_COLORS[day.tag] || 'var(--muted)';
+          const dayInWeek = ((day.day - 1) % 7) + 1;
           return (
             <div key={day.day}
-              className={`day-row ${isDone ? 'completed' : ''} ${isTarget ? 'target' : ''} ${isWeekend ? 'weekend' : ''}`}>
+              className={`day-row ${isDone ? 'completed' : ''} ${isTarget ? 'target' : ''}`}>
               <div className="day-num-col">
-                <div className="day-dow">{day.dow}</div>
-                <div className="day-label">D{day.day}</div>
+                <div className="day-label">D{String(day.day).padStart(2,'0')}</div>
                 <button className={`day-toggle ${isDone ? 'done' : ''}`}
                   onClick={() => tracker.toggleDay(day.day)}>{isDone ? '✓' : ''}</button>
               </div>
               <div className="day-content">
                 <div className="day-top">
-                  <span className="day-topic">{day.topic}</span>
-                  <span className="tag" style={{background:`${tagColor}20`,color:tagColor}}>{day.tag}</span>
+                  <span className="day-topic">{day.desc}</span>
                 </div>
-                <div className="day-task">{day.task}</div>
+                {day.theory && day.theory !== 'Focus on implementation and deep understanding.' && (
+                  <div style={{fontSize:11,color:'var(--purple)',marginTop:4,lineHeight:1.5,background:'rgba(155,109,255,0.06)',padding:'6px 10px',borderRadius:6,border:'1px solid rgba(155,109,255,0.15)'}}>
+                    🧮 {day.theory}
+                  </div>
+                )}
                 {DAILY_THEORY[day.day] && (
                   <div style={{fontSize:11,color:'var(--purple)',marginTop:4,lineHeight:1.5,background:'rgba(155,109,255,0.06)',padding:'6px 10px',borderRadius:6,border:'1px solid rgba(155,109,255,0.15)'}}>
                     🧮 {DAILY_THEORY[day.day].math}
                     {DAILY_THEORY[day.day].resource && <> · <a href={DAILY_THEORY[day.day].resource} target="_blank" rel="noopener noreferrer" style={{fontSize:10}}>📎 Resource</a></>}
                   </div>
                 )}
-                {course && (
-                  <a href={course.url} target="_blank" rel="noopener noreferrer" className="day-course-link">
-                    📘 {course.name}
-                  </a>
-                )}
+                {isDone && <div className="day-xp" style={{marginTop:4}}>+20 XP earned</div>}
               </div>
             </div>
           );

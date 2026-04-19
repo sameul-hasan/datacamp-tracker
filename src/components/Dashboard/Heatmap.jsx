@@ -5,7 +5,7 @@ export default function Heatmap({ tracker }) {
   const WEEKS = 16;
   const DAYS_PER_WEEK = 7;
 
-  // Generate a matrix of days [column][row] -> day number 1-168
+  // Generate a matrix of days [column][row] -> day number 1-112
   const matrix = Array.from({ length: WEEKS }, (_, w) => 
     Array.from({ length: DAYS_PER_WEEK }, (_, d) => w * DAYS_PER_WEEK + d + 1)
   );

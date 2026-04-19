@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="footer">
-      Built by Samuel Hasan · 168 Days · 31 Courses · 4 Certs · 7 Projects
+      Built by Samuel Hasan · 112 Days · 5 Courses · 4 Certs · 4 Projects
     </footer>
   );
 }

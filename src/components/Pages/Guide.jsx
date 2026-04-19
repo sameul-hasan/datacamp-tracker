@@ -4,7 +4,7 @@ export default function Guide() {
   return (
     <section className="fade-in">
       <h2 className="section-head">// How to Use This Tracker</h2>
-      <div className="tip-box"><span className="tip-icon">📖</span><div>Read this page first! It explains <strong>exactly how to follow</strong> the 6-month system, what each tab does, and the daily routine you should stick to.</div></div>
+      <div className="tip-box"><span className="tip-icon">📖</span><div>Read this page first! It explains <strong>exactly how to follow</strong> the 4-month challenge, what each tab does, and the daily routine you should stick to.</div></div>
       <div className="cards-grid">
         {HOW_TO_USE.map((item,i) => (
           <div key={i} className="info-card">

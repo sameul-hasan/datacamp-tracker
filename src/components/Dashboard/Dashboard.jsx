@@ -1,4 +1,4 @@
-import { WEEKS, MONTHS } from '../../data/curriculum';
+import { WEEKS, MONTHS, COURSES } from '../../data/curriculum';
 import { BADGES } from '../../hooks/useTracker';
 import MetricCard from './MetricCard';
 import LevelBar from './LevelBar';
@@ -12,21 +12,25 @@ function findDayData(dayNum) {
   return null;
 }
 
+function weekNumFromId(id) {
+  return parseInt(id.replace('w',''));
+}
+
 function Hero({ tracker }) {
   return (
     <header className="hero">
-      <div className="hero-eyebrow">DataCamp Classroom · Free Subscription</div>
+      <div className="hero-eyebrow">4-Month Job Crack Challenge</div>
       <h1>
         <span className="gradient">Zero to Job Ready</span><br />
         AI/ML Engineering Path
       </h1>
       <p className="hero-sub">
-        A 4-month day-by-day challenge from Python basics to production RAG apps.
+        A 4-month day-by-day challenge from mathematical bedrock to production MLOps.
         All courses free with DataCamp Classroom subscription.
       </p>
       <div className="hero-stats">
         <div className="stat-box"><span className="stat-num">112</span><span className="stat-label">Days</span></div>
-        <div className="stat-box"><span className="stat-num">5</span><span className="stat-label">Courses</span></div>
+        <div className="stat-box"><span className="stat-num">{COURSES.length}</span><span className="stat-label">Courses</span></div>
         <div className="stat-box"><span className="stat-num">4</span><span className="stat-label">Certs</span></div>
         <div className="stat-box"><span className="stat-num">4</span><span className="stat-label">Projects</span></div>
         <div className="stat-box">
@@ -39,10 +43,7 @@ function Hero({ tracker }) {
 }
 
 export default function Dashboard({ tracker }) {
-  const { daysComplete, coursesComplete, totalCourses, nextDay, resetAll, xp, currentLevel, nextLevel, levelProgress, motivation, earnedBadges } = tracker;
-  const totalDays = 112;
-  const totalCerts = 4;
-  const certsComplete = tracker.certsComplete;
+  const { daysComplete, totalDays, coursesComplete, totalCourses, certsComplete, totalCerts, nextDay, resetAll, xp, currentLevel, nextLevel, levelProgress, motivation, earnedBadges } = tracker;
   const nextDayData = nextDay ? findDayData(nextDay) : null;
 
   return (
@@ -51,6 +52,7 @@ export default function Dashboard({ tracker }) {
       <section className="fade-in">
         {daysComplete === 0 && (
           <div className="tip-box">
+            <span className="tip-icon">💡</span>
             <div><strong>Welcome, future AI/ML Engineer!</strong> This tracker follows a 4-month path from Python beginner to job-ready. Start by clicking the ✓ circle next to Day 1 in the Roadmap tab. Each day you complete earns <strong>20 XP</strong>!</div>
           </div>
         )}
@@ -74,8 +76,7 @@ export default function Dashboard({ tracker }) {
         {nextDayData && (
           <div className="next-action">
             <div className="next-action-label pulse">▸ Your Next Action — Day {nextDay}</div>
-            <div className="next-action-title">{nextDayData.title}</div>
-            <div className="next-action-desc">{nextDayData.desc}</div>
+            <div className="next-action-title">{nextDayData.desc}</div>
             <div className="day-xp" style={{marginTop:6}}>+20 XP on completion</div>
           </div>
         )}
@@ -84,13 +85,13 @@ export default function Dashboard({ tracker }) {
           <button className="btn danger" onClick={() => { if(confirm('Reset all progress? This cannot be undone.')) resetAll(); }}>Reset All</button>
         </div>
 
-        <h2 className="section-head">// Month Overview</h2>
+        <h2 className="section-head">// Part Overview</h2>
         <div className="cards-grid">
           {MONTHS.map(m => {
-            const wks = WEEKS.filter(w => m.weeks.includes(w.id));
+            const wks = WEEKS.filter(w => m.weeks.includes(weekNumFromId(w.id)));
             const allDays = wks.flatMap(w => w.days);
             const done = allDays.filter(d => tracker.state.completedDays[d.day]).length;
-            const pct = Math.round(done / allDays.length * 100);
+            const pct = allDays.length > 0 ? Math.round(done / allDays.length * 100) : 0;
             return (
               <div className="info-card" key={m.id}>
                 <div style={{position:'absolute',top:0,left:0,right:0,height:3,background:m.color}} />

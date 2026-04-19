@@ -248,9 +248,6 @@ export const SHOWCASE_GUIDE = [
   { title:'Blog Writing (Medium/Dev.to)', steps:['Write 1 article per project minimum','Structure: Problem → Approach → Code → Results','Include code snippets and diagrams','Cross-post to Hashnode for SEO','Add to your resume under "Publications"'] },
 ];
 
-const W = (id,title,days) => ({ id, title, days });
-const D = (day,dow,topic,task,tag,courseId) => ({ day,dow,topic,task,tag,courseId });
-
 export const TAG_COLORS = {
   PY:'#05c3de', SQL:'#f4b942', ML:'#9b6dff', DL:'#ff5577',
   LLM:'#f4b942', OPS:'#22d87a', VIZ:'#05c3de', CERT:'#ff5577',
@@ -295,7 +292,7 @@ export const DAILY_THEORY = {
 };
 
 export const HOW_TO_USE = [
-  { icon:'📅', title:'Daily Routine (2-3 hours/day)', desc:'Each day has ONE focused topic. Complete the DataCamp lesson first (1-1.5 hrs), then read the theory note, then practice. Mark the day complete when done.' },
+  { icon:'📅', title:'Daily Routine (2-3 hours/day)', desc:'Each day has ONE focused topic. Study the concept (1-1.5 hrs), then read the theory note, then practice. Mark the day complete when done.' },
   { icon:'✅', title:'Marking Progress', desc:'Click the ✓ circle next to each day in the Roadmap tab. This earns you 20 XP and updates your streak. Use "Mark All" on a week header for bulk completion.' },
   { icon:'📚', title:'Course Links', desc:'Each day links to a specific DataCamp course. Click the blue course pill to open it directly. All courses are FREE with your DataCamp Classroom subscription.' },
   { icon:'🧮', title:'Math & Theory Notes', desc:'Many days include a math/theory supplement (shown with a 🧮 icon). These are the concepts that come up in interviews. Review them even on rest days.' },
@@ -305,7 +302,7 @@ export const HOW_TO_USE = [
   { icon:'🧪', title:'Practice Problems', desc:'Use the Practice tab to test yourself after each section. Problems are categorized by topic (PY, SQL, ML, DL, LLM) and difficulty (Easy/Medium/Hard).' },
   { icon:'📣', title:'Showcasing Work', desc:'The Showcase tab has guides for README writing, GitHub optimization, LinkedIn strategy, video demos, and blog writing. Follow these from Day 1.' },
   { icon:'🔁', title:'Weekly Cycle', desc:'MON-FRI: Learn new topics with DataCamp. SAT: Build/practice. SUN: Rest or light review. Never skip rest days — burnout kills progress.' },
-  { icon:'🎯', title:'Interview Prep', desc:'Months 5-6 focus on interview prep. The Interview tab has IBM-specific stages, LeetCode must-solves, and behavioral Q&A. Start mock interviews at Month 5.' },
+  { icon:'🎯', title:'Interview Prep', desc:'Part IV focuses on interview prep. The Interview tab has LeetCode must-solves, system design case studies, and behavioral Q&A. Start mock interviews in Week 14.' },
   { icon:'💾', title:'Your Data', desc:'All progress is saved in your browser (localStorage). It persists across sessions. If you clear browser data, your progress resets. Use the same browser consistently.' },
 ];
 

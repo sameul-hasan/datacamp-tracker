@@ -5,7 +5,7 @@ export default function Settings() {
   const [msg, setMsg] = useState('');
 
   const handleExport = () => {
-    const data = localStorage.getItem('datacamp-tracker');
+    const data = localStorage.getItem('dc-tracker-v3');
     if (!data) {
       setMsg('No progress data found to export.');
       return;
@@ -31,7 +31,7 @@ export default function Settings() {
       try {
         const json = JSON.parse(event.target.result);
         if (json && typeof json === 'object' && 'completedDays' in json) {
-          localStorage.setItem('datacamp-tracker', JSON.stringify(json));
+          localStorage.setItem('dc-tracker-v3', JSON.stringify(json));
           setMsg('Progress imported successfully! Reloading...');
           setTimeout(() => window.location.reload(), 1500);
         } else {

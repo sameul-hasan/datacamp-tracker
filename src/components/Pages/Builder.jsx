@@ -6,7 +6,7 @@ export default function Builder() {
         <div className="builder-name">Samuel Hasan</div>
         <div className="builder-role">Software Engineering Student · AI/ML Engineer Path</div>
         <div className="builder-bio">
-          Engineered this 6-month zero-to-job-ready curriculum to bridge the gap between foundational
+          Engineered this 4-month zero-to-job-ready challenge to bridge the gap between foundational
           data science and production-grade AI engineering. Targeting entry-level AI/ML roles with
           a focus on IBM watsonx, RAG pipelines, and full-stack MLOps.
         </div>
@@ -25,23 +25,23 @@ export default function Builder() {
       <div className="interview-grid">
         <div className="interview-card">
           <h4>🎯 Purpose</h4>
-          <p>A complete 6-month learning tracker designed for beginners with a DataCamp Classroom subscription. Covers Python, SQL, ML, Deep Learning, LLMs, RAG, and MLOps — everything needed for an entry-level AI/ML Engineer role.</p>
+          <p>A complete 4-month learning challenge designed for beginners with a DataCamp Classroom subscription. Covers Math, ML, Deep Learning, NLP, LLMs, RAG, and MLOps — everything needed for an entry-level AI/ML Engineer role.</p>
         </div>
         <div className="interview-card">
           <h4>📋 What's Included</h4>
           <ul>
-            <li>168 day-by-day study plan</li>
-            <li>31 DataCamp courses (all free with Classroom)</li>
+            <li>112 day-by-day study plan</li>
+            <li>5 core DataCamp courses (all free with Classroom)</li>
             <li>4 DataCamp certifications</li>
-            <li>5 portfolio projects</li>
-            <li>IBM interview prep with LeetCode links</li>
+            <li>4 milestone projects</li>
+            <li>Interview prep with LeetCode links</li>
             <li>XP reward system with 14 badges</li>
             <li>Job market intelligence dashboard</li>
           </ul>
         </div>
         <div className="interview-card">
           <h4>💡 Target Outcome</h4>
-          <p>Entry-Level AI/ML Engineer at IBM or similar company. Salary range: <strong>$120K – $181K</strong>. The curriculum builds a portfolio of 5 projects including a hero RAG application that demonstrates production-ready AI engineering skills.</p>
+          <p>Entry-Level AI/ML Engineer at IBM or similar company. Salary range: <strong>$120K – $181K</strong>. The curriculum builds a portfolio of 4 milestone projects including a capstone application that demonstrates production-ready AI engineering skills.</p>
         </div>
         <div className="interview-card">
           <h4>🛠️ Built With</h4>
