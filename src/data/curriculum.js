@@ -207,7 +207,7 @@ export const WEEKS = [
     D(4,'THU','Inheritance','Build child classes for error handling','PY','c2'),
     D(5,'FRI','Local Env Setup','Install VS Code, Python 3.10+, venv','OPS',null),
     D(6,'SAT','Practice Day','Write OOP script to parse log files','PY',null),
-    D(7,'SUN','Rest','Rest and review OOP concepts','REST',null),
+    D(7,'SUN','Buffer Day','Rest and review OOP concepts','REST',null),
   ]),
   W('w2','SQL Data Engineering',[
     D(8,'MON','SQL Queries','SELECT, WHERE, HAVING, aggregates','SQL','c3'),
@@ -216,7 +216,7 @@ export const WEEKS = [
     D(11,'THU','Python + SQL','SQLAlchemy to connect to DB','SQL','c5'),
     D(12,'FRI','Data Extraction','ETL script: SQL tables → Pandas','SQL','c5'),
     D(13,'SAT','DB Setup','Create SQLite DB, load JSON data','PY',null),
-    D(14,'SUN','Rest','Rest','REST',null),
+    D(14,'SUN','Buffer Day','Buffer Day','REST',null),
   ]),
   W('w3','Pandas & Data Cleaning',[
     D(15,'MON','DataFrames','Subsetting, filtering, dropping cols','PY','c6'),
@@ -234,7 +234,7 @@ export const WEEKS = [
     D(25,'THU','🏆 Timed Exam','Take Python/SQL timed component','CERT',null),
     D(26,'FRI','🏆 Practical','Complete hands-on data project exam','CERT',null),
     D(27,'SAT','LinkedIn Post','Post your first credential!','OPS',null),
-    D(28,'SUN','Rest','End of Month 1. Foundations solid.','REST',null),
+    D(28,'SUN','Buffer Day','End of Month 1. Foundations solid.','REST',null),
   ]),
   W('w5','Statistical Foundations',[
     D(29,'MON','Probability Axioms','Conditional Probability & Bayes Theorem','PY','c8'),
@@ -243,7 +243,7 @@ export const WEEKS = [
     D(32,'THU','Hypothesis Test','P-values, Type I/II Errors, T-tests','PY','c9'),
     D(33,'FRI','MLE vs MAP','Maximum Likelihood vs A Posteriori','PY','c9'),
     D(34,'SAT','Practice','Run statistical tests on real data','PY',null),
-    D(35,'SUN','Rest','Rest','REST',null),
+    D(35,'SUN','Buffer Day','Buffer Day','REST',null),
   ]),
   W('w6','Data Visualization & EDA',[
     D(36,'MON','Seaborn Basics','Scatter, line, bar plots','VIZ','c10'),
@@ -261,7 +261,7 @@ export const WEEKS = [
     D(46,'THU','Multivariable Calculus','Partial Derivatives and Gradient Vectors','SQL',null),
     D(47,'FRI','Prep ML Env','Install scikit-learn, lock deps','OPS',null),
     D(48,'SAT','Assessments','Take Python & Stats skill quizzes','ML',null),
-    D(49,'SUN','Rest','Rest before ML starts','REST',null),
+    D(49,'SUN','Buffer Day','Rest before ML starts','REST',null),
   ]),
   W('w8','Data Preprocessing for ML',[
     D(50,'MON','Scaling','StandardScaler, MinMaxScaler','ML','c13'),
@@ -270,7 +270,7 @@ export const WEEKS = [
     D(53,'THU','Feature Selection','Variance thresholds','ML','c13'),
     D(54,'FRI','Practice Pipeline','Build preprocessing for Titanic','ML',null),
     D(55,'SAT','Push Setup','Commit preprocessing scripts','OPS',null),
-    D(56,'SUN','Rest','End of Month 2','REST',null),
+    D(56,'SUN','Buffer Day','End of Month 2','REST',null),
   ]),
   W('w9','Supervised Learning',[
     D(57,'MON','Convex Optimization','Global vs Local Minima, KKT Conditions','ML','c14'),
@@ -279,7 +279,7 @@ export const WEEKS = [
     D(60,'THU','Logistic Regression','Sigmoid Function & Cross-Entropy Loss','ML','c14'),
     D(61,'FRI','Unsupervised','K-Means clustering, PCA','ML','c15'),
     D(62,'SAT','Project Build','Baseline Logistic Regression','ML',null),
-    D(63,'SUN','Rest','Review metrics formulas','REST',null),
+    D(63,'SUN','Buffer Day','Review metrics formulas','REST',null),
   ]),
   W('w10','Tree Models & XGBoost',[
     D(64,'MON','Decision Trees','Build CART, visualize nodes','ML','c16'),
@@ -297,7 +297,7 @@ export const WEEKS = [
     D(74,'THU','DS102: Modeling','Pipeline & GridSearchCV','CERT',null),
     D(75,'FRI','Readiness Quizzes','DC readiness for DS Assoc','CERT',null),
     D(76,'SAT','Focus Study','Target weak areas','CERT',null),
-    D(77,'SUN','Rest','Get ready for cert week','REST',null),
+    D(77,'SUN','Buffer Day','Get ready for cert week','REST',null),
   ]),
   W('w12','Data Scientist Cert Week',[
     D(78,'MON','🏆 DS101 Exam','2-hour EDA/Stats timed exam','CERT',null),
@@ -306,7 +306,7 @@ export const WEEKS = [
     D(81,'THU','🏆 Practical Exam','Solve real business problem','CERT',null),
     D(82,'FRI','LinkedIn Update','Add Cert #2','OPS',null),
     D(83,'SAT','PyTorch Preview','Skim PyTorch tensor docs','DL',null),
-    D(84,'SUN','Rest','End of Month 3. Two certs down!','REST',null),
+    D(84,'SUN','Buffer Day','End of Month 3. Two certs down!','REST',null),
   ]),
   W('w13','PyTorch Fundamentals',[
     D(85,'MON','Tensors & Autograd','Backprop mechanics','DL','c18'),
@@ -333,7 +333,7 @@ export const WEEKS = [
     D(102,'THU','Evaluation','Perplexity, accuracy on test','LLM','c23'),
     D(103,'FRI','LLM Project Push','Push fine-tuned model to GH','LLM',null),
     D(104,'SAT','Documentation','Write HuggingFace Model Cards','LLM',null),
-    D(105,'SUN','Rest','Rest before GenAI week','REST',null),
+    D(105,'SUN','Buffer Day','Rest before GenAI week','REST',null),
   ]),
   W('w16','Generative AI APIs',[
     D(106,'MON','LLM Concepts','Large Language Model concepts','LLM','c24'),
@@ -342,7 +342,7 @@ export const WEEKS = [
     D(109,'THU','Embeddings API','Generate embeddings via API','LLM','c24'),
     D(110,'FRI','Vector Search','Cosine similarity on outputs','LLM','c24'),
     D(111,'SAT','Vector DBs','Set up local ChromaDB','LLM',null),
-    D(112,'SUN','Rest','End of Month 4','REST',null),
+    D(112,'SUN','Buffer Day','End of Month 4','REST',null),
   ]),
   W('w17','LangChain & RAG',[
     D(113,'MON','Chains','LLMChains & PromptTemplates','LLM','c25'),
@@ -351,7 +351,7 @@ export const WEEKS = [
     D(116,'THU','RAG Architecture','Retriever + QA chain','LLM','c25'),
     D(117,'FRI','Agents & Tools','Give agent search & math tools','LLM','c25'),
     D(118,'SAT','Hero Backend','FastAPI backend for hero app','LLM',null),
-    D(119,'SUN','Rest','Rest','REST',null),
+    D(119,'SUN','Buffer Day','Buffer Day','REST',null),
   ]),
   W('w18','Hero Project Frontend',[
     D(120,'MON','Streamlit Intro','Rapid prototyping UI','OPS','c26'),
@@ -360,7 +360,7 @@ export const WEEKS = [
     D(123,'THU','Streaming UI','LLM text streaming in React','OPS',null),
     D(124,'FRI','Push Full Stack','Push React+FastAPI, write README','OPS',null),
     D(125,'SAT','Write Blog','Medium post on architecture','OPS',null),
-    D(126,'SUN','Rest','All projects built. Prep for Cert #3','REST',null),
+    D(126,'SUN','Buffer Day','All projects built. Prep for Cert #3','REST',null),
   ]),
   W('w19','AI Engineer Cert Prep',[
     D(127,'MON','System Design','LLM scaling, token limits','CERT',null),
@@ -368,7 +368,7 @@ export const WEEKS = [
     D(129,'WED','Readiness Mock','AI Engineer readiness quiz','CERT',null),
     D(130,'THU','API Error Handling','Retry/rate limit logic','CERT',null),
     D(131,'FRI','Weakness Drill','Target lowest scoring areas','CERT',null),
-    D(132,'SAT','Rest & Focus','Clear mind before exam','REST',null),
+    D(132,'SAT','Buffer Day','Clear mind before exam','REST',null),
     D(133,'SUN','Env Setup','Prepare local env for testing','REST',null),
   ]),
   W('w20','AI Engineer Cert Week',[
@@ -377,8 +377,8 @@ export const WEEKS = [
     D(136,'WED','LinkedIn Update','Add AI Engineering Cert #3','OPS',null),
     D(137,'THU','MLOps Preview','Read Docker & MLflow docs','OPS',null),
     D(138,'FRI','Repo Audits','Add badges, GIFs to repos','OPS',null),
-    D(139,'SAT','Rest','Relax','REST',null),
-    D(140,'SUN','Rest','End of Month 5. Three certs!','REST',null),
+    D(139,'SAT','Buffer Day','Relax','REST',null),
+    D(140,'SUN','Buffer Day','End of Month 5. Three certs!','REST',null),
   ]),
   W('w21','MLOps & Docker',[
     D(141,'MON','MLOps Concepts','Model lifecycle management','OPS','c27'),
@@ -387,7 +387,7 @@ export const WEEKS = [
     D(144,'THU','Intro to Docker','Containerize Python script','OPS','c29'),
     D(145,'FRI','Docker-Compose','FastAPI + MLflow compose','OPS','c29'),
     D(146,'SAT','Dockerize App','Dockerize hero project','OPS',null),
-    D(147,'SUN','Rest','Rest','REST',null),
+    D(147,'SUN','Buffer Day','Buffer Day','REST',null),
   ]),
   W('w22','CI/CD & Monitoring',[
     D(148,'MON','CI/CD for ML','Pytest + GitHub Actions','OPS','c30'),
@@ -413,7 +413,7 @@ export const WEEKS = [
     D(164,'WED','Intro Pitch','Perfect "Tell me about yourself"','INT',null),
     D(165,'THU','Project Demo','5-min live hero app walkthrough','INT',null),
     D(166,'FRI','Light Review','1 hour max, no hard studying','INT',null),
-    D(167,'SAT','Rest','Confidence and sleep','REST',null),
+    D(167,'SAT','Buffer Day','Confidence and sleep','REST',null),
     D(168,'SUN','🎯 Target','Trust the 6 months. You are ready.','INT',null),
   ]),
 ];
@@ -435,39 +435,678 @@ export const TAG_COLORS = {
 
 // Math & Theory supplements mapped by day number
 export const DAILY_THEORY = {
-  1:{math:'Big-O notation: O(1) vs O(n) vs O(n²). Why list.append() is O(1) but list.insert(0,x) is O(n).',resource:'https://www.bigocheatsheet.com/'},
-  2:{math:'NumPy broadcasting rules: shapes (3,1)+(1,4)→(3,4). Element-wise vs matrix multiplication.',resource:'https://numpy.org/doc/stable/user/basics.broadcasting.html'},
-  3:{math:'Encapsulation: public vs private attributes. Memory layout of Python objects.',resource:''},
-  8:{math:'Set theory: UNION = A∪B, INTERSECT = A∩B. Relational algebra behind SQL joins.',resource:''},
-  15:{math:'Pandas indexing: .loc (label) vs .iloc (integer). Time complexity of DataFrame operations.',resource:''},
-  29:{math:'Probability: P(A|B) = P(B|A)·P(A)/P(B). Bayes theorem is the foundation of ML.',resource:'https://seeing-theory.brown.edu/'},
-  30:{math:'Variance = E[(X-μ)²]. Standard deviation = √Variance. Z-score = (X-μ)/σ.',resource:''},
-  31:{math:'Pearson r = cov(X,Y)/(σ_X·σ_Y). Range [-1,1]. Correlation ≠ causation!',resource:''},
-  32:{math:'p-value: probability of observing data as extreme as yours, given H₀ is true. α=0.05 threshold.',resource:''},
-  33:{math:'F-statistic = between-group variance / within-group variance. Higher F → more significant.',resource:''},
-  36:{math:'Color theory: HSL vs RGB. Perceptual uniformity in sequential colormaps.',resource:''},
-  43:{math:'Vectors: dot product a·b = |a||b|cosθ. Orthogonal when dot product = 0.',resource:'https://www.3blue1brown.com/topics/linear-algebra'},
-  44:{math:'Eigenvalues λ: Av = λv. PCA finds eigenvectors of covariance matrix for dimensionality reduction.',resource:''},
-  50:{math:'StandardScaler: z = (x-μ)/σ. MinMaxScaler: x_norm = (x-min)/(max-min). When to use which.',resource:''},
-  51:{math:'One-hot encoding creates orthogonal binary vectors. Label encoding assumes ordinal relationship.',resource:''},
-  57:{math:'Linear regression: y = Xβ + ε. OLS minimizes Σ(yᵢ - ŷᵢ)². Gradient: ∂L/∂β = -2Xᵀ(y-Xβ).',resource:''},
-  58:{math:'SVM: maximize margin 2/||w||. Kernel trick: K(x,y) = φ(x)·φ(y). RBF kernel for non-linear.',resource:''},
-  59:{math:'Precision = TP/(TP+FP). Recall = TP/(TP+FN). F1 = 2·P·R/(P+R). AUC = area under ROC curve.',resource:''},
-  64:{math:'Information Gain = H(parent) - Σ(wᵢ·H(childᵢ)). Entropy H = -Σpᵢ·log₂(pᵢ). Gini = 1-Σpᵢ².',resource:''},
-  66:{math:'Gradient Boosting: F_m(x) = F_{m-1}(x) + η·h_m(x). Learning rate η controls step size.',resource:''},
-  67:{math:'Cross-validation: K-Fold splits data K ways. Bias-variance tradeoff in model selection.',resource:''},
-  85:{math:'Backpropagation: chain rule ∂L/∂w = ∂L/∂a · ∂a/∂z · ∂z/∂w. Autograd computes this automatically.',resource:'https://karpathy.github.io/neuralnets/'},
-  86:{math:'Universal Approximation Theorem: a NN with 1 hidden layer can approximate any continuous function.',resource:''},
-  88:{math:'Convolution: (f*g)(t) = ∫f(τ)g(t-τ)dτ. In CNNs: output[i,j] = Σ kernel[m,n]·input[i+m,j+n].',resource:''},
-  92:{math:'TF-IDF: tf(t,d)·log(N/df(t)). High value = term is frequent in doc but rare across corpus.',resource:''},
-  94:{math:'Word2Vec: skip-gram predicts context from center word. Embedding space: king-man+woman≈queen.',resource:''},
-  99:{math:'Transformer: Attention(Q,K,V) = softmax(QKᵀ/√d_k)V. Self-attention captures long-range dependencies.',resource:'https://jalammar.github.io/illustrated-transformer/'},
-  106:{math:'Perplexity = exp(-1/N · Σlog P(wᵢ)). Lower = better language model. Used to evaluate LLMs.',resource:''},
-  108:{math:'Temperature T in softmax: P(xᵢ) = exp(xᵢ/T)/Σexp(xⱼ/T). Low T → confident, High T → creative.',resource:''},
-  109:{math:'Cosine similarity: cos(θ) = (A·B)/(||A||·||B||). Used for semantic search in embedding space.',resource:''},
-  113:{math:'Chain-of-Thought prompting: breaking complex reasoning into steps improves LLM accuracy by 20-40%.',resource:''},
-  116:{math:'RAG retrieval: top-k nearest neighbors in embedding space. HNSW algorithm for approximate NN search.',resource:''},
-  150:{math:'KS test: D = max|F₁(x)-F₂(x)|. Detects distribution shift between training and production data.',resource:''},
+  "1": {
+    "math": "Big-O notation: O(1) vs O(n) vs O(n²). Why list.append() is O(1) but list.insert(0,x) is O(n).",
+    "resource": "https://www.bigocheatsheet.com/"
+  },
+  "2": {
+    "math": "NumPy broadcasting rules: shapes (3,1)+(1,4)→(3,4). Element-wise vs matrix multiplication.",
+    "resource": "https://numpy.org/doc/stable/user/basics.broadcasting.html"
+  },
+  "3": {
+    "math": "Encapsulation: public vs private attributes. Memory layout of Python objects.",
+    "resource": "https://docs.python.org/3/tutorial/classes.html"
+  },
+  "4": {
+    "math": "Method Resolution Order (MRO) via C3 Linearization in multiple inheritance.",
+    "resource": "https://www.python.org/download/releases/2.3/mro/"
+  },
+  "5": {
+    "math": "Virtual Environments isolate site-packages. sys.path determines module resolution order.",
+    "resource": "https://docs.python.org/3/tutorial/venv.html"
+  },
+  "6": {
+    "math": "Parsing complexity: O(n) scan vs O(n log n) sorting. Hash maps for O(1) lookups.",
+    "resource": "https://en.wikipedia.org/wiki/Hash_table"
+  },
+  "7": {
+    "math": "REST Protocol: Sleep consolidates memory by replaying neural firing patterns in the hippocampus.",
+    "resource": "https://www.nih.gov/news-events/nih-research-matters/how-sleep-clears-brain"
+  },
+  "8": {
+    "math": "Set theory: UNION = A∪B, INTERSECT = A∩B. Relational algebra behind SQL joins.",
+    "resource": "https://en.wikipedia.org/wiki/Relational_algebra"
+  },
+  "9": {
+    "math": "Cartesian Product: Cross join creates N×M rows. Inner join filters this via predicate logic.",
+    "resource": "https://www.sqlitetutorial.net/sqlite-cross-join/"
+  },
+  "10": {
+    "math": "De Morgan’s Laws: NOT (A OR B) = (NOT A) AND (NOT B). Useful for complex WHERE clauses.",
+    "resource": "https://en.wikipedia.org/wiki/De_Morgan%27s_laws"
+  },
+  "11": {
+    "math": "Connection Pools reduce the overhead of TCP handshakes when talking to a database.",
+    "resource": "https://en.wikipedia.org/wiki/Connection_pool"
+  },
+  "12": {
+    "math": "ETL complexity: network bandwidth is usually the bottleneck over CPU.",
+    "resource": "https://aws.amazon.com/what-is/etl/"
+  },
+  "13": {
+    "math": "B-Trees: SQL indexes use balanced trees allowing O(log n) lookups instead of O(n) scans.",
+    "resource": "https://use-the-index-luke.com/sql/anatomy"
+  },
+  "14": {
+    "math": "REST Protocol: Spaced repetition strengthens synapses. Rest helps prevent retroactive interference.",
+    "resource": "https://en.wikipedia.org/wiki/Spaced_repetition"
+  },
+  "15": {
+    "math": "Pandas indexing: .loc (label) vs .iloc (integer). Column-major memory layout optimizes columnar math.",
+    "resource": "https://pandas.pydata.org/docs/user_guide/indexing.html"
+  },
+  "16": {
+    "math": "Split-Apply-Combine: Hash-based grouping operates in O(N) time expected.",
+    "resource": "https://pandas.pydata.org/docs/user_guide/groupby.html"
+  },
+  "17": {
+    "math": "Missing Data Mechanisms: MCAR vs MAR vs MNAR. Mean imputation reduces natural variance.",
+    "resource": "https://en.wikipedia.org/wiki/Missing_data"
+  },
+  "18": {
+    "math": "Regex Finite Automata: regular expressions compile to NDFA/DFAs for O(N) matching.",
+    "resource": "https://swtch.com/~rsc/regexp/regexp1.html"
+  },
+  "19": {
+    "math": "Pipeline DAGs: Directed Acyclic Graphs represent execution order of transformations.",
+    "resource": "https://en.wikipedia.org/wiki/Directed_acyclic_graph"
+  },
+  "20": {
+    "math": "Data engineering: Time complexity of dropping duplicates is O(N) using a hash table.",
+    "resource": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop_duplicates.html"
+  },
+  "21": {
+    "math": "Git uses Merkle Trees (Directed Acyclic Graphs) to track history efficiently.",
+    "resource": "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects"
+  },
+  "22": {
+    "math": "Window Functions calculate over partitions without collapsing rows. O(N log N) due to sorting.",
+    "resource": "https://www.postgresql.org/docs/current/tutorial-window.html"
+  },
+  "23": {
+    "math": "Vectorization in Pandas uses C-level contiguous arrays to bypass Python’s Global Interpreter Lock (GIL).",
+    "resource": "https://realpython.com/numpy-array-programming/"
+  },
+  "24": {
+    "math": "Test-taking strategy: Eliminate obviously wrong answers to improve expected value of guessing.",
+    "resource": "https://en.wikipedia.org/wiki/Expected_value"
+  },
+  "25": {
+    "math": "Timed pressure affects working memory. Breathe to reduce cortisol levels.",
+    "resource": "https://hbr.org/2015/12/calm-your-brain-during-an-anxious-moment"
+  },
+  "26": {
+    "math": "Practical exams test applied knowledge. Think in functions to keep scope clean.",
+    "resource": "https://en.wikipedia.org/wiki/Pure_function"
+  },
+  "27": {
+    "math": "Network effect: Value of a network is proportional to the square of the number of users (Metcalfe’s Law).",
+    "resource": "https://en.wikipedia.org/wiki/Metcalfe%27s_law"
+  },
+  "28": {
+    "math": "REST Protocol: Taking a full day off resets dopamine baseline, increasing motivation.",
+    "resource": "https://hubermanlab.com/controlling-your-dopamine-for-motivation-focus-and-satisfaction/"
+  },
+  "29": {
+    "math": "Probability: P(A|B) = P(B|A)·P(A)/P(B). Bayes theorem is the foundation of ML.",
+    "resource": "https://seeing-theory.brown.edu/bayesian-inference/index.html"
+  },
+  "30": {
+    "math": "Variance = E[(X-μ)²]. Standard deviation = √Variance. Z-score = (X-μ)/σ.",
+    "resource": "https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data"
+  },
+  "31": {
+    "math": "Pearson r = cov(X,Y)/(σ_X·σ_Y). Range [-1,1]. Correlation ≠ causation!",
+    "resource": "https://en.wikipedia.org/wiki/Pearson_correlation_coefficient"
+  },
+  "32": {
+    "math": "p-value: probability of observing data as extreme as yours, given H₀ is true. α=0.05 threshold.",
+    "resource": "https://www.nature.com/articles/nmeth.3288"
+  },
+  "33": {
+    "math": "F-statistic = between-group variance / within-group variance. Higher F → more significant.",
+    "resource": "https://en.wikipedia.org/wiki/F-test"
+  },
+  "34": {
+    "math": "Statistical Power (1-β) is the probability of rejecting a false null hypothesis.",
+    "resource": "https://en.wikipedia.org/wiki/Power_of_a_test"
+  },
+  "35": {
+    "math": "REST Protocol: Deep sleep promotes the glymphatic system to clear brain neurotoxins.",
+    "resource": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4636982/"
+  },
+  "36": {
+    "math": "Color theory: HSL vs RGB. Perceptual uniformity in sequential colormaps.",
+    "resource": "https://matplotlib.org/stable/tutorials/colors/colormaps.html"
+  },
+  "37": {
+    "math": "Interquartile Range (IQR) = Q3 - Q1. Robust to outliers compared to standard deviation.",
+    "resource": "https://en.wikipedia.org/wiki/Interquartile_range"
+  },
+  "38": {
+    "math": "Curse of Dimensionality: Volume of space increases exponentially, making data sparse.",
+    "resource": "https://en.wikipedia.org/wiki/Curse_of_dimensionality"
+  },
+  "39": {
+    "math": "Anscombe’s Quartet: Four datasets with identical summary statistics but drastically different graphs.",
+    "resource": "https://en.wikipedia.org/wiki/Anscombe%27s_quartet"
+  },
+  "40": {
+    "math": "Feature Engineering: Log transform normalizes right-skewed data distributions.",
+    "resource": "https://scikit-learn.org/stable/modules/preprocessing.html#mapping-to-a-gaussian-distribution"
+  },
+  "41": {
+    "math": "Simpson’s Paradox: A trend appears in several groups but disappears when combined.",
+    "resource": "https://en.wikipedia.org/wiki/Simpson%27s_paradox"
+  },
+  "42": {
+    "math": "Documentation reduces technical debt, which compounds like financial interest.",
+    "resource": "https://en.wikipedia.org/wiki/Technical_debt"
+  },
+  "43": {
+    "math": "Vectors: dot product a·b = |a||b|cosθ. Orthogonal when dot product = 0.",
+    "resource": "https://www.3blue1brown.com/topics/linear-algebra"
+  },
+  "44": {
+    "math": "Eigenvalues λ: Av = λv. PCA finds eigenvectors of covariance matrix for dimensionality reduction.",
+    "resource": "https://setosa.io/ev/principal-component-analysis/"
+  },
+  "45": {
+    "math": "SVD: A = UΣVᵀ. Generalizes eigendecomposition to non-square matrices.",
+    "resource": "https://en.wikipedia.org/wiki/Singular_value_decomposition"
+  },
+  "46": {
+    "math": "Gradient: Vector of partial derivatives points in direction of steepest ascent.",
+    "resource": "https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/gradient-and-directional-derivatives/v/gradient"
+  },
+  "47": {
+    "math": "Dependency resolution is an NP-hard problem. Package managers use SAT solvers.",
+    "resource": "https://research.swtch.com/vgo-principles"
+  },
+  "48": {
+    "math": "Formative assessment provides active recall, which is 3x more effective than re-reading.",
+    "resource": "https://en.wikipedia.org/wiki/Testing_effect"
+  },
+  "49": {
+    "math": "REST Protocol: Diffuse mode thinking (walking, resting) solves complex problems better than focused mode.",
+    "resource": "https://www.coursera.org/learn/learning-how-to-learn"
+  },
+  "50": {
+    "math": "StandardScaler: z = (x-μ)/σ. MinMaxScaler: x_norm = (x-min)/(max-min). When to use which.",
+    "resource": "https://scikit-learn.org/stable/auto_examples/preprocessing/plot_all_scaling.html"
+  },
+  "51": {
+    "math": "One-hot encoding creates orthogonal binary vectors. Label encoding assumes ordinal relationship.",
+    "resource": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html"
+  },
+  "52": {
+    "math": "KNN Imputation: Uses Euclidean distance √(Σ(pᵢ-qᵢ)²) to find similar rows.",
+    "resource": "https://scikit-learn.org/stable/modules/impute.html#knnimpute"
+  },
+  "53": {
+    "math": "Variance Threshold: Var(X) = p(1-p) for boolean features. Low variance features add noise.",
+    "resource": "https://scikit-learn.org/stable/modules/feature_selection.html#variance-threshold"
+  },
+  "54": {
+    "math": "Data Leakage: Fitting a scaler on the whole dataset before train/test split biases results.",
+    "resource": "https://scikit-learn.org/stable/common_pitfalls.html#data-leakage"
+  },
+  "55": {
+    "math": "Commit atomic changes. A git commit is an immutable snapshot of the working tree.",
+    "resource": "https://www.conventionalcommits.org/en/v1.0.0/"
+  },
+  "56": {
+    "math": "REST Protocol: Consistency over intensity. 1 hour a day beats 7 hours on Sunday.",
+    "resource": "https://jamesclear.com/marginal-gains"
+  },
+  "57": {
+    "math": "Linear regression: y = Xβ + ε. OLS minimizes Σ(yᵢ - ŷᵢ)². Gradient: ∂L/∂β = -2Xᵀ(y-Xβ).",
+    "resource": "https://www.statquest.org/video-index/"
+  },
+  "58": {
+    "math": "SVM: maximize margin 2/||w||. Kernel trick: K(x,y) = φ(x)·φ(y). RBF kernel for non-linear.",
+    "resource": "https://en.wikipedia.org/wiki/Support-vector_machine"
+  },
+  "59": {
+    "math": "Regularization: L1 (Lasso) uses absolute values |w|, leading to sparse weights (feature selection).",
+    "resource": "https://developers.google.com/machine-learning/crash-course/regularization-for-sparsity/l1-regularization"
+  },
+  "60": {
+    "math": "Precision = TP/(TP+FP). Recall = TP/(TP+FN). F1 = 2·P·R/(P+R). AUC = area under ROC curve.",
+    "resource": "https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall"
+  },
+  "61": {
+    "math": "K-Means minimizes within-cluster sum of squares. It is NP-hard, solved via Lloyd’s heuristic.",
+    "resource": "https://en.wikipedia.org/wiki/K-means_clustering"
+  },
+  "62": {
+    "math": "Log-loss (Cross-Entropy): H(p,q) = -Σ p(x)log q(x). Strongly penalizes confident wrong predictions.",
+    "resource": "https://ml-cheatsheet.readthedocs.io/en/latest/loss_functions.html"
+  },
+  "63": {
+    "math": "REST Protocol: Active recovery. Read something completely unrelated to AI today.",
+    "resource": "https://en.wikipedia.org/wiki/Active_recovery"
+  },
+  "64": {
+    "math": "Information Gain = H(parent) - Σ(wᵢ·H(childᵢ)). Entropy H = -Σpᵢ·log₂(pᵢ). Gini = 1-Σpᵢ².",
+    "resource": "https://en.wikipedia.org/wiki/Decision_tree_learning"
+  },
+  "65": {
+    "math": "Random Forests use Bagging (Bootstrap Aggregating) to reduce variance of single trees.",
+    "resource": "https://en.wikipedia.org/wiki/Random_forest"
+  },
+  "66": {
+    "math": "Gradient Boosting: F_m(x) = F_{m-1}(x) + η·h_m(x). Learning rate η controls step size.",
+    "resource": "https://xgboost.readthedocs.io/en/stable/tutorials/model.html"
+  },
+  "67": {
+    "math": "Cross-validation: K-Fold splits data K ways. Bias-variance tradeoff in model selection.",
+    "resource": "https://scikit-learn.org/stable/modules/cross_validation.html"
+  },
+  "68": {
+    "math": "Model Stacking: A meta-model learns how to best combine the predictions of base models.",
+    "resource": "https://scikit-learn.org/stable/modules/ensemble.html#stacking"
+  },
+  "69": {
+    "math": "XGBoost uses 2nd order Taylor expansion (Hessian) of the loss function for better splits.",
+    "resource": "https://arxiv.org/abs/1603.02754"
+  },
+  "70": {
+    "math": "Continuous Integration runs automated tests on push, preventing broken code in main.",
+    "resource": "https://docs.github.com/en/actions"
+  },
+  "71": {
+    "math": "Anomaly Detection: Isolation Forest isolates anomalies closer to the root of the tree.",
+    "resource": "https://scikit-learn.org/stable/modules/outlier_detection.html#isolation-forest"
+  },
+  "72": {
+    "math": "Central Limit Theorem: The sum of independent random variables tends toward a normal distribution.",
+    "resource": "https://en.wikipedia.org/wiki/Central_limit_theorem"
+  },
+  "73": {
+    "math": "Data Validation checks constraints (e.g. x > 0). If not, downstream math is garbage.",
+    "resource": "https://pandera.readthedocs.io/en/stable/"
+  },
+  "74": {
+    "math": "GridSearchCV tests Cartesian product of parameters. RandomizedSearchCV tests a random sample.",
+    "resource": "https://scikit-learn.org/stable/modules/grid_search.html"
+  },
+  "75": {
+    "math": "Confidence intervals provide a range of plausible values for an unknown parameter.",
+    "resource": "https://en.wikipedia.org/wiki/Confidence_interval"
+  },
+  "76": {
+    "math": "The Dunning-Kruger effect: Confidence dips as you learn more. Trust your preparation.",
+    "resource": "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect"
+  },
+  "77": {
+    "math": "REST Protocol: Hydration affects cognitive performance. Drink water!",
+    "resource": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2908954/"
+  },
+  "78": {
+    "math": "Time management is an optimization problem (Knapsack). Maximize points within time limit.",
+    "resource": "https://en.wikipedia.org/wiki/Knapsack_problem"
+  },
+  "79": {
+    "math": "A confusion matrix mathematically summarizes Type I (FP) and Type II (FN) errors.",
+    "resource": "https://en.wikipedia.org/wiki/Confusion_matrix"
+  },
+  "80": {
+    "math": "Read the problem statement twice. Misunderstanding requirements causes 100% loss.",
+    "resource": "https://en.wikipedia.org/wiki/Reading_comprehension"
+  },
+  "81": {
+    "math": "Heuristics vs Optimization: A good heuristic is faster than a perfect optimization during an exam.",
+    "resource": "https://en.wikipedia.org/wiki/Heuristic_(computer_science)"
+  },
+  "82": {
+    "math": "Social Proof: Displaying credentials mathematically increases response rate from recruiters.",
+    "resource": "https://en.wikipedia.org/wiki/Social_proof"
+  },
+  "83": {
+    "math": "Tensors are n-dimensional arrays. A scalar is 0D, vector 1D, matrix 2D.",
+    "resource": "https://pytorch.org/tutorials/beginner/blitz/tensor_tutorial.html"
+  },
+  "84": {
+    "math": "REST Protocol: Celebrate wins. Dopamine reinforcement ensures you continue the habit.",
+    "resource": "https://hubermanlab.com/dopamine-mindset-and-drive/"
+  },
+  "85": {
+    "math": "Backpropagation: chain rule ∂L/∂w = ∂L/∂a · ∂a/∂z · ∂z/∂w. Autograd computes this automatically.",
+    "resource": "https://karpathy.github.io/neuralnets/"
+  },
+  "86": {
+    "math": "Universal Approximation Theorem: a NN with 1 hidden layer can approximate any continuous function.",
+    "resource": "https://en.wikipedia.org/wiki/Universal_approximation_theorem"
+  },
+  "87": {
+    "math": "Adam Optimizer uses momentum (moving average of gradients) to escape local minima.",
+    "resource": "https://arxiv.org/abs/1412.6980"
+  },
+  "88": {
+    "math": "Convolution: (f*g)(t) = ∫f(τ)g(t-τ)dτ. In CNNs: output[i,j] = Σ kernel[m,n]·input[i+m,j+n].",
+    "resource": "https://cs231n.github.io/convolutional-networks/"
+  },
+  "89": {
+    "math": "Max Pooling introduces translation invariance and reduces spatial dimensions exponentially.",
+    "resource": "https://paperswithcode.com/method/max-pooling"
+  },
+  "90": {
+    "math": "Transfer Learning works because early layers learn universal features (edges, colors).",
+    "resource": "https://cs231n.github.io/transfer-learning/"
+  },
+  "91": {
+    "math": "Data Augmentation mathematically acts as a regularizer by expanding the training manifold.",
+    "resource": "https://pytorch.org/vision/stable/transforms.html"
+  },
+  "92": {
+    "math": "Tokenization converts string manifolds into discrete integer spaces.",
+    "resource": "https://huggingface.co/docs/transformers/tokenizer_summary"
+  },
+  "93": {
+    "math": "TF-IDF: tf(t,d)·log(N/df(t)). High value = term is frequent in doc but rare across corpus.",
+    "resource": "https://en.wikipedia.org/wiki/Tf%E2%80%93idf"
+  },
+  "94": {
+    "math": "Word2Vec: skip-gram predicts context from center word. Embedding space: king-man+woman≈queen.",
+    "resource": "https://jalammar.github.io/illustrated-word2vec/"
+  },
+  "95": {
+    "math": "Named Entity Recognition is often modeled as a sequence tagging problem (CRFs or LSTMs).",
+    "resource": "https://paperswithcode.com/task/named-entity-recognition-ner"
+  },
+  "96": {
+    "math": "Softmax function squashes vector to [0,1] probabilities summing to 1.",
+    "resource": "https://en.wikipedia.org/wiki/Softmax_function"
+  },
+  "97": {
+    "math": "Attention Is All You Need paper introduced parallelizable attention, replacing sequential LSTMs.",
+    "resource": "https://arxiv.org/abs/1706.03762"
+  },
+  "98": {
+    "math": "A successful project deployment requires reproducible environments (Dockerfile/requirements.txt).",
+    "resource": "https://12factor.net/dependencies"
+  },
+  "99": {
+    "math": "Transformer: Attention(Q,K,V) = softmax(QKᵀ/√d_k)V. Self-attention captures long-range dependencies.",
+    "resource": "https://jalammar.github.io/illustrated-transformer/"
+  },
+  "100": {
+    "math": "LoRA injects low-rank matrices A and B into frozen weights W. W = W + AB. Saves 90% memory.",
+    "resource": "https://arxiv.org/abs/2106.09685"
+  },
+  "101": {
+    "math": "Catastrophic Forgetting: fine-tuning on new data can erase previously learned weights.",
+    "resource": "https://en.wikipedia.org/wiki/Catastrophic_interference"
+  },
+  "102": {
+    "math": "BLEU measures precision of n-grams against reference. ROUGE measures recall.",
+    "resource": "https://huggingface.co/spaces/evaluate-metric/bleu"
+  },
+  "103": {
+    "math": "HuggingFace Hub uses Git LFS (Large File Storage) for multi-GB model weights.",
+    "resource": "https://huggingface.co/docs/hub/models-the-hub"
+  },
+  "104": {
+    "math": "Model Cards provide transparency, documenting bias and expected F1 metrics.",
+    "resource": "https://arxiv.org/abs/1810.03993"
+  },
+  "105": {
+    "math": "REST Protocol: Step away from screens. Eye strain reduces long-term focus.",
+    "resource": "https://www.aao.org/eye-health/tips-prevention/computer-usage"
+  },
+  "106": {
+    "math": "Perplexity = exp(-1/N · Σlog P(wᵢ)). Lower = better language model. Used to evaluate LLMs.",
+    "resource": "https://huggingface.co/docs/transformers/perplexity"
+  },
+  "107": {
+    "math": "Temperature T in softmax: P(xᵢ) = exp(xᵢ/T)/Σexp(xⱼ/T). Low T → confident, High T → creative.",
+    "resource": "https://lukesalamone.github.io/posts/what-is-temperature/"
+  },
+  "108": {
+    "math": "Few-shot prompting provides priors to the LLM, shifting its internal probability distribution.",
+    "resource": "https://www.promptingguide.ai/techniques/fewshot"
+  },
+  "109": {
+    "math": "Cosine similarity: cos(θ) = (A·B)/(||A||·||B||). Used for semantic search in embedding space.",
+    "resource": "https://en.wikipedia.org/wiki/Cosine_similarity"
+  },
+  "110": {
+    "math": "Approximate Nearest Neighbors (ANN) uses graphs (HNSW) to search vectors in O(log N) time.",
+    "resource": "https://arxiv.org/abs/1603.09320"
+  },
+  "111": {
+    "math": "Vector Databases store dense vectors and use inverted file index (IVF) to accelerate queries.",
+    "resource": "https://milvus.io/docs/index.md"
+  },
+  "112": {
+    "math": "REST Protocol: Growth happens during rest, not during the workout.",
+    "resource": "https://en.wikipedia.org/wiki/Supercompensation"
+  },
+  "113": {
+    "math": "LangChain chains link input variables sequentially to LLM calls.",
+    "resource": "https://python.langchain.com/docs/get_started/introduction"
+  },
+  "114": {
+    "math": "Conversational Memory grows context linearly O(N), which quadratically O(N²) slows down Transformers.",
+    "resource": "https://arxiv.org/abs/2304.11062"
+  },
+  "115": {
+    "math": "Text chunking strategy: overlap chunks to prevent cutting semantic context exactly at borders.",
+    "resource": "https://www.pinecone.io/learn/chunking-strategies/"
+  },
+  "116": {
+    "math": "RAG retrieval: top-k nearest neighbors in embedding space mitigates LLM hallucinations.",
+    "resource": "https://arxiv.org/abs/2005.11401"
+  },
+  "117": {
+    "math": "ReAct (Reasoning and Acting) loops let LLMs use tools until a termination condition is met.",
+    "resource": "https://arxiv.org/abs/2210.03629"
+  },
+  "118": {
+    "math": "FastAPI uses Starlette and Pydantic for asynchronous IO and data validation.",
+    "resource": "https://fastapi.tiangolo.com/"
+  },
+  "119": {
+    "math": "REST Protocol: Sleep deprivation mathematically decreases working memory capacity by 40%.",
+    "resource": "https://www.nih.gov/news-events/nih-research-matters/sleep-deprivation-affects-memory"
+  },
+  "120": {
+    "math": "Streamlit runs the entire script top-to-bottom on every interaction.",
+    "resource": "https://docs.streamlit.io/library/get-started/main-concepts"
+  },
+  "121": {
+    "math": "React Virtual DOM calculates minimal DOM diffs in O(n) using heuristic tree traversal.",
+    "resource": "https://react.dev/learn/preserving-and-resetting-state"
+  },
+  "122": {
+    "math": "REST APIs use HTTP verbs (GET, POST). JSON parsing is O(N) where N is string length.",
+    "resource": "https://restfulapi.net/"
+  },
+  "123": {
+    "math": "Server-Sent Events (SSE) allows unidirectional streaming of LLM tokens over one HTTP connection.",
+    "resource": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events"
+  },
+  "124": {
+    "math": "CORS (Cross-Origin Resource Sharing) prevents malicious sites from calling your API.",
+    "resource": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS"
+  },
+  "125": {
+    "math": "Feynman Technique: If you can write a simple blog post about it, you understand it.",
+    "resource": "https://fs.blog/feynman-technique/"
+  },
+  "126": {
+    "math": "REST Protocol: The brain physically restructures synapses during downtime.",
+    "resource": "https://en.wikipedia.org/wiki/Neuroplasticity"
+  },
+  "127": {
+    "math": "Scaling Laws: LLM performance scales predictably as a power law of parameters and dataset size.",
+    "resource": "https://arxiv.org/abs/2001.08361"
+  },
+  "128": {
+    "math": "Data Privacy: PII redaction models use NER to mask sensitive tokens.",
+    "resource": "https://presidio.microsoft.com/"
+  },
+  "129": {
+    "math": "Recall is more important than Precision when trying to ensure you cover all exam topics.",
+    "resource": "https://towardsdatascience.com/precision-vs-recall-386cf9f89488"
+  },
+  "130": {
+    "math": "Exponential Backoff: Retry failed requests at intervals 2^c to avoid overwhelming the API.",
+    "resource": "https://en.wikipedia.org/wiki/Exponential_backoff"
+  },
+  "131": {
+    "math": "Targeted review: Focusing on lowest scoring areas provides the highest marginal return on time.",
+    "resource": "https://en.wikipedia.org/wiki/Marginal_utility"
+  },
+  "132": {
+    "math": "REST Protocol: Lowering cortisol levels the day before an exam improves recall.",
+    "resource": "https://www.apa.org/news/press/releases/stress/"
+  },
+  "133": {
+    "math": "Environmental consistency: Testing in the same environment you study in improves recall.",
+    "resource": "https://en.wikipedia.org/wiki/Context-dependent_memory"
+  },
+  "134": {
+    "math": "Pacing = Total Time / Total Questions. If pacing drops, guess and move on.",
+    "resource": "https://blog.prepscholar.com/time-management-strategies-for-the-sat"
+  },
+  "135": {
+    "math": "Edge cases in practicals: check for nulls, divide-by-zero, and out-of-bounds indices.",
+    "resource": "https://en.wikipedia.org/wiki/Edge_case"
+  },
+  "136": {
+    "math": "Algorithms power LinkedIn feeds. Posting with images/video gets higher engagement weight.",
+    "resource": "https://engineering.linkedin.com/blog"
+  },
+  "137": {
+    "math": "Docker uses Linux cgroups to limit CPU/RAM, and namespaces to isolate processes.",
+    "resource": "https://docs.docker.com/get-started/overview/"
+  },
+  "138": {
+    "math": "Readme quality correlates highly with GitHub repo stars and recruiter callbacks.",
+    "resource": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes"
+  },
+  "139": {
+    "math": "REST Protocol: Complete detachment from work reduces burnout probability.",
+    "resource": "https://hbr.org/2017/12/to-recover-from-burnout-you-need-to-detach"
+  },
+  "140": {
+    "math": "REST Protocol: Month 5 completed. The compound interest of daily learning is immense.",
+    "resource": "https://jamesclear.com/continuous-improvement"
+  },
+  "141": {
+    "math": "MLOps Lifecycle: Data prep → Model training → Registry → Serving → Monitoring.",
+    "resource": "https://ml-ops.org/"
+  },
+  "142": {
+    "math": "Hyperparameter tuning spaces grow exponentially. MLflow tracks this high-dimensional search.",
+    "resource": "https://mlflow.org/docs/latest/tracking.html"
+  },
+  "143": {
+    "math": "Model Registry acts as the source of truth, tracking transitions (Staging → Production).",
+    "resource": "https://mlflow.org/docs/latest/model-registry.html"
+  },
+  "144": {
+    "math": "Docker Images are built from layered file systems (UnionFS). Order of Dockerfile matters!",
+    "resource": "https://docs.docker.com/build/cache/"
+  },
+  "145": {
+    "math": "Docker Compose networking automatically creates a DNS namespace for inter-container routing.",
+    "resource": "https://docs.docker.com/compose/networking/"
+  },
+  "146": {
+    "math": "Gunicorn/Uvicorn: WSGI/ASGI servers manage concurrent worker processes for throughput.",
+    "resource": "https://www.uvicorn.org/"
+  },
+  "147": {
+    "math": "REST Protocol: Visualizing success primes the brain’s reticular activating system.",
+    "resource": "https://en.wikipedia.org/wiki/Reticular_activating_system"
+  },
+  "148": {
+    "math": "CI/CD DAGs: Jobs run in parallel unless defined sequentially to minimize total build time.",
+    "resource": "https://docs.gitlab.com/ee/ci/pipelines/pipeline_architectures.html"
+  },
+  "149": {
+    "math": "Automated retraining reduces manual toil (O(1) human effort vs O(N) model updates).",
+    "resource": "https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning"
+  },
+  "150": {
+    "math": "KS test: D = max|F₁(x)-F₂(x)|. Detects distribution shift between training and production data.",
+    "resource": "https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test"
+  },
+  "151": {
+    "math": "Population Stability Index (PSI) measures how much a variable has shifted over time.",
+    "resource": "https://mwouts.github.io/itables/psi.html"
+  },
+  "152": {
+    "math": "Completing a program puts you in the top 5% of starters. Execution is everything.",
+    "resource": "https://fourminutebooks.com/execution-is-everything/"
+  },
+  "153": {
+    "math": "ATS (Applicant Tracking Systems) use TF-IDF or vector embeddings to match resumes to JDs.",
+    "resource": "https://en.wikipedia.org/wiki/Applicant_tracking_system"
+  },
+  "154": {
+    "math": "Job hunting is a numbers game. Law of Large Numbers dictates eventual success.",
+    "resource": "https://en.wikipedia.org/wiki/Law_of_large_numbers"
+  },
+  "155": {
+    "math": "Python `dict` lookup is O(1) on average. Under the hood, it uses an open-addressing hash table.",
+    "resource": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries"
+  },
+  "156": {
+    "math": "ML Interview: Be able to derive linear regression OLS on a whiteboard.",
+    "resource": "https://web.stanford.edu/~mrosenfe/soc_meth_proj3/matrix_OLS_NYU_notes.pdf"
+  },
+  "157": {
+    "math": "System Design: Estimate QPS, bandwidth, and storage limits. (e.g. 100M users * 1MB = 100TB).",
+    "resource": "https://github.com/donnemartin/system-design-primer"
+  },
+  "158": {
+    "math": "Explain concepts in 3 levels: to a 5-year old, to a peer, and to a senior engineer.",
+    "resource": "https://en.wikipedia.org/wiki/The_Feynman_Technique"
+  },
+  "159": {
+    "math": "Two Pointers technique solves array sequence problems in O(N) time with O(1) space.",
+    "resource": "https://leetcode.com/articles/two-pointer-technique/"
+  },
+  "160": {
+    "math": "STAR Method: Situation, Task, Action, Result. Keeps answers concise and impact-driven.",
+    "resource": "https://en.wikipedia.org/wiki/Situation,_task,_action,_result"
+  },
+  "161": {
+    "math": "Warm intros convert 10x higher than cold applications. Network graph density matters.",
+    "resource": "https://en.wikipedia.org/wiki/Social_network_analysis"
+  },
+  "162": {
+    "math": "Mock interviews desensitize the amygdala to the stress response of live coding.",
+    "resource": "https://en.wikipedia.org/wiki/Systematic_desensitization"
+  },
+  "163": {
+    "math": "Feedback loops: receiving external critique fixes blind spots in your knowledge graph.",
+    "resource": "https://fs.blog/feedback-loops/"
+  },
+  "164": {
+    "math": "First impressions anchor the interviewer’s perception (Anchoring Bias). Nail the intro.",
+    "resource": "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)"
+  },
+  "165": {
+    "math": "A live demo proves execution capability, bypassing traditional signaling (degrees).",
+    "resource": "https://en.wikipedia.org/wiki/Signalling_(economics)"
+  },
+  "166": {
+    "math": "Cramming uses short-term memory buffers which decay rapidly and cause fatigue.",
+    "resource": "https://en.wikipedia.org/wiki/Forgetting_curve"
+  },
+  "167": {
+    "math": "REST Protocol: Maximum cognitive performance requires minimal stress and high sleep.",
+    "resource": "https://www.sleepfoundation.org/how-sleep-works/memory-and-sleep"
+  },
+  "168": {
+    "math": "The journey from day 1 to 168 represents exponential growth. Go get the job.",
+    "resource": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
+  }
 };
 
 export const HOW_TO_USE = [
@@ -530,4 +1169,255 @@ export const INTERVIEW_RESOURCES = {
     { name:'Exponent ML Interview', url:'https://www.tryexponent.com/practice/ml', type:'ML-Specific' },
     { name:'DataCamp Interview Qs', url:'https://www.datacamp.com/blog/top-machine-learning-interview-questions', type:'Question Bank' },
   ],
+};
+
+export const DAY_INSTRUCTIONS = {
+  "5": {
+    "type": "setup",
+    "title": "Local Environment Setup",
+    "content": [
+      {
+        "title": "Install Python 3.10+",
+        "cmd": "brew install python",
+        "note": "Ensure Python is added to your PATH."
+      },
+      {
+        "title": "Create Virtual Environment",
+        "cmd": "python -m venv venv",
+        "note": "Keeps project dependencies isolated."
+      },
+      {
+        "title": "Activate Virtual Environment",
+        "cmd": "source venv/bin/activate",
+        "note": "Run this every time you open a new terminal."
+      },
+      {
+        "title": "Install Requirements",
+        "cmd": "pip install -r requirements.txt",
+        "note": "Or install pandas, numpy, etc. manually."
+      }
+    ]
+  },
+  "6": {
+    "type": "practice",
+    "title": "Python Basics - Challenges",
+    "content": [
+      {
+        "topic": "Data Types",
+        "difficulty": "Easy",
+        "q": "Write a function that takes a string and returns a dictionary with the frequency of each character."
+      },
+      {
+        "topic": "Control Flow",
+        "difficulty": "Medium",
+        "q": "Implement a list comprehension that returns all prime numbers between 1 and 100."
+      }
+    ]
+  },
+  "7": {
+    "type": "rest",
+    "title": "Week 1 Complete: Buffer / Integration Day",
+    "content": "You have conquered Python Basics! Take today to step away from the IDE. Go for a walk and let the syntax structures consolidate in your memory."
+  },
+  "13": {
+    "type": "setup",
+    "title": "SQLite Database Setup",
+    "content": [
+      {
+        "title": "Install SQLite3",
+        "cmd": "brew install sqlite",
+        "note": "Mac usually comes with it, but good to ensure latest."
+      },
+      {
+        "title": "Create Database File",
+        "cmd": "sqlite3 mydatabase.db",
+        "note": "This opens the sqlite prompt and creates the file."
+      },
+      {
+        "title": "Python sqlite3 Module",
+        "cmd": "import sqlite3\nconn = sqlite3.connect(\"mydatabase.db\")",
+        "note": "Use this in your Python scripts to connect."
+      }
+    ]
+  },
+  "14": {
+    "type": "rest",
+    "title": "Week 2 Complete: Buffer / Integration Day",
+    "content": "Object-Oriented Programming fundamentally changes how you model problems. Close the laptop today; your brain is actively rewiring itself to think in objects."
+  },
+  "28": {
+    "type": "rest",
+    "title": "Month 1 Complete: Buffer / Integration Day",
+    "content": "You can now visually tell stories with data using Pandas and Matplotlib. Give your visual cortex a rest today by listening to a podcast instead of looking at screens."
+  },
+  "34": {
+    "type": "practice",
+    "title": "Data Manipulation - Challenges",
+    "content": [
+      {
+        "topic": "Pandas",
+        "difficulty": "Medium",
+        "q": "Given a DataFrame, use groupby and agg to find the sum and mean of \"sales\" per \"region\"."
+      },
+      {
+        "topic": "SQL",
+        "difficulty": "Hard",
+        "q": "Write an INNER JOIN query that filters out any rows where the customer account is inactive."
+      }
+    ]
+  },
+  "35": {
+    "type": "rest",
+    "title": "Week 5 Complete: Buffer / Integration Day",
+    "content": "Relational algebra is heavy on working memory. You have finished your first month! Take a full 24 hours off. No coding allowed."
+  },
+  "49": {
+    "type": "rest",
+    "title": "Week 7 Complete: Buffer / Integration Day",
+    "content": "Version control and terminal mastery separate juniors from mid-level engineers. You are leveling up. Relax your posture today."
+  },
+  "54": {
+    "type": "practice",
+    "title": "ML Pipeline - Challenges",
+    "content": [
+      {
+        "topic": "Scikit-Learn",
+        "difficulty": "Medium",
+        "q": "Build a Pipeline that applies StandardScaler then a LogisticRegression model."
+      },
+      {
+        "topic": "Metrics",
+        "difficulty": "Hard",
+        "q": "Write the code to plot an ROC curve and calculate the AUC score."
+      }
+    ]
+  },
+  "55": {
+    "type": "setup",
+    "title": "Git & GitHub Setup",
+    "content": [
+      {
+        "title": "Initialize Git",
+        "cmd": "git init",
+        "note": "Turns your current directory into a repository."
+      },
+      {
+        "title": "Add Remote Origin",
+        "cmd": "git remote add origin https://github.com/username/repo.git",
+        "note": "Links your local repo to GitHub."
+      },
+      {
+        "title": "Commit & Push",
+        "cmd": "git add .\ngit commit -m \"initial commit\"\ngit push -u origin main",
+        "note": "Pushes your code to the cloud."
+      }
+    ]
+  },
+  "56": {
+    "type": "rest",
+    "title": "Week 8 Complete: Buffer / Integration Day",
+    "content": "Welcome to Machine Learning. You have built your first predictive model. Let the math settle. Sleep is paramount tonight."
+  },
+  "63": {
+    "type": "rest",
+    "title": "Week 9 Complete: Buffer / Integration Day",
+    "content": "Ensemble methods are the workhorses of industry ML. Your foundational knowledge is solidifying. Take a complete mental break today."
+  },
+  "77": {
+    "type": "rest",
+    "title": "Week 11 Complete: Buffer / Integration Day",
+    "content": "Dimensionality reduction is conceptually difficult. You made it through. Hydrate, stretch, and step away from the keyboard."
+  },
+  "84": {
+    "type": "rest",
+    "title": "Week 12 Complete: Buffer / Integration Day",
+    "content": "You are exactly halfway through the 6-month roadmap, and you just entered Deep Learning! Massive congratulations. Enjoy this milestone rest day."
+  },
+  "105": {
+    "type": "rest",
+    "title": "Week 15 Complete: Buffer / Integration Day",
+    "content": "Fine-tuning LLMs is a highly sought-after skill. Your market value is rapidly increasing. Relax and let the dopamine hit."
+  },
+  "112": {
+    "type": "rest",
+    "title": "Week 16 Complete: Buffer / Integration Day",
+    "content": "RAG is the most deployed enterprise AI architecture today. You are learning highly practical skills. Disconnect for 24 hours."
+  },
+  "119": {
+    "type": "rest",
+    "title": "Week 17 Complete: Buffer / Integration Day",
+    "content": "Agentic workflows represent the cutting edge of AI capabilities. Your mind has expanded this week. Rest is mandatory."
+  },
+  "121": {
+    "type": "setup",
+    "title": "React & Node Setup",
+    "content": [
+      {
+        "title": "Install Node.js",
+        "cmd": "nvm install 20",
+        "note": "Use Node Version Manager to get Node 20."
+      },
+      {
+        "title": "Create Vite App",
+        "cmd": "npm create vite@latest frontend -- --template react",
+        "note": "Scaffolds a blazing fast React app."
+      },
+      {
+        "title": "Run Dev Server",
+        "cmd": "cd frontend\nnpm install\nnpm run dev",
+        "note": "Starts your local UI environment."
+      }
+    ]
+  },
+  "126": {
+    "type": "rest",
+    "title": "Week 18 Complete: Buffer / Integration Day",
+    "content": "Deploying models turns theory into products. You are now a builder, not just a researcher. Enjoy your rest."
+  },
+  "132": {
+    "type": "rest",
+    "title": "Exam Prep Phase: Buffer / Integration Day",
+    "content": "Exam prep is stressful. Lowering your cortisol levels is scientifically proven to improve test performance. Chill out."
+  },
+  "133": {
+    "type": "setup",
+    "title": "Final Project Environment Setup",
+    "content": [
+      {
+        "title": "Clone Boilerplate",
+        "cmd": "git clone https://github.com/your-repo/boilerplate.git",
+        "note": "Get your starting files."
+      },
+      {
+        "title": "Docker Compose",
+        "cmd": "docker-compose up -d",
+        "note": "Spins up your Postgres DB and Redis cache locally."
+      },
+      {
+        "title": "Environment Variables",
+        "cmd": "cp .env.example .env",
+        "note": "Fill in your OpenAI keys and DB credentials."
+      }
+    ]
+  },
+  "139": {
+    "type": "rest",
+    "title": "Week 20 Complete: Buffer / Integration Day",
+    "content": "Month 5 is complete. You have passed the theoretical and practical exams. The final month is pure portfolio and interview prep. Breathe."
+  },
+  "140": {
+    "type": "rest",
+    "title": "Month 5 Complete: Buffer / Integration Day",
+    "content": "The compound interest of daily learning is immense. You are almost there."
+  },
+  "147": {
+    "type": "rest",
+    "title": "Week 21 Complete: Buffer / Integration Day",
+    "content": "MLOps bridges the gap between data science and software engineering. Rest your mind to prepare for your final capstone."
+  },
+  "167": {
+    "type": "rest",
+    "title": "Week 24 Complete: Buffer / Integration Day",
+    "content": "You have done it. 168 days of relentless consistency. You are fully prepared. Rest today, and go crush those interviews tomorrow."
+  }
 };

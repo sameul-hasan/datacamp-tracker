@@ -16,23 +16,23 @@ function findDayData(dayNum) {
 function Hero({ tracker }) {
   return (
     <header className="hero">
-      <div className="hero-eyebrow">6-Month Job Crack Challenge</div>
+      <div className="hero-eyebrow">168-Session Job Crack Curriculum</div>
       <h1>
         <span className="gradient">Zero to Job Ready</span><br />
         AI/ML Engineering Path
       </h1>
       <p className="hero-sub">
-        A 6-month day-by-day challenge from mathematical bedrock to production MLOps and portfolio polish.
-        All courses free with DataCamp Classroom subscription.
+        A rigorous 168-session journey from mathematical bedrock to production MLOps and portfolio polish.
+        <br/><strong style={{color:'var(--accent)'}}>Pacing:</strong> A standard session requires 3-4 hours of deep focus. Complete 1 session/day for a 6-month pace, or 3-4 sessions/week for a 9-12 month pace. Prioritize mastery over speed.
       </p>
       <div className="hero-stats">
-        <div className="stat-box"><span className="stat-num">168</span><span className="stat-label">Days</span></div>
+        <div className="stat-box"><span className="stat-num">168</span><span className="stat-label">Sessions</span></div>
         <div className="stat-box"><span className="stat-num">{COURSES.length}</span><span className="stat-label">Courses</span></div>
         <div className="stat-box"><span className="stat-num">4</span><span className="stat-label">Certs</span></div>
         <div className="stat-box"><span className="stat-num">4</span><span className="stat-label">Projects</span></div>
         <div className="stat-box">
           <span className="stat-num" style={{color:'var(--green)'}}>{tracker.streak}</span>
-          <span className="stat-label">Day Streak</span>
+          <span className="stat-label">Session Streak</span>
         </div>
       </div>
     </header>
@@ -50,7 +50,7 @@ export default function Dashboard({ tracker }) {
         {daysComplete === 0 && (
           <div className="tip-box">
             <span className="tip-icon">💡</span>
-            <div><strong>Welcome, future AI/ML Engineer!</strong> This tracker follows a 6-month path from Python beginner to job-ready. Start by clicking the ✓ circle next to Day 1 in the Roadmap tab. Each day you complete earns <strong>20 XP</strong>!</div>
+            <div><strong>Welcome, future AI/ML Engineer!</strong> This tracker follows a comprehensive path from Python beginner to job-ready. Start by clicking the ✓ circle next to Session 1 in the Roadmap tab. Take it at your own pace!</div>
           </div>
         )}
 
@@ -60,8 +60,8 @@ export default function Dashboard({ tracker }) {
 
         <h2 className="section-head">// Progress Dashboard</h2>
         <div className="dash-grid">
-          <MetricCard label="Days Complete" value={`${daysComplete}/${totalDays}`} pct={daysComplete/totalDays*100} />
-          <MetricCard label="Weeks" value={`${Math.floor(daysComplete/7)}/${totalDays/7}`} pct={Math.floor(daysComplete/7)/(totalDays/7)*100} color="purple" />
+          <MetricCard label="Sessions Complete" value={`${daysComplete}/${totalDays}`} pct={daysComplete/totalDays*100} />
+          <MetricCard label="Weeks Equivalent" value={`${Math.floor(daysComplete/7)}/${totalDays/7}`} pct={Math.floor(daysComplete/7)/(totalDays/7)*100} color="purple" />
           <MetricCard label="Courses" value={`${coursesComplete}/${totalCourses}`} pct={coursesComplete/totalCourses*100} color="gold" />
           <MetricCard label="Certifications" value={`${certsComplete}/${totalCerts}`} pct={certsComplete/totalCerts*100} color="green" />
           <MetricCard label="Total XP" value={xp} pct={Math.min(xp/7000*100,100)} />

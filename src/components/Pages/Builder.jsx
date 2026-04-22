@@ -6,7 +6,7 @@ export default function Builder() {
         <div className="builder-name">Samuel Hasan</div>
         <div className="builder-role">Software Engineering Student · AI/ML Engineer Path</div>
         <div className="builder-bio">
-          Engineered this 6-month zero-to-job-ready challenge to bridge the gap between foundational
+          Engineered this rigorous 168-session professional journey to bridge the gap between foundational
           data science and production-grade AI engineering. Targeting entry-level AI/ML roles with
           a focus on IBM watsonx, RAG pipelines, and full-stack MLOps.
         </div>
@@ -25,12 +25,12 @@ export default function Builder() {
       <div className="interview-grid">
         <div className="interview-card">
           <h4>🎯 Purpose</h4>
-          <p>A complete 6-month learning challenge designed for beginners with a DataCamp Classroom subscription. Covers Math, ML, Deep Learning, NLP, LLMs, RAG, and MLOps — everything needed for an entry-level AI/ML Engineer role.</p>
+          <p>A complete 168-session professional journey designed for beginners with a DataCamp Classroom subscription. Covers Math, ML, Deep Learning, NLP, LLMs, RAG, and MLOps — everything needed for an entry-level AI/ML Engineer role.</p>
         </div>
         <div className="interview-card">
           <h4>📋 What's Included</h4>
           <ul>
-            <li>168 day-by-day study plan</li>
+            <li>168 session-by-session study plan</li>
             <li>31 core DataCamp courses (all free with Classroom)</li>
             <li>4 DataCamp certifications</li>
             <li>4 milestone projects</li>
